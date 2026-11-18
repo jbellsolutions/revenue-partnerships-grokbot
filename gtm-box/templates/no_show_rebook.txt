@@ -1,0 +1,5 @@
+Hey {{first_name}}, looks like we missed each other today. No problem at all.
+
+Here's my calendar if you'd like another time: {{booking_link}}
+
+Justin

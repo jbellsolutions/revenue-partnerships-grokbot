@@ -1,0 +1,26 @@
+My Plan to Build Microsites Across 50 Local Markets
+https://www.youtube.com/watch?v=7ON5PlQg3Vs
+Published: 20260902 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use target-market evidence to select improvements and expand only when maintenance and user value support it.
+
+Cautions: No domain registrations or API deployments were performed; a profile per city requires real eligibility.
+
+Topic navigation (automatically detected; check context):
+citations_profiles: https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=369s | https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=545s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+architecture: https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=318s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+portfolio: https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=124s | https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=197s | https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=509s
+Our application: The channel proposes separate assets across services/places. Evaluate distinct user purpose, truthful identity and upkeep before expanding domains.
+ai_visibility: https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=70s | https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=314s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+technical: https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=96s | https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=240s | https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=528s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=4s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=441s | https://www.youtube.com/watch?v=7ON5PlQg3Vs&t=539s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.

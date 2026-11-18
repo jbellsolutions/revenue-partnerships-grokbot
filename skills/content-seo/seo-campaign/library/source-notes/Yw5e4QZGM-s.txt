@@ -1,0 +1,22 @@
+Why Are AI "Micro Directories" Taking Over Google?
+https://www.youtube.com/watch?v=Yw5e4QZGM-s
+Published: 20261007 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Create verified comparisons with source provenance and a correction route.
+
+Cautions: Claims of AI preference and effortless accuracy remain unverified; no fabricated best-of rankings.
+
+Topic navigation (automatically detected; check context):
+ai_visibility: https://www.youtube.com/watch?v=Yw5e4QZGM-s&t=299s | https://www.youtube.com/watch?v=Yw5e4QZGM-s&t=429s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+data_quality: https://www.youtube.com/watch?v=Yw5e4QZGM-s&t=380s | https://www.youtube.com/watch?v=Yw5e4QZGM-s&t=640s
+Our application: Use verified source facts and useful interpretation; retain provenance, unknowns and data-use restrictions.
+technical: https://www.youtube.com/watch?v=Yw5e4QZGM-s&t=315s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=Yw5e4QZGM-s&t=12s | https://www.youtube.com/watch?v=Yw5e4QZGM-s&t=135s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=Yw5e4QZGM-s&t=97s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.

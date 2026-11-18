@@ -1,0 +1,22 @@
+How I Build Opus 5 Microsites to Rank #1 on Google
+https://www.youtube.com/watch?v=_Itjh9tIRGA
+Published: 20260726 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use natural-language editing with human-readable briefs and verify the actual links and coverage.
+
+Cautions: Model/version enthusiasm and build speed do not demonstrate rankings; reject invented local facts.
+
+Topic navigation (automatically detected; check context):
+architecture: https://www.youtube.com/watch?v=_Itjh9tIRGA&t=255s | https://www.youtube.com/watch?v=_Itjh9tIRGA&t=359s | https://www.youtube.com/watch?v=_Itjh9tIRGA&t=433s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+portfolio: https://www.youtube.com/watch?v=_Itjh9tIRGA&t=652s
+Our application: The channel proposes separate assets across services/places. Evaluate distinct user purpose, truthful identity and upkeep before expanding domains.
+data_quality: https://www.youtube.com/watch?v=_Itjh9tIRGA&t=465s
+Our application: Use verified source facts and useful interpretation; retain provenance, unknowns and data-use restrictions.
+niche: https://www.youtube.com/watch?v=_Itjh9tIRGA&t=141s | https://www.youtube.com/watch?v=_Itjh9tIRGA&t=402s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+memory: https://www.youtube.com/watch?v=_Itjh9tIRGA&t=626s
+Our application: Persist sourced facts, decisions and change history so an agent can resume without repeating research.

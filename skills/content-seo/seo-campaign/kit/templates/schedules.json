@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "desired_not_installed",
+  "jobs": [
+    {
+      "purpose_key": "campaign-dispatcher",
+      "native_job_id": null,
+      "enabled": false,
+      "schedule_proposed": "every 60 minutes",
+      "timezone": "America/New_York",
+      "expires_at": null,
+      "entry_prompt": "Read AGENTS.md, config/authority.json, operations/stop.json and checkpoint.json from the actual campaign store. Acquire enforced director ownership. Reconcile pending effects and active workers. Advance a bounded batch of ready or due work; check output; save state. Do not recreate projects, roles or jobs. Stop on cancellation, expiry or cap. Quiet if unchanged; notify only meaningful results, failures, required input or agreed reports.",
+      "workdir_or_store_ref": null,
+      "prompt_revision": 1,
+      "overlap_policy": "exclusive_director_required",
+      "missed_run_policy": "coalesce_once_after_reconciliation",
+      "budget_ref": "config/campaign.json#limits",
+      "cancel_route": null,
+      "verified_scheduled_run_receipt": null
+    }
+  ],
+  "due_work_in_queue": [
+    "post_release_recheck",
+    "weekly_metrics",
+    "sampled_ai_panel",
+    "factual_refresh_on_change",
+    "campaign_day_30_60_90_review"
+  ]
+}

@@ -1,0 +1,18 @@
+Building a Custom WordPress Site with Claude Code
+https://www.youtube.com/watch?v=aeImsK3u7Ac
+Published: 20260618 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use the workflow lesson while replacing all placeholders with verified original content and checking the actual page.
+
+Cautions: The channel’s platform preferences change over time; a new platform alone is not a ranking strategy.
+
+Topic navigation (automatically detected; check context):
+architecture: https://www.youtube.com/watch?v=aeImsK3u7Ac&t=300s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+data_quality: https://www.youtube.com/watch?v=aeImsK3u7Ac&t=532s
+Our application: Use verified source facts and useful interpretation; retain provenance, unknowns and data-use restrictions.
+niche: https://www.youtube.com/watch?v=aeImsK3u7Ac&t=66s
+Our application: Validate demand, competition, business fit and contribution economics before building.

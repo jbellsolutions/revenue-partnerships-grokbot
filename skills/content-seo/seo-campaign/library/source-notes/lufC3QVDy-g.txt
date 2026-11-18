@@ -1,0 +1,28 @@
+How I Would Make Money Online in 2027 (If I Had to Start Over)
+https://www.youtube.com/watch?v=lufC3QVDy-g
+Published: 20261028 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Combine useful local evidence with real business references and working lead routing.
+
+Cautions: Profiles and a press release preceded a rise, but another profile-heavy site remained weak.
+
+Topic navigation (automatically detected; check context):
+business_identity: https://www.youtube.com/watch?v=lufC3QVDy-g&t=251s | https://www.youtube.com/watch?v=lufC3QVDy-g&t=396s | https://www.youtube.com/watch?v=lufC3QVDy-g&t=527s
+Our application: Check real business identity, consistent public facts and corroborating sources; schema must reflect reality.
+citations_profiles: https://www.youtube.com/watch?v=lufC3QVDy-g&t=451s | https://www.youtube.com/watch?v=lufC3QVDy-g&t=501s | https://www.youtube.com/watch?v=lufC3QVDy-g&t=551s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+architecture: https://www.youtube.com/watch?v=lufC3QVDy-g&t=211s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+ai_visibility: https://www.youtube.com/watch?v=lufC3QVDy-g&t=658s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+data_quality: https://www.youtube.com/watch?v=lufC3QVDy-g&t=186s
+Our application: Use verified source facts and useful interpretation; retain provenance, unknowns and data-use restrictions.
+niche: https://www.youtube.com/watch?v=lufC3QVDy-g&t=156s | https://www.youtube.com/watch?v=lufC3QVDy-g&t=669s | https://www.youtube.com/watch?v=lufC3QVDy-g&t=839s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=lufC3QVDy-g&t=808s | https://www.youtube.com/watch?v=lufC3QVDy-g&t=959s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.
+measurement: https://www.youtube.com/watch?v=lufC3QVDy-g&t=840s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

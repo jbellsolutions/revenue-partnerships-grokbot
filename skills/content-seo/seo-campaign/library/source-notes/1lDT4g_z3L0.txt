@@ -1,0 +1,14 @@
+How LLMWiki Makes Claude Code Cheaper and Better
+https://www.youtube.com/watch?v=1lDT4g_z3L0
+Published: 20260728 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Save facts, sources, decisions, unresolved tasks and rollback points in the project.
+
+Cautions: Do not store credentials in the knowledge vault or assume a folder automatically creates an autonomous runner.
+
+Topic navigation (automatically detected; check context):
+memory: https://www.youtube.com/watch?v=1lDT4g_z3L0&t=13s | https://www.youtube.com/watch?v=1lDT4g_z3L0&t=69s | https://www.youtube.com/watch?v=1lDT4g_z3L0&t=198s
+Our application: Persist sourced facts, decisions and change history so an agent can resume without repeating research.

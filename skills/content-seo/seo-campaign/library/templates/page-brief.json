@@ -1,0 +1,30 @@
+{
+  "url": null,
+  "page_type": "service",
+  "search_intent": null,
+  "primary_question": null,
+  "title": null,
+  "h1": null,
+  "direct_answer": null,
+  "verified_local_differences": [],
+  "problem": null,
+  "process": [],
+  "cost": {
+    "range": null,
+    "currency": null,
+    "scope": null,
+    "date": null,
+    "source": null,
+    "assumptions": [],
+    "approved": false
+  },
+  "proof": [],
+  "limitations": [],
+  "faq": [],
+  "internal_links": [],
+  "cta": null,
+  "fact_ids": [],
+  "schema_type": null,
+  "unknowns": [],
+  "review_status": "draft"
+}

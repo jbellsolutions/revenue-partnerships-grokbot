@@ -1,0 +1,74 @@
+{
+  "objective": "qualified traffic and leads",
+  "steps": [
+    {
+      "id": "intake",
+      "input": "owner direction and live business evidence",
+      "action": "confirm site, identity, services, scope and goal",
+      "output": "templates/site-brief.json",
+      "done_when": "critical unknowns explicit"
+    },
+    {
+      "id": "baseline",
+      "input": "site and authorized measurement access",
+      "action": "capture discovery, conversion and search baseline",
+      "output": "audit and metric records",
+      "done_when": "actual evidence saved"
+    },
+    {
+      "id": "prioritize",
+      "input": "baseline and live target-market results",
+      "action": "select the highest-value coherent batch",
+      "output": "page map and experiment",
+      "done_when": "value and hypothesis stated"
+    },
+    {
+      "id": "verify",
+      "input": "business and primary sources",
+      "action": "confirm claims and local evidence",
+      "output": "fact ledger",
+      "done_when": "publishable facts traceable"
+    },
+    {
+      "id": "prepare",
+      "input": "verified facts and briefs",
+      "action": "improve pages and internal links; create accurate schema",
+      "output": "staged site changes",
+      "done_when": "content useful and factual"
+    },
+    {
+      "id": "authority",
+      "input": "existing listings and competitor evidence",
+      "action": "research corrections and fitting links",
+      "output": "citation and backlink queues",
+      "done_when": "opportunities checked; external action scope explicit"
+    },
+    {
+      "id": "release",
+      "input": "approved changes and launch checklist",
+      "action": "run relevant checks and publish only within scope",
+      "output": "live evidence and change log",
+      "done_when": "actual release works or gap recorded"
+    },
+    {
+      "id": "measure",
+      "input": "fixed queries and conversion records",
+      "action": "compare matched periods and record AI citations",
+      "output": "measurement and experiment logs",
+      "done_when": "outcomes separated from hypotheses"
+    },
+    {
+      "id": "iterate",
+      "input": "observations and unresolved bottleneck",
+      "action": "choose the next worthwhile fix",
+      "output": "updated checkpoint",
+      "done_when": "next action concrete"
+    }
+  ],
+  "special_constraints": [
+    "No automatic messages, purchases or account creation",
+    "No invented local facts or fake profiles",
+    "No claimed rankings from a template or simulation",
+    "No new recurring execution without user request"
+  ]
+}

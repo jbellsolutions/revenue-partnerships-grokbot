@@ -1,0 +1,20 @@
+I Built an SEO Agent That Replaces Manual SEO Work (n8n)
+https://www.youtube.com/watch?v=-WdA6OZ9RjE
+Published: 20260113 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use real data and competitor research to find intent gaps; verify facts and create original material.
+
+Cautions: The public demo does not supply a private workflow copy or prove equivalence to a commercial SEO platform.
+
+Topic navigation (automatically detected; check context):
+ai_visibility: https://www.youtube.com/watch?v=-WdA6OZ9RjE&t=90s | https://www.youtube.com/watch?v=-WdA6OZ9RjE&t=401s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+data_quality: https://www.youtube.com/watch?v=-WdA6OZ9RjE&t=286s
+Our application: Use verified source facts and useful interpretation; retain provenance, unknowns and data-use restrictions.
+niche: https://www.youtube.com/watch?v=-WdA6OZ9RjE&t=109s | https://www.youtube.com/watch?v=-WdA6OZ9RjE&t=522s | https://www.youtube.com/watch?v=-WdA6OZ9RjE&t=614s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=-WdA6OZ9RjE&t=449s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.

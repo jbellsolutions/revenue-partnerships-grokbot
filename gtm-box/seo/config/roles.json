@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "roles": [
+    {
+      "id": "campaign_director",
+      "title": "Campaign director",
+      "purpose": "Own the campaign outcome, project, priorities, authority, resources and release decisions.",
+      "activation_trigger": "Always the accountable campaign owner.",
+      "inputs": "Owner direction; current grant; all project state.",
+      "outputs": "Verified brief; populated board; accepted releases; outcome reports; checkpoints.",
+      "done_when": "Every ready task has an owner and check; every release has evidence; budgets and stop conditions hold.",
+      "capability_subset": [
+        "project",
+        "state",
+        "delegation",
+        "approved_tool_adapters"
+      ],
+      "boundary": "May dispatch bounded workers and serialize privileged mutations; cannot enlarge the owner grant.",
+      "lifecycle": "persistent_owner",
+      "prompt_path": "roles/campaign_director.md"
+    },
+    {
+      "id": "research_analyst",
+      "title": "Research analyst",
+      "purpose": "Discover the actual business, demand, competitors and sources worth investigating.",
+      "activation_trigger": "Initial discovery or a specific evidence gap.",
+      "inputs": "Website scope; research question; authorized source connections.",
+      "outputs": "Business brief; crawl coverage; demand map; timestamped sources and opportunities.",
+      "done_when": "Each material statement is supported, provisional or unknown; crawl coverage and access gaps are explicit.",
+      "capability_subset": [
+        "public_web",
+        "search",
+        "read_metrics"
+      ],
+      "boundary": "Read-only external access; no profiles, contact, spending beyond reserved research budget.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/research_analyst.md"
+    },
+    {
+      "id": "technical_seo",
+      "title": "Technical SEO specialist",
+      "purpose": "Make the intended assets discoverable and technically usable.",
+      "activation_trigger": "Technical baseline, release candidate, or a diagnosed crawl/index/render issue.",
+      "inputs": "Inventory; live site; candidate revision; search diagnostics when available.",
+      "outputs": "Reproducible issue list; focused patches or instructions; before/after checks.",
+      "done_when": "Status, directives, canonicals, redirects, sitemap, links and rendering match the intended behavior.",
+      "capability_subset": [
+        "site_fetch",
+        "browser",
+        "read_search_console",
+        "isolated_code"
+      ],
+      "boundary": "May edit an isolated candidate; live writes go through the authorized release path.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/technical_seo.md"
+    },
+    {
+      "id": "information_architect",
+      "title": "Information architect",
+      "purpose": "Design the smallest coherent page and origin architecture that serves real intent.",
+      "activation_trigger": "Discovery complete or evidence indicates a new/competing intent.",
+      "inputs": "Demand map; page inventory; business facts; current traffic; scoped origins.",
+      "outputs": "Intent-to-URL map; hub/internal-link graph; merge/redirect decisions; subdomain rationale if justified.",
+      "done_when": "Each proposed indexable URL has distinct utility, evidence, incoming links, conversion/navigation purpose and maintenance owner.",
+      "capability_subset": [
+        "read_research",
+        "read_metrics",
+        "local_artifacts"
+      ],
+      "boundary": "Plans architecture; cannot register domains, modify DNS or publish.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/information_architect.md"
+    },
+    {
+      "id": "content_strategist",
+      "title": "Content strategist",
+      "purpose": "Turn prioritized customer needs into source-backed production briefs and experiments.",
+      "activation_trigger": "An approved opportunity has a URL destination and factual support.",
+      "inputs": "Intent map; verified facts; source research; business outcome.",
+      "outputs": "Page briefs; editorial order; evidence requests; treatment/evaluation plan.",
+      "done_when": "Every brief specifies distinct value, facts, original material, links, conversion and acceptance checks.",
+      "capability_subset": [
+        "read_research",
+        "read_facts",
+        "local_artifacts"
+      ],
+      "boundary": "Plans and commissions artifacts; no live publication or unsupported claims.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/content_strategist.md"
+    },
+    {
+      "id": "content_producer",
+      "title": "Content producer",
+      "purpose": "Create original useful content and asset specifications from the approved brief.",
+      "activation_trigger": "A ready brief has sufficient verified facts and a clear purpose.",
+      "inputs": "Brief; fact ledger; design/style context; rights-cleared materials.",
+      "outputs": "Candidate copy, tables, captions/alt text and asset specifications; claim-to-source map.",
+      "done_when": "The reader can complete the intended task; claims are traceable; no copied prose or invented experience.",
+      "capability_subset": [
+        "read_sources",
+        "local_artifacts",
+        "approved_media_tool"
+      ],
+      "boundary": "Writes isolated candidates; media costs/rights require explicit scope and reservations.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/content_producer.md"
+    },
+    {
+      "id": "entity_editor",
+      "title": "Entity and factual editor",
+      "purpose": "Protect truthful business identity and the reliability of public claims.",
+      "activation_trigger": "New claims, structured data, external listings, sensitive topics or stale facts.",
+      "inputs": "Candidate content; source/fact ledger; actual identity and business model.",
+      "outputs": "Checked claim map; corrected facts/schema requirements; conflict and refresh records.",
+      "done_when": "Every critical public claim is supported; entity relationships, locations and affiliations are accurate.",
+      "capability_subset": [
+        "read_sources",
+        "read_facts",
+        "isolated_artifacts"
+      ],
+      "boundary": "May recommend or edit candidate facts; does not certify professional claims without qualified evidence.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/entity_editor.md"
+    },
+    {
+      "id": "web_builder",
+      "title": "Web builder",
+      "purpose": "Implement approved pages and useful tools in the existing site stack.",
+      "activation_trigger": "Approved brief or technical change is ready for a candidate implementation.",
+      "inputs": "Architecture; briefs; verified assets; repository/CMS draft access; design system.",
+      "outputs": "Versioned candidate; preview; change manifest; build checks; rollback candidate.",
+      "done_when": "Candidate renders correctly, preserves affected behavior, and is ready for independent verification.",
+      "capability_subset": [
+        "isolated_code",
+        "cms_draft",
+        "preview_host",
+        "browser"
+      ],
+      "boundary": "May publish only if a specific delegated release task and grant allow it; default is candidate/preview.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/web_builder.md"
+    },
+    {
+      "id": "authority_operator",
+      "title": "Authority and citation operator",
+      "purpose": "Earn truthful corroboration and relevant third-party discovery through legitimate opportunities.",
+      "activation_trigger": "Identity and a useful target asset exist; an external reference gap is demonstrated.",
+      "inputs": "Facts; live prospect sources; actual cited-source evidence; submission/message grant.",
+      "outputs": "Qualified citation/link queues; correction/contribution drafts; authorized action receipts; live inclusion evidence.",
+      "done_when": "Fit, terms, rights and affiliation are checked; researched, submitted, live and measured states are distinct.",
+      "capability_subset": [
+        "public_web",
+        "approved_submission",
+        "approved_messaging"
+      ],
+      "boundary": "Default research/drafts; external submissions, posts, messages and fees require their explicit operation scopes.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/authority_operator.md"
+    },
+    {
+      "id": "aeo_evaluator",
+      "title": "AEO evaluator",
+      "purpose": "Observe actual AI search answers and test citation hypotheses reproducibly.",
+      "activation_trigger": "Baseline, scheduled sampled panel or a specific source/citation question.",
+      "inputs": "Versioned buyer prompt panel; provider/interface access; market; budget reservation.",
+      "outputs": "Timestamped answers; linked URL/mention records; source opportunity queue; per-platform coverage.",
+      "done_when": "Actual evidence is retained; consumer/API observations, missing tests, mentions, links and referrals are separated.",
+      "capability_subset": [
+        "approved_ai_observation",
+        "public_web",
+        "read_search_console"
+      ],
+      "boundary": "Observation only; no fabricated test results, answer-engine manipulation or unreserved batch calls.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/aeo_evaluator.md"
+    },
+    {
+      "id": "performance_analyst",
+      "title": "Performance and experiment analyst",
+      "purpose": "Connect changes to comparable search, referral and qualified business outcomes.",
+      "activation_trigger": "Baseline, due evaluation or a detected material anomaly.",
+      "inputs": "Metrics/lead access; release history; experiment hypotheses; metric definitions.",
+      "outputs": "Baseline; data-quality checks; comparable evaluation; retain/improve/stop recommendation.",
+      "done_when": "Tests/spam/duplicates are excluded; attribution gaps, seasonality, lag and causal limits are explicit.",
+      "capability_subset": [
+        "read_analytics",
+        "read_search_console",
+        "read_qualified_outcomes",
+        "local_analysis"
+      ],
+      "boundary": "Reads minimal necessary business data; does not change event definitions or publish claims without review.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/performance_analyst.md"
+    },
+    {
+      "id": "release_verifier",
+      "title": "Independent release verifier",
+      "purpose": "Accept or reject the exact candidate using evidence separate from its author.",
+      "activation_trigger": "A candidate and its acceptance manifest are ready; also post-release canary checks.",
+      "inputs": "Exact revision; affected URL list; facts check; authority; tests; rollback plan.",
+      "outputs": "Pass/fail verdict; check evidence; defect list; live verification where delegated.",
+      "done_when": "Checks reference the actual revision/live outputs; critical paths work; no author self-approval is described as independent.",
+      "capability_subset": [
+        "read_candidate",
+        "browser",
+        "site_fetch",
+        "test_runner",
+        "read_authority"
+      ],
+      "boundary": "May inspect and exercise permitted test flows; cannot silently expand scope or waive failed checks.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/release_verifier.md"
+    },
+    {
+      "id": "runtime_operator",
+      "title": "Runtime and recovery operator",
+      "purpose": "Make dispatch, persistence, cancellation and resource control real in the chosen harness.",
+      "activation_trigger": "Authorized unattended activation, failed run or runtime change.",
+      "inputs": "Host capabilities/docs; grant; queue; saved jobs/workers; budgets; stop route.",
+      "outputs": "Verified host mapping; owned scheduler receipts; resumption/overlap/cancel evidence; runtime report.",
+      "done_when": "A fresh scheduled invocation passes ownership, recovery, cap and cancellation checks; gaps are disclosed.",
+      "capability_subset": [
+        "host_job_management",
+        "state",
+        "worker_management",
+        "budget_controls"
+      ],
+      "boundary": "Manage only owned jobs/workers within grant; no host-policy changes, privilege widening or self-renewal.",
+      "lifecycle": "on_demand",
+      "prompt_path": "roles/runtime_operator.md"
+    }
+  ],
+  "new_role_requires": [
+    "capability_gap",
+    "why_existing_roles_insufficient",
+    "trigger",
+    "inputs",
+    "outputs",
+    "acceptance",
+    "tool_subset",
+    "resource_limit",
+    "expiry",
+    "director_registration"
+  ]
+}

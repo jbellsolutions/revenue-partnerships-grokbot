@@ -1,0 +1,21 @@
+PUBLIC OFFER → OUR ORIGINAL EQUIVALENT
+
+Microsite Blueprint ZIP → full playbook, page map/brief, service-page skeleton, build instructions and launch checklist.
+Microsite Empire / Star / Layer Cake → named-method translation and portfolio decision rules; improve an existing site first.
+AI Directory Blueprint → scope/clean/enrich/plan/build/launch procedure, directory listing schema, selection and disclosure requirements.
+Niche Validator → live-result research procedure, niche-validation input template, explicit economics and demand assumptions.
+Private Backlink Rolodex (advertised as 815 sites) → current-market backlink prospecting method and evidence-based prospect queue. The private list was not obtained or guessed.
+Entity / n8n workflows → portable agent workflow, fact ledger, structured-data procedure and audit/build/measure loop. WORKFLOW.json is an orchestration specification, not an importable copy of a private n8n workflow.
+Query-fan-out / AI citation tactics → question map, observation protocol, real-citation source prospecting and separate outcome measurement.
+Contest/PDF checklists → source-specific notes, evidence caveats, operating checklist and launch checks. The original private scoreboard and PDFs remain unavailable.
+Knowledge vault → agent instructions, templates, source index, checkpoint and change/measurement logs in this folder.
+Coaching, private lessons, live calls, member results → no equivalent claimed; these services and inaccessible material were not reviewed.
+
+Known public resources:
+https://www.youtube.com/@jessecunninghamv
+https://www.youtube.com/watch?v=9l1NyuZjl4w
+https://www.skool.com/rank-expand-academy/about
+https://tool.rankexpand.com/
+https://www.jcchouinard.com/chatgpt-query-fanout-analyzer/
+
+The niche validator returned a public app shell without readable documentation. We did not run it, create an account, or verify its internal scoring. The linked fan-out analyzer is a third-party resource mentioned in a video description, not Jesse's private software. Check its current behavior before use. No membership, subscription, domains or placements were purchased.

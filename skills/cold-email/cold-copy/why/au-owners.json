@@ -1,0 +1,35 @@
+{
+  "big": "Step 1 is Justin's own email, word for word. Version A is exactly as he wrote it. Version B rotates only the lines with no claim in them. Version C links the site instead of the podcast, to test which draws more replies.",
+  "steps": {
+    "1A": [
+      "Justin's email, unchanged",
+      "Each lead opens on a line written from their own website."
+    ],
+    "1B": [
+      "Justin's email, with rotation",
+      "Each lead opens on a line written from their own website."
+    ],
+    "1C": [
+      "Justin's email, with the site link",
+      "Each lead opens on a line written from their own website."
+    ],
+    "2A": [
+      "The barber",
+      "A short note that adds a true story and doesn't nag. A barber building and selling software answers 'I'm not techy' better than saying so. It ends on a question about them."
+    ],
+    "2B": [
+      "People talking about you",
+      "This adds one new thing the agent does, in Justin's words. It suits owners who have read step 1 and want something that finds new business, not just old customers."
+    ],
+    "3A": [
+      "Clean exit",
+      "Honest and short, in the style of a polite breakup. It leaves the door open and doesn't guilt anyone."
+    ],
+    "3B": [
+      "Yes or no",
+      "A distracted reader often answers a one-word question. Either answer helps us, and the out is real. It never says silence means no."
+    ]
+  },
+  "subsequences": "These go only to people who replied. The yes path repeats the booking link and gives them something to bring. Both emails read fine if they've already booked, because PlusVibe can't see the calendar. The not-now email goes out about three months later, which matches the reply they got.",
+  "replies": "The reply agent sends these as written, with no spintax, because the reply call doesn't process it. The yes reply is your approved booking template with 'my calendar' changed to 'the calendar', and a line added on what to bring. If someone asks something specific, answer that first using Justin's claims only. Price, terms or anyone upset goes to Justin."
+}

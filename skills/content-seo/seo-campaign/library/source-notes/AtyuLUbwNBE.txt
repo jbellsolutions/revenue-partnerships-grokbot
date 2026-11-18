@@ -1,0 +1,18 @@
+Why I'm Building 1,000 Microsites for $10 Each
+https://www.youtube.com/watch?v=AtyuLUbwNBE
+Published: 20251210 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use realistic total cost and observed site outcomes to decide whether an asset deserves continued support.
+
+Cautions: Domain-only cost framing omits other operating expenses, and source portfolio-return scenarios are hypothetical.
+
+Topic navigation (automatically detected; check context):
+citations_profiles: https://www.youtube.com/watch?v=AtyuLUbwNBE&t=377s | https://www.youtube.com/watch?v=AtyuLUbwNBE&t=596s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+ai_visibility: https://www.youtube.com/watch?v=AtyuLUbwNBE&t=683s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+measurement: https://www.youtube.com/watch?v=AtyuLUbwNBE&t=592s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

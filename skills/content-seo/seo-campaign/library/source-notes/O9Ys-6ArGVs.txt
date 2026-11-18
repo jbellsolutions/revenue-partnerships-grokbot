@@ -1,0 +1,18 @@
+How I'm Ranking on Google AI Overviews (and ChatGPT) on Autopilot
+https://www.youtube.com/watch?v=O9Ys-6ArGVs
+Published: 20260323 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Publish clear sourced information and inspect actual AI citations without assuming selection.
+
+Cautions: Statements about AI structure and reported citation statistics are not independently validated here.
+
+Topic navigation (automatically detected; check context):
+business_identity: https://www.youtube.com/watch?v=O9Ys-6ArGVs&t=312s
+Our application: Check real business identity, consistent public facts and corroborating sources; schema must reflect reality.
+ai_visibility: https://www.youtube.com/watch?v=O9Ys-6ArGVs&t=18s | https://www.youtube.com/watch?v=O9Ys-6ArGVs&t=107s | https://www.youtube.com/watch?v=O9Ys-6ArGVs&t=237s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+niche: https://www.youtube.com/watch?v=O9Ys-6ArGVs&t=482s
+Our application: Validate demand, competition, business fit and contribution economics before building.

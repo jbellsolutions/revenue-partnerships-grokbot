@@ -1,0 +1,16 @@
+Google's New Update is the Worst.
+https://www.youtube.com/watch?v=M7z9u2_XtRU
+Published: 20260903 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Retain more than one measurement source and save repeatable settings and evidence.
+
+Cautions: The commentary about search-platform motives is interpretation, not a verified ranking mechanism.
+
+Topic navigation (automatically detected; check context):
+ai_visibility: https://www.youtube.com/watch?v=M7z9u2_XtRU&t=222s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+measurement: https://www.youtube.com/watch?v=M7z9u2_XtRU&t=168s | https://www.youtube.com/watch?v=M7z9u2_XtRU&t=241s | https://www.youtube.com/watch?v=M7z9u2_XtRU&t=299s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

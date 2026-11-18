@@ -1,0 +1,25 @@
+{
+  "definitions": {
+    "qualified_lead": "Owner-defined service/area fit and genuine inquiry; not a click or our own test",
+    "citation_coverage": "Valid tests with a source link to our pages / valid completed tests, separately by provider",
+    "mention_coverage": "Valid tests mentioning the business / valid completed tests",
+    "lead_conversion_rate": "Qualified inquiries / comparable relevant visits"
+  },
+  "periods": [
+    {
+      "start": null,
+      "end": null,
+      "comparison_period": null,
+      "nonbrand_clicks": null,
+      "impressions": null,
+      "organic_sessions": null,
+      "ai_referral_sessions": null,
+      "qualified_leads": null,
+      "sales": null,
+      "attributed_contribution": null,
+      "source_exports": [],
+      "confounders": [],
+      "interpretation": null
+    }
+  ]
+}

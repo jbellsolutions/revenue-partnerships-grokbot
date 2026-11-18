@@ -1,0 +1,36 @@
+{
+  "scope": {
+    "trade": null,
+    "geography": null,
+    "source_terms_checked": false,
+    "source_terms_url": null,
+    "refresh_policy": null
+  },
+  "listings": [
+    {
+      "id": null,
+      "name": null,
+      "website": null,
+      "public_phone": null,
+      "city": null,
+      "region": null,
+      "source_url": null,
+      "checked_at": null,
+      "status": "unverified",
+      "duplicate_reviewed": false,
+      "attributes": [
+        {
+          "question": null,
+          "answer": "unknown",
+          "evidence_url": null,
+          "checked_at": null
+        }
+      ],
+      "original_summary": null,
+      "editorial_criteria": [],
+      "paid_feature": false,
+      "owned_relationship": null,
+      "correction_contact": null
+    }
+  ]
+}

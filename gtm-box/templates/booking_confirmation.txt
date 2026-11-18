@@ -1,0 +1,5 @@
+Hey {{first_name}}, you're booked for {{call_time}}. It's a free 30 minutes, just you and me, and we'll look at where partnerships could bring you leads you don't pay for.
+
+If something comes up, you can move it here: {{reschedule_link}}
+
+Justin

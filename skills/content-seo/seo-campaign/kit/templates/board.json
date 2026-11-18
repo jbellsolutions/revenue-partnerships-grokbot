@@ -1,0 +1,776 @@
+{
+  "schema_version": 1,
+  "project_key": null,
+  "authority": "local",
+  "epics": [
+    {
+      "id": "operations",
+      "name": "operations"
+    },
+    {
+      "id": "truth_and_baseline",
+      "name": "truth and baseline"
+    },
+    {
+      "id": "technical",
+      "name": "technical"
+    },
+    {
+      "id": "architecture",
+      "name": "architecture"
+    },
+    {
+      "id": "content",
+      "name": "content"
+    },
+    {
+      "id": "release",
+      "name": "release"
+    },
+    {
+      "id": "authority",
+      "name": "authority"
+    },
+    {
+      "id": "ai_visibility",
+      "name": "ai visibility"
+    },
+    {
+      "id": "measurement",
+      "name": "measurement"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "project-bootstrap",
+      "epic": "operations",
+      "title": "Create or reconcile canonical project and durable state",
+      "outcome": "Create or reconcile canonical project and durable state",
+      "owner_role": "campaign_director",
+      "status": "READY",
+      "priority": 1,
+      "depends_on": [],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/project-bootstrap/project.json"
+      ],
+      "acceptance": [
+        "Canonical project exists; board is readable; duplicate projects reconciled"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "access-map",
+      "epic": "operations",
+      "title": "Verify connections, authority, costs and runtime capability",
+      "outcome": "Verify connections, authority, costs and runtime capability",
+      "owner_role": "runtime_operator",
+      "status": "INBOX",
+      "priority": 1,
+      "depends_on": [
+        "project-bootstrap"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/access-map/connections.json"
+      ],
+      "acceptance": [
+        "Harmless capability reads recorded; missing scopes explicit; grant normalized"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "business-discovery",
+      "epic": "truth_and_baseline",
+      "title": "Infer and substantiate the business, customers and offers",
+      "outcome": "Infer and substantiate the business, customers and offers",
+      "owner_role": "research_analyst",
+      "status": "INBOX",
+      "priority": 1,
+      "depends_on": [
+        "project-bootstrap"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/business-discovery/brief.json"
+      ],
+      "acceptance": [
+        "Verified/provisional/unknown facts separated; sources saved"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "site-audit",
+      "epic": "technical",
+      "title": "Audit representative templates and conversion routes",
+      "outcome": "Audit representative templates and conversion routes",
+      "owner_role": "technical_seo",
+      "status": "INBOX",
+      "priority": 1,
+      "depends_on": [
+        "business-discovery"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/site-audit/audit.json"
+      ],
+      "acceptance": [
+        "Coverage, status/directives, links, rendering and conversion gaps evidenced"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "baseline",
+      "epic": "truth_and_baseline",
+      "title": "Capture search, analytics and qualified-outcome baseline or access gaps",
+      "outcome": "Capture search, analytics and qualified-outcome baseline or access gaps",
+      "owner_role": "performance_analyst",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "access-map",
+        "business-discovery"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/baseline/baseline.json"
+      ],
+      "acceptance": [
+        "Metric definitions and comparable periods recorded; unavailable data is not zero"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "demand-research",
+      "epic": "architecture",
+      "title": "Map buyer intent, competing solutions and source opportunities",
+      "outcome": "Map buyer intent, competing solutions and source opportunities",
+      "owner_role": "research_analyst",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "business-discovery"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/demand-research/demand.json"
+      ],
+      "acceptance": [
+        "Observed queries, competitors, dates and locale captured; no invented volume"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "fact-check",
+      "epic": "truth_and_baseline",
+      "title": "Check identity and initial reusable claims",
+      "outcome": "Check identity and initial reusable claims",
+      "owner_role": "entity_editor",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "business-discovery"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/fact-check/facts.json"
+      ],
+      "acceptance": [
+        "Critical facts have evidence or explicit unknown/conflict status"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "page-map",
+      "epic": "architecture",
+      "title": "Choose primary URLs, links and justified origin boundaries",
+      "outcome": "Choose primary URLs, links and justified origin boundaries",
+      "owner_role": "information_architect",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "site-audit",
+        "demand-research",
+        "fact-check"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/page-map/page-map.json"
+      ],
+      "acceptance": [
+        "Distinct purpose and maintenance for each URL; duplicates/redirects addressed"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "first-batch",
+      "epic": "content",
+      "title": "Select the first useful batch and measurable hypothesis",
+      "outcome": "Select the first useful batch and measurable hypothesis",
+      "owner_role": "campaign_director",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "baseline",
+        "page-map"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/first-batch/batch.json"
+      ],
+      "acceptance": [
+        "Prioritized coherent batch chosen; facts/access gaps do not hide ready work"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "page-briefs",
+      "epic": "content",
+      "title": "Produce page briefs and evidence requirements",
+      "outcome": "Produce page briefs and evidence requirements",
+      "owner_role": "content_strategist",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "first-batch"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/page-briefs/briefs.json"
+      ],
+      "acceptance": [
+        "Briefs include value, sources, links, conversion and checks"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "technical-fixes",
+      "epic": "technical",
+      "title": "Prepare diagnosed foundational fixes",
+      "outcome": "Prepare diagnosed foundational fixes",
+      "owner_role": "technical_seo",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "site-audit",
+        "first-batch"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/technical-fixes/fixes.json"
+      ],
+      "acceptance": [
+        "Candidate fixes have reproducible before/after checks or no-op rationale"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "draft-content",
+      "epic": "content",
+      "title": "Write original content for the selected batch",
+      "outcome": "Write original content for the selected batch",
+      "owner_role": "content_producer",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "page-briefs"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/draft-content/drafts.json"
+      ],
+      "acceptance": [
+        "Useful task-focused drafts and claim map exist"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "verify-content",
+      "epic": "content",
+      "title": "Verify candidate business claims, identity and schema facts",
+      "outcome": "Verify candidate business claims, identity and schema facts",
+      "owner_role": "entity_editor",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "draft-content"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/verify-content/content-verdict.json"
+      ],
+      "acceptance": [
+        "Critical claims supported; unknowns removed or clearly qualified"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "build-preview",
+      "epic": "release",
+      "title": "Integrate checked content and fixes into a versioned preview",
+      "outcome": "Integrate checked content and fixes into a versioned preview",
+      "owner_role": "web_builder",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "technical-fixes",
+        "verify-content"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/build-preview/candidate.json"
+      ],
+      "acceptance": [
+        "Preview and release manifest exist; rollback version identified"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "independent-qa",
+      "epic": "release",
+      "title": "Independently verify the exact release candidate",
+      "outcome": "Independently verify the exact release candidate",
+      "owner_role": "release_verifier",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "build-preview"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/independent-qa/qa.json"
+      ],
+      "acceptance": [
+        "Revision-specific QA verdict and evidence; defects repaired before pass"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "live-release",
+      "epic": "release",
+      "title": "Release within scope and verify live behavior",
+      "outcome": "Release within scope and verify live behavior",
+      "owner_role": "campaign_director",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "independent-qa"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/live-release/release.json"
+      ],
+      "acceptance": [
+        "Live URLs and revision checked; conversion delivery verified within test authority; rollback ready"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "authority-research",
+      "epic": "authority",
+      "title": "Qualify truthful reference and cited-source opportunities",
+      "outcome": "Qualify truthful reference and cited-source opportunities",
+      "owner_role": "authority_operator",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "first-batch",
+        "fact-check"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/authority-research/authority-queue.json"
+      ],
+      "acceptance": [
+        "Live fit/terms checked; drafts separated from authorized submissions"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "ai-baseline",
+      "epic": "ai_visibility",
+      "title": "Observe a fixed buyer panel and its actual cited sources",
+      "outcome": "Observe a fixed buyer panel and its actual cited sources",
+      "owner_role": "aeo_evaluator",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "demand-research",
+        "access-map"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/ai-baseline/ai-panel.json"
+      ],
+      "acceptance": [
+        "Exact prompts, settings, responses, links, mentions and missing tests recorded"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "schedule-activation",
+      "epic": "operations",
+      "title": "Prove one dispatcher, recovery, caps and cancellation",
+      "outcome": "Prove one dispatcher, recovery, caps and cancellation",
+      "owner_role": "runtime_operator",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "access-map",
+        "first-batch"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/schedule-activation/runtime.json"
+      ],
+      "acceptance": [
+        "Authorized real job IDs and scheduled-run evidence, or explicit unsupported/authority gap"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "release-recheck",
+      "epic": "release",
+      "title": "Recheck changed live assets at the configured interval",
+      "outcome": "Recheck changed live assets at the configured interval",
+      "owner_role": "release_verifier",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "live-release"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/release-recheck/recheck.json"
+      ],
+      "acceptance": [
+        "Live checks rerun at actual due time; regressions owned"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "evaluate-batch",
+      "epic": "measurement",
+      "title": "Evaluate the batch after sufficient comparable data",
+      "outcome": "Evaluate the batch after sufficient comparable data",
+      "owner_role": "performance_analyst",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "live-release",
+        "baseline"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/evaluate-batch/evaluation.json"
+      ],
+      "acceptance": [
+        "Outcome comparison or justified inconclusive verdict saved; due window respected"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "review-and-next",
+      "epic": "measurement",
+      "title": "Choose retain, improve, scale, wait or retire and update backlog",
+      "outcome": "Choose retain, improve, scale, wait or retire and update backlog",
+      "owner_role": "campaign_director",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "evaluate-batch"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/review-and-next/decision.json"
+      ],
+      "acceptance": [
+        "Evidence-based next action, spend and owner report recorded"
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "authority-execution",
+      "epic": "authority",
+      "title": "Execute scoped corrections/submissions/contributions and verify actual inclusion",
+      "outcome": "Execute scoped corrections/submissions/contributions and verify actual inclusion",
+      "owner_role": "authority_operator",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "authority-research",
+        "live-release"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/authority-execution/result.json"
+      ],
+      "acceptance": [
+        "Each external action has explicit scope, intent and receipt; unknown effects reconciled; absent scope leaves a complete prepared queue."
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    },
+    {
+      "id": "ai-follow-up",
+      "epic": "ai_visibility",
+      "title": "Rerun the fixed buyer panel after the chosen observation interval",
+      "outcome": "Rerun the fixed buyer panel after the chosen observation interval",
+      "owner_role": "aeo_evaluator",
+      "status": "INBOX",
+      "priority": 2,
+      "depends_on": [
+        "ai-baseline",
+        "live-release"
+      ],
+      "authority_ref": "config/authority.json",
+      "inputs": [],
+      "outputs": [
+        "work/ai-follow-up/result.json"
+      ],
+      "acceptance": [
+        "Comparable settings and dated observations retained; actual citations separated from mentions, impressions and referrals."
+      ],
+      "due_at": null,
+      "not_before": null,
+      "worker_id": null,
+      "candidate_revision": null,
+      "evidence": [],
+      "blocker": null,
+      "attempts": 0,
+      "cancellation_token": null,
+      "resource_reservation_id": null,
+      "external_id": null
+    }
+  ],
+  "note": "Customize from live discovery. Optional/unavailable work becomes a scoped blocked task or accepted no-op with evidence. Never fabricate completion."
+}

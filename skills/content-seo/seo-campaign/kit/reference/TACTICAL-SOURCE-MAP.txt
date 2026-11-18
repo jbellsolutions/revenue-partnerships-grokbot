@@ -1,0 +1,94 @@
+T01 — Business identity is one of the five layers
+https://www.youtube.com/watch?v=9l1NyuZjl4w&t=295s
+Our application: Adopt accurate identity; do not invent missing address or entity details.
+Evidence limit: Public explanation; not a controlled comparison
+
+T02 — Complete launch versus a half-built site
+https://www.youtube.com/watch?v=9l1NyuZjl4w&t=605s
+Our application: Ship a coherent ready batch; distinguish small-site completeness from a large-directory rollout.
+Evidence limit: Reported contest association
+
+T03 — Place-specific detail and costs
+https://www.youtube.com/watch?v=9l1NyuZjl4w&t=669s
+Our application: Add verified local information and approved cost assumptions.
+Evidence limit: Reported contest association
+
+T04 — External profiles described as borrowed trust
+https://www.youtube.com/watch?v=9l1NyuZjl4w&t=715s
+Our application: Correct suitable genuine references and measure the result.
+Evidence limit: Fifteen profiles is an anecdote, not a required dose
+
+T05 — Citation stack and same identity across profiles
+https://www.youtube.com/watch?v=DpvPBB0As6k&t=578s
+Our application: Research fitting profiles and stable identity; reject manufactured stacks.
+Evidence limit: Private profile checklist and scoreboard unavailable
+
+T06 — Core pages, services and locations as repeated architecture
+https://www.youtube.com/watch?v=Y6fpMvp11rs&t=114s
+Our application: Use a useful conditional page map; avoid fixed page quotas.
+Evidence limit: Public overview does not reveal the full private ZIP
+
+T07 — Hub/spoke links and backlink rolodex
+https://www.youtube.com/watch?v=Y6fpMvp11rs&t=383s
+Our application: Use contextual internal links and current prospect research.
+Evidence limit: Private backlink list was not obtained
+
+T08 — Star sites around a central business, without cross-linking
+https://www.youtube.com/watch?v=JbNbCj10dLI&t=221s
+Our application: Evaluate distinct assets cautiously and improve the existing site first.
+Evidence limit: Lack of cross-links does not prove compliance or anonymity
+
+T09 — Clean and enrich directory data, plan pages, launch ready content
+https://www.youtube.com/watch?v=TS8ReRdSkAo&t=440s
+Our application: Verify provenance/rights and add decision-useful attributes.
+Evidence limit: Ranking amplification and build costs are source claims
+
+T10 — Niche filters for regional directories
+https://www.youtube.com/watch?v=1CJ2s80xr1w&t=95s
+Our application: Use live demand, competition and contribution economics.
+Evidence limit: Creator thresholds are selection preferences
+
+T11 — Local and trade links
+https://www.youtube.com/watch?v=U5qSfJNhzcY&t=90s
+Our application: Research genuine associations, sponsorships and useful local resources.
+Evidence limit: Specific link prices and strength need current checking
+
+T12 — Competitor-informed entity extraction workflow
+https://www.youtube.com/watch?v=bcIGbuW75y4&t=377s
+Our application: Extract, dedupe, classify, cluster and verify useful gaps.
+Evidence limit: Extraction does not prove that adding a term causes ranking gains
+
+T13 — Relevance filtering and clustering after candidate collection
+https://www.youtube.com/watch?v=bcIGbuW75y4&t=455s
+Our application: Add coherent sourced sections rather than keyword lists.
+Evidence limit: Private n8n import/prompts not retrieved
+
+T14 — Query-fan-out tool and cited-page inspection
+https://www.youtube.com/watch?v=rszIeAbuZHA&t=42s
+Our application: Use observed related searches as research clues and log the actual answer.
+Evidence limit: A browser tool is not a full model-reasoning trace
+
+T15 — Inspect AI-cited pages and legitimate inclusion opportunities
+https://www.youtube.com/watch?v=YaIWVwvjRho&t=270s
+Our application: Build a citation-source queue from buyer prompts.
+Evidence limit: Provider/search-index dependencies can change
+
+T16 — UGC and outside sources in local/AI visibility
+https://www.youtube.com/watch?v=pI_ujrd8pVY&t=441s
+Our application: Research authentic mentions and useful contributions with disclosure.
+Evidence limit: No fabricated independent endorsements
+
+T17 — Persistent knowledge vault and reusable context
+https://www.youtube.com/watch?v=1lDT4g_z3L0&t=222s
+Our application: Save verified facts, source dates, decisions and rollback history.
+Evidence limit: A folder alone does not schedule or run an agent
+
+T18 — Avoid Google analytics/Search Console for ownership isolation
+https://www.youtube.com/watch?v=6TYRec6m1is&t=0s
+Our application: Do not adopt; retain authorized measurement and truthful ownership.
+Evidence limit: Unsupported risk explanation; official guidance recommends diagnosis tools
+
+T19 — List-style pages claimed to receive a share of AI citations
+https://www.youtube.com/watch?v=NvAq7Mo7mqY&t=229s
+Our application: Use transparent comparison pages where useful, without a citation guarantee.
+Evidence limit: Quoted study proportions were not independently verified

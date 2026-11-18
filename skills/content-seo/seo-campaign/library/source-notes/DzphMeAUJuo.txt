@@ -1,0 +1,24 @@
+How to Build AI Directories on Easy Mode
+https://www.youtube.com/watch?v=DzphMeAUJuo
+Published: 20260916 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Preserve unknowns and verify claims while adding original comparison value.
+
+Cautions: Data rights, editorial independence and link-spam rules apply even when the directory is easy to build.
+
+Topic navigation (automatically detected; check context):
+business_identity: https://www.youtube.com/watch?v=DzphMeAUJuo&t=139s
+Our application: Check real business identity, consistent public facts and corroborating sources; schema must reflect reality.
+ai_visibility: https://www.youtube.com/watch?v=DzphMeAUJuo&t=356s | https://www.youtube.com/watch?v=DzphMeAUJuo&t=471s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+data_quality: https://www.youtube.com/watch?v=DzphMeAUJuo&t=152s | https://www.youtube.com/watch?v=DzphMeAUJuo&t=241s | https://www.youtube.com/watch?v=DzphMeAUJuo&t=567s
+Our application: Use verified source facts and useful interpretation; retain provenance, unknowns and data-use restrictions.
+technical: https://www.youtube.com/watch?v=DzphMeAUJuo&t=442s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=DzphMeAUJuo&t=67s | https://www.youtube.com/watch?v=DzphMeAUJuo&t=148s | https://www.youtube.com/watch?v=DzphMeAUJuo&t=188s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=DzphMeAUJuo&t=46s | https://www.youtube.com/watch?v=DzphMeAUJuo&t=232s | https://www.youtube.com/watch?v=DzphMeAUJuo&t=602s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.

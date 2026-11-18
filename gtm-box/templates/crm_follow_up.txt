@@ -1,0 +1,5 @@
+Hey {{first_name}}, following up on my note. If getting leads without paying for them isn't a problem for you right now, no worries, and tell me so I stop asking.
+
+If it is, I've got 30 free minutes to look at it with you: {{booking_link}}
+
+Justin

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "status": "ungranted",
+  "owner_source_ref": null,
+  "granted_at": null,
+  "expires_at": null,
+  "scope": {
+    "website": null,
+    "allowed_origins": [],
+    "allowed_path_prefixes": [],
+    "allowed_new_subdomains": [],
+    "dns_record_allowlist": [],
+    "project_destination_refs": [],
+    "host_project_refs": []
+  },
+  "operations": {
+    "public_research": true,
+    "local_project_and_drafts": true,
+    "delegate_bounded_workers": false,
+    "live_project_management_writes": false,
+    "cms_draft_writes": false,
+    "production_page_publish": false,
+    "shared_template_changes": false,
+    "redirects_or_removals": false,
+    "scoped_dns_writes": false,
+    "new_domain_registration": false,
+    "external_profile_create_or_edit": false,
+    "external_submissions": false,
+    "outreach_send": false,
+    "public_posts": false,
+    "test_form_or_email_send": false,
+    "paid_tool_calls": false,
+    "new_recurring_costs": false,
+    "create_update_owned_schedules": false,
+    "rollback_own_release": false
+  },
+  "financial": {
+    "currency": "USD",
+    "total_incremental_spend_cap": 0,
+    "daily_incremental_spend_cap": 0,
+    "per_operation_cap": 0,
+    "approved_recurring_commitments": []
+  },
+  "communications": {
+    "allowed_destinations": [],
+    "allowed_audiences": [],
+    "purpose_scope": null,
+    "max_messages_per_day": 0,
+    "stop_on_reply_or_opt_out": true
+  },
+  "constraints": {
+    "preserve_unrelated_dns": true,
+    "truthful_business_facts_required": true,
+    "rights_and_platform_eligibility_required": true,
+    "host_policy_may_not_be_weakened": true
+  },
+  "stop": {
+    "owner_cancel_route": null,
+    "stop_state_path": "operations/stop.json",
+    "cancel_owned_jobs_on_expiry": true,
+    "propagate_to_active_workers": true
+  },
+  "note": "Template only. Owner-issued session authority may populate this record. No live, paid, messaging or scheduling authority arises from the file itself."
+}

@@ -1,0 +1,171 @@
+{
+  "version": "2026-11-18",
+  "stop_file": "STOP",
+  "standing_authorization": {
+    "present": false,
+    "note": "Until Justin adds the standing authorization himself, every message type runs as draft whatever its mode says, except a type with authorized: true. Approval records (who said yes, when, in which words) are kept privately, not in this file. 2026-11-18: this pack sells a new offer (OFFER.md), so every type whose words pitch the offer is back to draft and not approved until Justin approves the new words. The reply-with-calendar and no-show notes do not pitch and keep their approval."
+  },
+  "message_types": {
+    "past_call_reconnect": {
+      "channel": "past-calls",
+      "mode": "draft",
+      "per_day": 30,
+      "copy_approved": false,
+      "to": "people from past calls more than 60 days ago, on the private past-calls list given at intake, minus do-not-contact"
+    },
+    "mail_reconnect": {
+      "channel": "mail-history",
+      "mode": "draft",
+      "per_day": 40,
+      "copy_approved": false,
+      "to": "reviewed rows of the private mail-contacts list given at intake: past clients, deals, partners and quiet two-way conversations, minus do-not-contact"
+    },
+    "client_referral_ask": {
+      "channel": "clients",
+      "mode": "draft",
+      "per_day": 2,
+      "to": "current clients, only after their own session says the build is accepted"
+    },
+    "partner_outreach": {
+      "channel": "referrals",
+      "mode": "draft",
+      "per_day": 5,
+      "to": "partners on the referral list",
+      "copy_approved": false,
+      "copy": "agents/gtm-box/templates/partner_outreach.txt"
+    },
+    "starter_invite": {
+      "channel": "proof-builds",
+      "mode": "draft",
+      "per_day": null,
+      "to": "a buyer who has paid for the AIOS Starter, by GitHub username"
+    },
+    "radar_public_reply": {
+      "channel": "lead-radar",
+      "mode": "draft",
+      "per_day": null,
+      "to": "radar leads"
+    },
+    "radar_skool_dm": {
+      "channel": "lead-radar",
+      "mode": "draft",
+      "per_day": 10,
+      "to": "high-intent Skool leads, one message per person ever, after a public reply"
+    },
+    "reply_book_call": {
+      "channel": "every lane",
+      "mode": "auto",
+      "per_day": null,
+      "copy_approved": true,
+      "to": "anyone who said yes",
+      "copy": "agents/gtm-box/templates/reply_book_call.txt"
+    },
+    "booking_confirmation": {
+      "channel": "inbound",
+      "mode": "draft",
+      "per_day": null,
+      "copy_approved": false,
+      "to": "anyone with a call booked",
+      "copy": "agents/gtm-box/templates/booking_confirmation.txt"
+    },
+    "no_show_rebook": {
+      "channel": "every lane",
+      "mode": "auto",
+      "per_day": null,
+      "to": "anyone who missed a call",
+      "copy_approved": true,
+      "copy": "agents/gtm-box/templates/no_show_rebook.txt"
+    },
+    "crm_opener": {
+      "channel": "every lane",
+      "mode": "draft",
+      "per_day": 25,
+      "copy_approved": false,
+      "to": "people in the CRM whom no lane already reaches, with a card, clear of the suppression list"
+    },
+    "crm_follow_up": {
+      "channel": "every lane",
+      "mode": "draft",
+      "per_day": 15,
+      "to": "anyone the open-loop list marks as allowed",
+      "copy_approved": false,
+      "copy": "agents/gtm-box/templates/crm_follow_up.txt"
+    },
+    "crm_reactivation": {
+      "channel": "every lane",
+      "mode": "draft",
+      "per_day": 25,
+      "to": "a wave Justin approved, in the CRM, clear of the suppression list"
+    },
+    "linkedin_first_degree": {
+      "channel": "linkedin",
+      "mode": "draft",
+      "per_day": 50,
+      "to": "Justin's first-degree connections, minus suppression",
+      "copy_approved": false,
+      "copy": "agents/gtm-box/templates/linkedin_first_degree.txt"
+    },
+    "cold_first_touch": {
+      "channel": "cold-email",
+      "mode": "draft",
+      "per_day": null,
+      "to": "an approved test cell",
+      "copy_approved": false
+    },
+    "cold_follow_up": {
+      "channel": "cold-email",
+      "mode": "draft",
+      "per_day": null,
+      "to": "an approved test cell",
+      "copy_approved": false
+    },
+    "github_note": {
+      "channel": "cold-email",
+      "mode": "draft",
+      "per_day": 15,
+      "to": "the person behind a project, at an address from their own site"
+    },
+    "podcast_pitch": {
+      "channel": "podcast",
+      "mode": "draft",
+      "per_day": 30,
+      "to": "show hosts that passed the suppression check",
+      "copy_approved": false,
+      "copy": "agents/gtm-box/templates/podcast_pitch.txt"
+    },
+    "creator_outreach": {
+      "channel": "rev-partner",
+      "mode": "draft",
+      "per_day": null,
+      "to": "creators who passed the bar"
+    },
+    "skool_owner_note": {
+      "channel": "skool",
+      "mode": "draft",
+      "per_day": null,
+      "to": "Skool group owners"
+    },
+    "reactivation_invite": {
+      "channel": "deals",
+      "mode": "draft",
+      "per_day": null,
+      "to": "businesses that fit reactivation"
+    },
+    "collab_outreach": {
+      "channel": "rev-partner",
+      "mode": "draft",
+      "per_day": 10,
+      "copy_approved": false,
+      "to": "creators who pass the bar in the rev-partner charter",
+      "copy": "agents/gtm-box/templates/collab_outreach.txt",
+      "subject": "A collaboration idea for your audience"
+    }
+  },
+  "never": [
+    "quote a price, date or promise in outreach",
+    "send, post or reply from this workspace (the radar's sender is the only poster, behind its own gates)",
+    "spend money or start a paid run",
+    "contact anyone in the do-not-contact list",
+    "commit, log or post contact data"
+  ]
+}

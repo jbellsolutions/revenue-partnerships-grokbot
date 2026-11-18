@@ -1,0 +1,28 @@
+How I Built 50 Microsites That Took Over a State
+https://www.youtube.com/watch?v=XvCvKawtJAk
+Published: 20260727 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use a scoped brief, source-based local information, visible costs and actual output review.
+
+Cautions: This build demonstration is not an independently measured ranking experiment or evidence that design quality harms leads.
+
+Topic navigation (automatically detected; check context):
+citations_profiles: https://www.youtube.com/watch?v=XvCvKawtJAk&t=386s | https://www.youtube.com/watch?v=XvCvKawtJAk&t=1216s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+architecture: https://www.youtube.com/watch?v=XvCvKawtJAk&t=1800s | https://www.youtube.com/watch?v=XvCvKawtJAk&t=1858s | https://www.youtube.com/watch?v=XvCvKawtJAk&t=1964s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+portfolio: https://www.youtube.com/watch?v=XvCvKawtJAk&t=46s | https://www.youtube.com/watch?v=XvCvKawtJAk&t=712s
+Our application: The channel proposes separate assets across services/places. Evaluate distinct user purpose, truthful identity and upkeep before expanding domains.
+ai_visibility: https://www.youtube.com/watch?v=XvCvKawtJAk&t=580s | https://www.youtube.com/watch?v=XvCvKawtJAk&t=834s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+data_quality: https://www.youtube.com/watch?v=XvCvKawtJAk&t=418s | https://www.youtube.com/watch?v=XvCvKawtJAk&t=1819s
+Our application: Use verified source facts and useful interpretation; retain provenance, unknowns and data-use restrictions.
+niche: https://www.youtube.com/watch?v=XvCvKawtJAk&t=185s | https://www.youtube.com/watch?v=XvCvKawtJAk&t=296s | https://www.youtube.com/watch?v=XvCvKawtJAk&t=341s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+measurement: https://www.youtube.com/watch?v=XvCvKawtJAk&t=1020s | https://www.youtube.com/watch?v=XvCvKawtJAk&t=1918s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.
+memory: https://www.youtube.com/watch?v=XvCvKawtJAk&t=285s | https://www.youtube.com/watch?v=XvCvKawtJAk&t=944s | https://www.youtube.com/watch?v=XvCvKawtJAk&t=1034s
+Our application: Persist sourced facts, decisions and change history so an agent can resume without repeating research.

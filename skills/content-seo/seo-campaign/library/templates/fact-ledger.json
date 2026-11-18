@@ -1,0 +1,17 @@
+{
+  "records": [
+    {
+      "fact_id": "F001",
+      "entity": null,
+      "claim": null,
+      "value": null,
+      "status": "unknown",
+      "source_url": null,
+      "checked_at": null,
+      "owner_confirmation": null,
+      "rights_notes": null,
+      "conflict": null,
+      "allowed_for_publication": false
+    }
+  ]
+}

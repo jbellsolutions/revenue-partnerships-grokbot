@@ -1,0 +1,21 @@
+{
+  "experiments": [
+    {
+      "id": "E001",
+      "site": null,
+      "hypothesis": null,
+      "expected_business_effect": null,
+      "treatment_urls": [],
+      "comparison_urls": [],
+      "baseline_period": null,
+      "change_batch": [],
+      "started_at": null,
+      "review_after": null,
+      "decision_rule": null,
+      "known_confounders": [],
+      "observations": [],
+      "conclusion": "not_yet_measured",
+      "next_action": null
+    }
+  ]
+}

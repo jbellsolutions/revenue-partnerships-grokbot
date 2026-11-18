@@ -1,0 +1,20 @@
+How I Print $1,000s From $10 AI Websites
+https://www.youtube.com/watch?v=R0WLs0Ew6GI
+Published: 20250923 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use domain research only after a real user purpose and market opportunity are established.
+
+Cautions: Domain availability, price and demand are time-sensitive; do not assume the video’s examples remain available.
+
+Topic navigation (automatically detected; check context):
+business_identity: https://www.youtube.com/watch?v=R0WLs0Ew6GI&t=620s
+Our application: Check real business identity, consistent public facts and corroborating sources; schema must reflect reality.
+citations_profiles: https://www.youtube.com/watch?v=R0WLs0Ew6GI&t=626s | https://www.youtube.com/watch?v=R0WLs0Ew6GI&t=758s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+backlinks: https://www.youtube.com/watch?v=R0WLs0Ew6GI&t=761s
+Our application: Investigate relevant editorial/local links and competitor evidence. Avoid assuming a paid link or a vendor metric guarantees results.
+portfolio: https://www.youtube.com/watch?v=R0WLs0Ew6GI&t=561s | https://www.youtube.com/watch?v=R0WLs0Ew6GI&t=750s
+Our application: The channel proposes separate assets across services/places. Evaluate distinct user purpose, truthful identity and upkeep before expanding domains.

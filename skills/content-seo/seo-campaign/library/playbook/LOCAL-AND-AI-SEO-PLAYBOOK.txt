@@ -1,0 +1,246 @@
+LOCAL + AI SEARCH: AN OPERATING PLAYBOOK FOR OUR AGENTS
+Original reconstruction from Jesse Cunningham's public channel
+Research date: November 3, 2026 | Owner objective: qualified traffic and leads for our sites
+
+1. THE STRATEGY WE ARE RECONSTRUCTING
+
+The public offer combines a repeatable site blueprint, niche selection, business-data collection, static-site production, off-site profiles, measurement, and lead monetization. A microsite focuses on a service and a small market; a microdirectory covers one trade across a state or county, with city comparison pages and individual business listings. A directory supplies business data and reveals markets where additional work might be worthwhile. The business model is to capture demand, then rent the site, sell leads, share revenue, sell featured placements, or sell website/SEO services.
+
+Our use is narrower: help our actual sites attract relevant visitors and business. Start with the existing business website. Do not assume another domain is better than improving a service page that already has history, links, and customers. Treat directories and separate microsites as optional assets with a separate purpose, maintenance cost, and conversion path.
+
+The central mechanism is not a secret AI ranking file. It is a useful, discoverable local resource, a credible business identity, external corroboration, and repeated improvement. AI lowers production effort; it does not create evidence, a real business, or demand.
+
+Source labels used throughout the kit:
+• CHANNEL: a statement or demonstration from a public video; timestamps appear in the source notes.
+• OFFICIAL: current platform documentation, identified in evidence/primary-sources.json.
+• OUR METHOD: an original operating choice for the user's agents. A proposed experiment is not a proven ranking factor.
+• UNVERIFIED: revenue, causal explanations, private datasets, or results we cannot independently establish.
+
+2. PICK THE RIGHT WORK BEFORE BUILDING
+
+For each candidate site, record the actual business, services, service area, present pages, conversion path, and access. Record the owner's goal: leads, sales, appointments, visits, or qualified referral traffic. Ask for missing facts once; continue the public research and draft preparation that do not depend on them.
+
+Inspect the live results for 10–20 representative searches from the target market. Separate service + city, specific subservice, cost, comparison, and problem-solving questions. Record organic results, ads, local pack, AI overview, directories, forums, and the actual space available to an organic result. A rank of three is less valuable if it sits beneath several other result features.
+
+Choose work where demand is plausible, the site's offer fits, current results leave a meaningful information gap, and the business can fulfill the work. Examine the quality of the competing pages: missing prices, vague service areas, stale contact information, poor mobile experience, unsubstantiated comparisons, absent local evidence, or unanswered purchase questions. Avoid treating a high keyword-difficulty score or weak-looking design as a complete market assessment.
+
+The channel's directory heuristic favors expensive services, enough operators to support a regional directory, weak results, and evidence that businesses already advertise. One public niche-selection video proposes a $5,000 job value and roughly 1,500 operators. These are his selection heuristics, not eligibility requirements or universal profitable thresholds. For our existing businesses, prioritize reachable demand and expected profit instead.
+
+OUR METHOD: estimate expected incremental monthly contribution as incremental qualified visits × lead conversion rate × lead-to-sale rate × contribution per sale minus operating cost. Use ranges and identify unknown inputs. Do not equate a $20,000 job with $20,000 profit, or a ranking screenshot with a business result.
+
+Output: site-brief.json, opportunity evidence, a first batch of specific page improvements, and one measurable conversion goal. If this is an existing site, preserve successful URLs and avoid a domain migration just to obtain an exact-match name. Google's ranking-systems guide describes limits on excess credit for exact-match domains [G6].
+
+3. THE FIRST PASS: FIX DISCOVERY AND MEASUREMENT
+
+Before writing more pages, check HTTP responses, redirects, the canonical hostname, HTTPS, robots rules, page-level noindex, canonical tags, sitemap contents, internal links, and rendered page text. Inspect the HTML a crawler receives. Important content should not depend on an empty app shell, a login, an infinite-scroll action, or an inaccessible filter state.
+
+A static HTML site is a practical, low-maintenance option. Server-rendered applications and well-maintained WordPress sites can also meet the same requirements. The channel's blanket claim that WordPress cannot compete on speed is an overstatement. Measure the actual site. Avoid a platform rebuild when repairing the current site is cheaper and adequate.
+
+Use one indexable URL for each intended page. Redirect alternate HTTP/HTTPS and hostname variants appropriately. Keep production canonicals on production URLs. Return an actual 404 status for missing pages; a custom error design alone is not enough. Remove staging URLs, redirects, errors, and intentionally excluded pages from the sitemap. Use modification dates only for substantive changes. Test mobile layout, image size, accessible navigation, labels, contact actions, and form delivery.
+
+Use Search Console where authorized, plus analytics and conversion records. The channel sometimes warns against connecting multiple microsites to Search Console as a shared footprint. We found no substantiation for that advice in the public material; Google's own AI-search guide recommends the tool [G1]. The agent must not hide ownership or weaken measurement on that basis.
+
+Output: a prioritized defect list, fixes within authorized scope, baseline exports, and an annotated change log. Fix discovery before evaluating a content tactic that Google cannot yet see.
+
+4. BUILD A VERIFIED BUSINESS FACT BASE
+
+Create one authoritative identity record: real business name; canonical website; public phone; customer-facing address when appropriate; actual service area; hours; contact email; real business profiles; license/credential sources; services; owner-approved claims; price basis; project evidence; and review provenance. Mark each fact verified, unknown, conflicting, or outdated, with its source URL and checked date.
+
+Never invent a branch, address, team, job, customer, review, award, license, or years in business. Do not publish a home address merely to fill a field. A service-area business can describe its genuine coverage without pretending to have a storefront in every town. A lead referral site must identify itself accurately rather than impersonating the contractor who performs the work.
+
+Resolve meaningful name/phone/address conflicts before adding more listings. Keep an authoritative public phone; document any call-tracking implementation so it does not accidentally replace the business's identity across unrelated records. A tracking number and a canonical business number can coexist when implemented carefully.
+
+A name/address/phone citation is a business reference. A backlink is a clickable link. An AI citation is a source link in an AI answer. A brand mention is text. Track these as different observations; none automatically proves the others.
+
+5. PLAN PAGES AROUND DECISIONS, NOT A PAGE QUOTA
+
+Suggested business-site structure:
+Home → services hub → individual service pages.
+Home → service-area hub → genuinely useful location pages.
+Service/location pages → cost guidance, project evidence, relevant answers, and contact.
+About, contact, privacy, and relevant disclosures support the whole site.
+
+The channel often describes 20–40 pages and, in another example, 116 pages. That describes examples, not a requirement. Start with the smallest set that satisfies actual needs. Do not automatically publish every service × city combination. A location page earns its place through real coverage and useful differences: local project examples, verified permit authority, service constraints, travel coverage, local building conditions, or a distinct customer question. A city name swapped into generic prose is insufficient.
+
+OUR METHOD: publish an initial coherent batch: the home page, the highest-value services, actual location/area coverage, a defensible cost resource, project evidence, and a functioning conversion path. Build additional pages only when evidence supports distinct intent and content. On a large directory, a smaller vetted launch is sensible when the rest of the data is unready. This reconciles the channel's differing advice about shipping an entire microsite and staging large directories. The decision is completeness of the useful launch unit, not a universal release schedule.
+
+Use readable page paths, descriptive titles and headings, logical breadcrumbs, and contextual links. Link from a service page to its relevant projects and areas, and back from projects to the service. Avoid sitewide anchor blocks that list dozens of towns or manufactured cross-links between owned domains.
+
+Output: page-map.json with URL, intent, primary audience, distinct contribution, evidence sources, parent page, links, and conversion. Merge competing pages where the intent and evidence are substantially the same; preserve useful URLs or map deliberate redirects.
+
+6. WRITE A LOCAL SERVICE PAGE THAT EARNS ATTENTION
+
+Answer the purchase question near the top: what is offered, for whom, where, and how to take the next step. Use the natural service/location language in the title and main heading without sacrificing clarity. Then explain the customer's problem, suitable solutions, process, likely cost drivers, realistic timing, limitations, evidence of delivery, service coverage, and next step.
+
+Price sections must use owner-approved figures or clearly labeled external estimates with scope, date, and source. A defensible range explains assumptions and exclusions. If the business has not confirmed a price, ask for it; never convert a national average into a local quote. Useful price drivers include access, materials, job size, labor, permits, removal, and emergency timing where relevant.
+
+Add information another generic page could not supply: a real case, actual dimensions and materials, an attributed local rule, an original comparison, a calculator with stated assumptions, or a firsthand explanation. A public dataset is not proprietary merely because AI rewrites it. Keep source facts separate from interpretation. Add meaningful conclusions supported by the facts; do not fabricate experience to make the page sound local.
+
+The channel suggests word counts around 1,000–1,500 words in some videos. Treat that as a drafting preference. Stop when the customer's decision is served. A short page with precise evidence can be better than a long page repeating the same claims.
+
+Give FAQs where they resolve objections or fill gaps. They are useful visible content. Do not promise FAQ rich results; Google's current documentation update states that feature is no longer displayed [G7]. Optional markup is never a substitute for readable answers.
+
+Output: a staged page with a fact/source ledger, checked links, unique title, coherent headings, clear CTA, and a reviewer note identifying remaining uncertainties.
+
+7. STRUCTURED DATA: DESCRIBE THE FACTS THAT EXIST
+
+Use the appropriate schema.org types for the actual publisher and content: Organization for an organization or referral publisher, a relevant LocalBusiness subtype for a real business, Service when appropriate, BreadcrumbList for visible navigation, and ItemList for an actual list. Maintain stable entity identifiers and canonical URLs. sameAs should point to profiles that identify the same entity, not unrelated prestigious sites or a manufactured graph.
+
+Keep markup consistent with the visible page. Avoid invented ratings, review counts, geographic coordinates, addresses, certifications, and hours. Do not label a directory publisher as a contractor. Do not assume service-area markup creates a Google Maps presence. When a rich-result feature requires information the business should not publish, eligibility for that feature is optional; accuracy and privacy take precedence.
+
+Validate JSON syntax, schema semantics, relevant rich-result eligibility, and rendered output. A successful validator does not prove ranking value or selection by an AI answer [G5].
+
+8. OFF-SITE CITATIONS AND ENTITY CORROBORATION
+
+Start with real profiles that users in the business's market would expect: eligible maps listings, genuine social profiles, relevant trade directories, local associations, chambers, manufacturer/partner directories, licensing sources, and niche review platforms. The channel mentions examples such as Facebook, Houzz, MapQuest, Clutch, BBB, Patch and YouTube. These are source-mentioned candidates, not a verified current list of free opportunities. Check current suitability, eligibility, fees, ownership rights and submission paths before using any of them.
+
+For each opportunity, record platform, profile URL or official submission URL, reason it fits, identity fields, existing duplicate/conflict, expected audience value, owner, status, cost, live result, and last check. Prefer correcting an authoritative existing listing to creating ten weak duplicates. Do not create social accounts the business cannot maintain merely to reach an arbitrary count.
+
+The supplied video reports a contestant building 15 profiles and later moving to first place. Another public discussion describes a site with a profile, reviews and several press releases that still did not rank well. Together they support a hypothesis worth testing, not a dose-response law. There is no universal requirement to create 15 or 815 listings.
+
+GBP is for eligible real businesses. Google explicitly excludes lead-generation companies and online-only businesses [G8]. A new microsite or a new city page is not a new eligible location. Work on an actual business's authorized profile when it qualifies. Keep map-pack ranking separate from organic web ranking; distance remains material in local results [G2, G3].
+
+Output: a researched citation queue and a correction plan. Draft details within the authorized scope; do not submit profiles, create accounts or spend money without the scope covering those actions.
+
+9. BACKLINKS: BUILD A REPEATABLE PROSPECTING PROCESS
+
+For a real local business, prioritize links that arise from actual relationships, useful resources, news or community activity. Research the pages linking to three to five relevant competitors. Manually classify the opportunities: genuine local association; trade membership; supplier/dealer; project partner; local editorial coverage; relevant resource; review directory; paid placement; or low-quality site. Investigate the specific linking page, not just a domain's score.
+
+Score a candidate by topical/local fit, real audience, editorial rationale, legitimacy, maintenance, likely referral value and effort. A rating such as DR or DA is a vendor metric, not Google's approval. Confirm the opportunity exists before adding it to an action queue. Prospect fields must include exact evidence URL, target page, fit, proposed useful contribution, cost/terms, status and checked date.
+
+Useful outreach assets include a genuinely informative regional cost guide, a permissioned project story, an original local data analysis, a maintenance checklist, or a supplier-approved case study. Draft the contribution and proposed link destination first. Avoid generic paid-link packages and identical keyword-rich anchors. Brand, URL and natural descriptive links should arise from the context rather than an anchor-ratio recipe.
+
+Press releases can announce real news. Syndication and paid placements do not guarantee editorial endorsement, referral traffic, indexing, or improved rankings. Qualify compensated links appropriately. Do not construct a directory or a network primarily to pass ranking credit into our sites; Google's link-spam policy applies [G4]. No manufactured tiered stacks, hidden links, fake independent endorsements, or automated comment backlinks.
+
+There is no recreated private '815-site rolodex' in this kit. Instead, use backlink-prospects.json to build a current, market-specific list from evidence. A stale massive list is less useful than a short verified queue.
+
+10. DIRECTORY WORKFLOW: SCOPE → CLEAN → ENRICH → PLAN → BUILD → LAUNCH
+
+Use a directory only if it serves a distinct audience need and we can maintain its data. Start with one trade and one meaningful geography. Acquire business data through a source whose terms permit the intended use. Public availability does not automatically permit republishing every field, review, image or dataset. Record provider, permitted uses, storage/display requirements and refresh restrictions. Maps data may have particular terms; verify them before building a permanent dataset.
+
+Dedupe using stable identifiers when permitted, normalized website/phone/address, and human review of ambiguous branches. Exclude closed, unrelated or unverified records. Never merge two separate businesses merely because their names are similar. Preserve where every fact came from and when it was checked.
+
+Enrich from the business's own website and authoritative sources. Ask useful questions for the trade, for example: repair versus replacement; materials; financing; residential versus commercial; service boundaries; emergency availability; permits; project types; and whether the claim is actually supported. Store true, false or unknown, with evidence. Missing information is unknown, not false. A contradictory source needs review.
+
+Directory architecture: regional landing page → city pages → verified business listing pages. Each city page should genuinely help comparison, with a clear coverage statement and selection methodology. Each listing should provide relevant sourced attributes and a functioning visit/contact path. A sorted copy of the same scraped fields on thousands of pages is a weak product. Add original useful organization, comparisons and decision support.
+
+Do not call a paid top placement the objectively best contractor. Label featured/sponsored entries and explain editorial ordering. Disclose owned listings and other relationships. Give businesses a correction route. Outbound links should help the reader; qualify paid links. Offer visible freshness dates only when a real check occurred.
+
+Launch the ready portion with appropriate sitemap and navigation. Record discovered versus indexed pages and investigate the gap. There is no guaranteed 'force indexing' mechanism. Avoid abusing unrelated indexing APIs or repeatedly resubmitting unchanged pages. Demand, usefulness, duplication, links, canonicalization and crawling all deserve diagnosis.
+
+Use the directory's query and conversion data to identify useful improvements to existing sites. Separate microsites require a distinct user purpose; do not turn every impression into another domain.
+
+11. AI OVERVIEWS, AI MODE AND OTHER AI CITATIONS
+
+First distinguish the outcomes: a page ranking in ordinary results; an AI answer linking to that page; an answer mentioning the business without a link; and a visitor who converts. None is interchangeable.
+
+Google says ordinary search eligibility applies to AI features, and there is no special AI schema or mandatory AI text file [G1]. Do not sell an 'AI overview switch.' The operating opportunity is to make our content eligible, understandable, relevant and worth citing. Selection varies by query, model, time and location.
+
+Research the purchase journey: symptoms, alternatives, suitability, cost, timing, local rules, comparison criteria and provider selection. Google's guide describes related-query fan-out. OUR METHOD: map related questions to coherent sections and pages; do not generate a separate page for every synthetic question. Validate the questions against observed searches, actual customers and the site's own data.
+
+Make useful facts easy to extract: a direct answer, a comparison with stated criteria, a table when it improves understanding, explicit units and dates, identifiable sources, and clear organization/business identity. Link to the primary source for a local factual claim. Publish original evidence worth citing. There is no proven magic answer length or required paragraph format in this kit.
+
+The channel promotes city 'best of' lists as citation targets. A list can help comparison if its criteria and data are defensible. It does not guarantee AI preference. We have not independently validated the channel's cited proportions or study generalizations. Do not place our company first in a supposedly independent ranking just to induce an AI recommendation.
+
+Check the relevant provider's current public crawl/search guidance before changing crawler controls. Search access and model-training controls are different. Retain normal security and do not expose private content for a citation experiment.
+
+Create a fixed test panel of real questions: service + city, comparison, cost, urgent need, selection, and a narrow problem. Record the exact prompt, provider/interface, any reported model, web-search setting, locale, date/time, answer, business mention, linked URL and captured evidence. Use a consistent observation method and repeat selected prompts across sessions; a single screenshot is weak evidence. Do not imply that checking from one location with personalization off exactly reproduces every customer.
+
+Calculate citation coverage as tests linking to our pages divided by valid completed tests, and mention coverage separately. Record missing answers and access failures as missing, not negative. Keep platform results separate. Track AI referrals and qualified leads where attribution is available. Google includes AI-feature activity in Search Console Web traffic [G1]; do not invent an isolated AI-overview report if the available data does not provide one.
+
+12. MEASURE TRAFFIC THAT CAN HELP THE BUSINESS
+
+Baseline the previous comparable 28 days when available: nonbrand clicks and impressions, landing pages, query mix, organic sessions, referral sessions, qualified calls/forms, appointments/sales, and business contribution where known. Compare matched periods; mark seasonality, outages, promotions and other changes. New sites lack a valid historic baseline; use absolute results and careful cohort comparisons.
+
+Rank measurements need query, location, language, device, result type, date and method. Track organic rank independently of local-pack position. Observe a local grid only when the business is eligible and the geography makes sense. Search visibility can be useful diagnostic evidence but does not replace traffic and lead outcomes.
+
+Make the conversion path work: real phone routing, a tested form, a clear offer, mobile usability and an appropriate response process. Distinguish a button click from an answered call and a qualified inquiry. Do not count our own test submissions as leads. Store only the customer data actually needed for the authorized business process.
+
+A ranking change after several simultaneous edits has multiple possible causes. Document the treatment, dates, competing explanations and expected lag. Use a comparable untreated page or staggered deployment when practical. Avoid claiming causal certainty from the channel's uncontrolled contest or our own single example.
+
+13. A PRACTICAL FIRST 30 DAYS
+
+Days 1–3: confirm business/site scope; collect identity facts; baseline; inspect target-market results; diagnose discovery and conversion defects. Select a manageable batch based on value and evidence.
+Days 4–10: repair technical blockers; improve primary service and location pages; add verified pricing/case evidence; strengthen navigation and relevant schema. Stage and review changes. Launch the useful ready batch within existing authorization.
+Days 11–17: correct important listings; research fitting citations and competitor links; prepare worthwhile linkable material and drafts. Keep costs and external actions explicit. Do not let volume replace suitability.
+Days 18–24: check crawl/indexing evidence; run a fixed AI citation panel; review early query and lead data; repair discovered defects. Separate normal lag from a concrete access or content problem.
+Days 25–30: evaluate the actual business outcome and leading indicators. Expand what helps, revise the largest weak opportunity, and retire unsupported tactics. Do not interpret 30 days without results as conclusive failure or promise a result within 30 days.
+
+OUR METHOD: for a low-maintenance portfolio, review data weekly at first and less often once stable, then refresh facts and important pages when the evidence changes. This document does not schedule any automation.
+
+14. DIAGNOSE THE BOTTLENECK
+
+Not crawled: inspect access, links, sitemap, server behavior and discovery; do not buy links blindly.
+Crawled but not indexed: inspect canonical decisions, duplication, soft errors, value and site coherence.
+Indexed but weak impressions: revisit demand, intent, coverage and competition.
+Impressions but poor clicks: inspect title/description, actual position, result features and intent fit.
+Clicks but poor leads: inspect offer, trust, routing, forms, speed and query quality.
+Leads but poor sales: confirm qualification, service fit, business follow-up and attribution.
+AI mentions but no links: record the distinction; improve citable sources and discoverability without inventing a guarantee.
+A profile outranks the site: measure whether it produces relevant traffic/leads; investigate the site rather than assuming the profile is harmful.
+A sudden drop: check changed pages, access, manual actions, security issues, seasonality, competitors and announced search changes. Save evidence before redesigning everything.
+
+15. WHAT TO ADOPT, TEST, OR REJECT
+
+Adopt: verified local detail; coherent service/area architecture; important content in accessible HTML; consistent real identity; useful external profiles; genuine local relationships; conversion tracking; documented improvements.
+Test: source-backed cost pages; comparison resources; focused directories with a maintenance plan; different release batches; useful content refinements from related queries. Define a business outcome and time window.
+Treat cautiously: exact-match domains, fixed word counts, mandatory page counts, generic profile-stack quotas, a universal no-backlinks claim, or claims that one content format is always favored by AI.
+Reject for our agents: fake businesses/branches/reviews; GBP for an ineligible referral publisher; hiding ownership from Search Console; guaranteed indexing/ranking/citations; bought ranking-credit networks; invented first-person experience; mass city swaps; and undisclosed self-promotional 'independent' rankings.
+
+16. LIMITS OF THE EVIDENCE
+
+The public channel gives a useful blueprint and source claims. We did not obtain the private microsite ZIP, directory ZIP, private backlink list, course lessons, contest domain list, original crawl data or measurement code. Those cannot be inferred completely from public videos. The source notes identify public evidence and gaps. This original kit recreates the usable workflow; it is not his product or an authenticated copy.
+
+The seed contest is short, self-selected and confounded: entrants used different pages, links, profiles and other techniques, and rankings were observed over time. Organic results in two local queries are not proof of success in every niche, map pack, AI system or revenue model. A claim of the first position does not establish durability or profitable traffic. The agent should run measured improvements on our actual sites and retain the uncertainty.
+
+17. THE CHANNEL'S NAMED METHODS, TRANSLATED
+
+STAR METHOD (portfolio/geography): put the established business at the center and target surrounding suburbs or narrow services with separate focused sites. His public explanation says the separate microsites need not link to each other. This is different from ordinary internal linking inside one website. It is a portfolio hypothesis about capturing more searches, not a mechanism that bypasses distance in Google Maps. In our deployment, consider strong location/service sections on the existing domain first. A separate domain needs its own useful purpose, truthful publisher identity and maintenance plan. Merely omitting cross-links does not make a doorway portfolio acceptable.
+
+LAYER CAKE (service/geography): an established general business sits alongside narrower service-specific and location-specific demand capture. Public examples break plumbing into drains, water heaters, sewer lines and other subservices across nearby towns. OUR METHOD: use that decomposition to improve the existing site's intent map before considering separate assets. Combine pages when the distinction would be artificial.
+
+HUB AND SPOKE (within a site): the service hub and area hub link to relevant detail pages, with contextual connections where a customer benefits. Hubs organize the relationship; they are not just lists of keyword anchors. The public build video visibly describes flat slugs and a repeatable core/support/service structure, but that does not reveal every rule in the private ZIP.
+
+INVISIBLE URL / CITATION RESEARCH: ask actual buyer questions in the AI interface, capture the real sources it uses, inspect those source pages, and identify legitimate opportunities to be included or referenced. A source may influence an answer even when a conventional keyword rank check does not make it obvious. Do not assume a citation source is selling placement or that inclusion transfers automatically to an AI recommendation. Verify each opportunity and disclose relationships.
+
+ENTITY WORKFLOW: collect a business's actual services, places and identity, reflect them in copy and appropriate markup, and corroborate them through real external sources. A fabricated entity graph is not a substitute for a real business. The workflow should recognize unknowns and disagreements, not simply turn every desired claim into schema.
+
+KNOWLEDGE VAULT: persist the business facts, sources, decisions, rules, change log, metrics and unresolved tasks in a versioned project folder so an agent does not re-learn them every session. Keep current facts separate from historical observations. Correct stale claims rather than accumulating contradictory notes. Preserve an earlier working version before a large change.
+
+18. THREE PRIORITY RUNS FOR OUR EXISTING SITES
+
+Run A — ranking foundation: audit one site; fix discovery and conversion issues; improve the main service page and the most useful area page; add a defensible cost/evidence resource; connect them clearly. Verify identity and source every factual claim. Measure nonbrand clicks and qualified leads.
+
+Run B — authority and corroboration: inspect current business references; correct the most important inconsistent profiles; research actual competitor links and relevant local/trade sources. Prepare a short verified queue and a useful contribution for each. Record live listings, referral outcomes and business results separately from rankings.
+
+Run C — AI citation opportunity: make a fixed panel of buyer questions; capture the actual cited sources; identify content gaps and legitimate third-party inclusion opportunities; improve the relevant source material; recheck consistently. Track linked citations, unlinked mentions, referral visits and qualified leads separately.
+
+Do these runs on one existing site first. Expand the workload only when our own evidence and available maintenance capacity support it. A portfolio of domains is optional; a functioning useful site and measured business outcome are essential.
+
+19. RECREATE THE ENTITY-GAP AND PAGE-REFRESH WORKFLOW
+
+CHANNEL: the public n8n demonstration takes a target page, identifies competing pages, extracts concepts/entities, removes duplication, classifies relevance, groups themes, and returns opportunities. One step limits candidate entities to about 300. This is a public functional description; we did not obtain its private import file or exact prompts.
+
+OUR METHOD, usable by any browsing/coding agent:
+1. Select an existing URL with relevant impressions or a clear customer gap. Record the query, target market and current result. A page near better visibility can be a practical first candidate, but average position alone is not a decision rule.
+2. Fetch its visible content and 3–5 genuinely competing pages for the same intent. Save URLs and dates; keep navigation/advertising separate. Use licensed keyword/SERP data or observed results, and never invent volumes.
+3. Extract candidate concepts into records: canonical label, type (service, problem, material, location, process, standard, brand), source URL, supporting passage location and presence on our page. Entity extraction can make errors; a model's confidence is not verification.
+4. Normalize aliases and duplicates. Drop incidental menu terms, unrelated locations, brand names that imply a false association, and topics outside our actual offer. Classify each retained concept as essential, useful optional, unrelated, or needs factual confirmation. This is editorial judgment, not a Google factor score.
+5. Group related concepts by the customer's question or decision. For each genuine gap, propose a specific section, table, example or answer. Explain why it helps. A mention appearing on several competitors is not sufficient reason to add it.
+6. Verify factual claims from our business evidence or authoritative sources. If we do not serve that location, offer that material, hold that credential or support that price, omit it or explain the true limitation.
+7. Produce an edit brief with the current problem, proposed improvement, claim sources, affected links/schema and an expected measurable outcome. Apply it within scope, then inspect the actual page. Do not keyword-stuff an entity list.
+8. Record change dates and evaluate relevant query traffic, lead quality and other confounders. Keep an unchanged comparison when practical. Revert a harmful edit or improve a failed hypothesis without pretending the extracted entities were a proven ranking signal.
+
+20. AUTHENTIC MENTIONS AND CITATION-SOURCE PROSPECTING
+
+One public 'four priorities' video specifically puts UGC, user-generated content, in its fourth slot. In context it examines what AI answers cite and discusses visibility beyond the business's own pages. Our adaptation is to identify legitimate places where customers and experts already discuss the service: useful industry Q&A, real reviews, relevant community resources and independently maintained comparison pages.
+
+The agent may research those sources and prepare a factual helpful contribution within the current scope. It must not post manufactured customer stories, impersonate an independent reviewer, pay for undisclosed praise, fabricate forum conversations, or flood platforms with promotional links. Maintain honest affiliation and follow each community's rules. External messages/posts require explicit sending authorization under the host's rules.
+
+Build a citation-source queue separately from the backlink queue. For each actual cited source: save the exact buyer prompt and answer evidence; identify the source URL and why it was relevant; check whether our business genuinely fits; record an official correction/submission/editorial contact path; propose useful information; and track any actual inclusion. Do not promise that getting on a page guarantees the AI will cite it, mention us or send traffic.
+
+21. HOW THE PUBLIC OFFER CHANGES OVER TIME
+
+Earlier interviews describe a proprietary flat-file CMS, layered prompts and generated content/images; later demonstrations emphasize plain static HTML controlled by coding agents. The channel also contains a WordPress build demonstration despite later broad criticism of WordPress. Page counts, launch approaches, use of citations and measurement advice vary across videos. Treat these as an evolving offer, not a single unchanged technical specification.
+
+Our portable kit preserves the functional loop—research, verify, plan, produce, corroborate, measure and improve—without locking agents to a private CMS, a specific model name or a claimed pricing window. Domain-only build prices exclude some combination of model subscriptions, data, hosting limits, tracking numbers, lead handling, profile work, maintenance and the operator's time. Use actual total costs for decisions.

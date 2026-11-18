@@ -1,0 +1,18 @@
+How to Rank #1 in Claude in 5 Minutes
+https://www.youtube.com/watch?v=YaIWVwvjRho
+Published: 20260730 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Run a current citation-source audit using actual buyer questions and verify opportunities.
+
+Cautions: Claims about a particular AI provider always relying on one search engine require current verification.
+
+Topic navigation (automatically detected; check context):
+citations_profiles: https://www.youtube.com/watch?v=YaIWVwvjRho&t=286s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+backlinks: https://www.youtube.com/watch?v=YaIWVwvjRho&t=286s
+Our application: Investigate relevant editorial/local links and competitor evidence. Avoid assuming a paid link or a vendor metric guarantees results.
+ai_visibility: https://www.youtube.com/watch?v=YaIWVwvjRho&t=13s | https://www.youtube.com/watch?v=YaIWVwvjRho&t=187s | https://www.youtube.com/watch?v=YaIWVwvjRho&t=276s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.

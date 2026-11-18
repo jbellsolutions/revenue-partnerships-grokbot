@@ -1,0 +1,22 @@
+My 20-Minute Microsite Workflow for Local SEO
+https://www.youtube.com/watch?v=XGVGsqpF11U
+Published: 20260826 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Keep production effort low while verifying facts, conversion delivery and independent user purpose.
+
+Cautions: Build time and first-page claims are source claims, not guaranteed outcomes for our sites.
+
+Topic navigation (automatically detected; check context):
+architecture: https://www.youtube.com/watch?v=XGVGsqpF11U&t=506s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+ai_visibility: https://www.youtube.com/watch?v=XGVGsqpF11U&t=8s | https://www.youtube.com/watch?v=XGVGsqpF11U&t=60s | https://www.youtube.com/watch?v=XGVGsqpF11U&t=223s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+technical: https://www.youtube.com/watch?v=XGVGsqpF11U&t=366s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+monetization: https://www.youtube.com/watch?v=XGVGsqpF11U&t=302s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.
+measurement: https://www.youtube.com/watch?v=XGVGsqpF11U&t=408s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

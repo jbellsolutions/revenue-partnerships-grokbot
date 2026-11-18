@@ -1,0 +1,17 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "type": "home",
+      "intent": null,
+      "audience": null,
+      "distinct_value": null,
+      "evidence_ids": [],
+      "parent": null,
+      "contextual_links": [],
+      "conversion": null,
+      "status": "planned"
+    }
+  ],
+  "rule": "Create a service/location combination only when distinct intent and verified local information justify it."
+}

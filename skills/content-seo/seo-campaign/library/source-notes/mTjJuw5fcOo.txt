@@ -1,0 +1,26 @@
+How I Build 30 Websites and Rank Them All on Google
+https://www.youtube.com/watch?v=mTjJuw5fcOo
+Published: 20260804 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Check hub links and place-specific evidence, then verify the mobile/customer path.
+
+Cautions: Photo-location and ranking explanations are source assertions; do not invent evidence or locations.
+
+Topic navigation (automatically detected; check context):
+business_identity: https://www.youtube.com/watch?v=mTjJuw5fcOo&t=211s
+Our application: Check real business identity, consistent public facts and corroborating sources; schema must reflect reality.
+citations_profiles: https://www.youtube.com/watch?v=mTjJuw5fcOo&t=95s | https://www.youtube.com/watch?v=mTjJuw5fcOo&t=178s | https://www.youtube.com/watch?v=mTjJuw5fcOo&t=221s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+architecture: https://www.youtube.com/watch?v=mTjJuw5fcOo&t=246s | https://www.youtube.com/watch?v=mTjJuw5fcOo&t=655s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+portfolio: https://www.youtube.com/watch?v=mTjJuw5fcOo&t=114s | https://www.youtube.com/watch?v=mTjJuw5fcOo&t=360s
+Our application: The channel proposes separate assets across services/places. Evaluate distinct user purpose, truthful identity and upkeep before expanding domains.
+data_quality: https://www.youtube.com/watch?v=mTjJuw5fcOo&t=279s
+Our application: Use verified source facts and useful interpretation; retain provenance, unknowns and data-use restrictions.
+monetization: https://www.youtube.com/watch?v=mTjJuw5fcOo&t=101s | https://www.youtube.com/watch?v=mTjJuw5fcOo&t=534s | https://www.youtube.com/watch?v=mTjJuw5fcOo&t=754s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.
+measurement: https://www.youtube.com/watch?v=mTjJuw5fcOo&t=611s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

@@ -1,0 +1,16 @@
+The Query-Fan Out AI SEO System is INSANE
+https://www.youtube.com/watch?v=rszIeAbuZHA
+Published: 20260107 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Capture actual buyer-query sources, derive useful content/research opportunities and save observed settings.
+
+Cautions: Browser internals and bookmarklets can change; do not treat visible searches as a complete model reasoning trace.
+
+Topic navigation (automatically detected; check context):
+citations_profiles: https://www.youtube.com/watch?v=rszIeAbuZHA&t=433s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+ai_visibility: https://www.youtube.com/watch?v=rszIeAbuZHA&t=17s | https://www.youtube.com/watch?v=rszIeAbuZHA&t=71s | https://www.youtube.com/watch?v=rszIeAbuZHA&t=127s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.

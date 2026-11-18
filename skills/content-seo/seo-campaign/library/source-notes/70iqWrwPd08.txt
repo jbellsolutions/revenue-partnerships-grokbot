@@ -1,0 +1,16 @@
+Claude Watermarking: What It Could Mean for AI Websites
+https://www.youtube.com/watch?v=70iqWrwPd08
+Published: 20260825 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Focus on accuracy and user value; verify any actual platform change before changing operations.
+
+Cautions: Do not implement detector evasion or treat this speculation as a current ranking penalty.
+
+Topic navigation (automatically detected; check context):
+citations_profiles: https://www.youtube.com/watch?v=70iqWrwPd08&t=48s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+niche: https://www.youtube.com/watch?v=70iqWrwPd08&t=146s
+Our application: Validate demand, competition, business fit and contribution economics before building.

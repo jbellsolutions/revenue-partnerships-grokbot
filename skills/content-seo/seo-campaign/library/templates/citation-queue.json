@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "platform": null,
+      "official_submission_url": null,
+      "existing_profile_url": null,
+      "market_fit": null,
+      "eligible": "unknown",
+      "canonical_identity_fact_ids": [],
+      "duplicate_or_conflict": null,
+      "current_fee_usd": null,
+      "fee_checked_at": null,
+      "draft_fields": {},
+      "authorized_to_submit": false,
+      "status": "research",
+      "live_url": null,
+      "verified_at": null
+    }
+  ]
+}

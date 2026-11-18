@@ -1,0 +1,57 @@
+{
+  "protocol": {
+    "repetitions": 3,
+    "note": "An operating default, not a validated statistical standard. Log provider settings and failed tests. Do not combine platforms."
+  },
+  "prompts": [
+    {
+      "id": "Q1",
+      "intent": "service",
+      "prompt": "Which providers offer [specific service] in [actual city]?",
+      "replace_placeholders": true
+    },
+    {
+      "id": "Q2",
+      "intent": "cost",
+      "prompt": "What affects the cost of [service] in [city]?",
+      "replace_placeholders": true
+    },
+    {
+      "id": "Q3",
+      "intent": "comparison",
+      "prompt": "How should I compare [service] providers in [city]?",
+      "replace_placeholders": true
+    },
+    {
+      "id": "Q4",
+      "intent": "problem",
+      "prompt": "What should I do about [specific problem] in [city]?",
+      "replace_placeholders": true
+    },
+    {
+      "id": "Q5",
+      "intent": "selection",
+      "prompt": "What questions should I ask before choosing a [trade] in [city]?",
+      "replace_placeholders": true
+    }
+  ],
+  "observations": [
+    {
+      "prompt_id": null,
+      "exact_prompt": null,
+      "provider": null,
+      "interface": null,
+      "reported_model": null,
+      "search_setting": null,
+      "location": null,
+      "device": null,
+      "observed_at": null,
+      "valid_completed_test": false,
+      "business_mentioned": null,
+      "our_page_cited": null,
+      "cited_urls": [],
+      "answer_evidence_path": null,
+      "failure_reason": null
+    }
+  ]
+}

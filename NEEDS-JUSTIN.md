@@ -1,0 +1,66 @@
+# NEEDS-JUSTIN: Revenue Partnerships 3.0
+
+Only what Justin can do, in the order things depend on each other. Each line: what, the exact click or command, the cost where it is spend, and what it unblocks. Nothing here is done by anyone but Justin: no sign-in, spend, send or live change happens without his yes in the chat doing it. Prices are the public list prices the base kit read on 2026-11-15, not re-read since.
+
+## A. Decisions (free; a one-line answer each)
+
+| # | Decision | Say | What it unblocks |
+|---|---|---|---|
+| A1 | [ ] **The percentage** on Revenue Partnerships 3.0, and what counts as revenue that comes from a partnership | A number and a sentence | The sales agent can answer "what does it cost" in full |
+| A2 | [ ] **The call link** every lane ends on | A link | Every draft that ends in a call |
+| A3 | [ ] **The guarantee.** You said on 2026-11-18: "at least 5 new partners in 90 days, or you don't pay." Does it go with these offers, and with $2,000 up front does a miss mean a refund, or is the fee paid after? | "No guarantee", "refund on a miss" or "paid after" | Whether any message states it. Until then none does |
+| A4 | [ ] **Prices in outreach** | "Say the prices in outreach" or "prices only on a reply and the call" | First-touch copy. Until then a first touch names no price |
+| A5 | [ ] **The tier this bot runs** | "revenue-partnerships" (the default: six functions, 31 routines) or "revenue-os" (all nine, 40 routines) | Which routines are created |
+| A6 | [ ] **The base kit's safeguards.** On 2026-11-17 you removed these from the Revenue OS template: opt-outs suppressed, STOP, no CAPTCHA solving, auto-send only once you mark a type, first public post waits for you. The base kit's guard scripts in this pack still do them | "Keep" or "remove", for each or for all | The guard scripts either stay or come out in the next release |
+| A7 | [ ] **The name** the business goes by. The pack uses "True Revenue Partnerships" and truerevenuepartnerships.com | "Yes" or the name and site to use | The AEO and SEO settings and every signature |
+| A8 | [ ] **One system answers replies.** If another agent or pack already answers replies or writes this CRM | Which one answers | sales-crm going on |
+| A9 | [ ] **Single brain path** | "Deploy key" (the bot pushes its daily note) or "Mac pulls" | Reports reach the single brain |
+
+## B. The bot
+
+| # | What | The exact step | Cost | What it unblocks |
+|---|---|---|---|---|
+| 1 | [ ] **Room on the bot** | In the Grok desktop app, open your main bot's routine screen and count what is already there. This pack adds 31 (or 40). A bot holds 50 *(seen in the app, not on a public page)* | None | Everything |
+| 2 | [ ] Paste the one line | The one-to-one chat with the bot → Settings → General → Bot → Timezone **UTC** → paste the line in HANDOFF.md, Part 1, step 4. If the download fails, attach `revenue-partnerships.zip` from the same release | None | Setup |
+| 3 | [ ] Auto-review rules | When the bot shows them: paste the Ask-first lines from GATES.md into Auto-review → Custom Rules, one rule each | None | Routines that stop for your yes |
+| 4 | [ ] Sign-ins, when the bot asks | Connect apps or the bot's browser, one at a time: Slack, Notion, Gmail, Google Calendar, GitHub, the X connector (read only), YouTube. Revenue OS tier also: Skool, Medium. Not LinkedIn in the bot's browser: LinkedIn runs through OutFlo or your own computer (LINKEDIN.md) | None | Read-only checks |
+| 5 | [ ] Keys, by hidden prompt, names only | GoHighLevel `GHL_API_KEY` (read-only first), `GHL_LOCATION_ID`. Sender `SENDER_URL`, `SENDER_TOKEN`. `CAL_API_KEY`. `SLACK_BOT_TOKEN`, `NOTION_TOKEN`. `CONSULTI_API_KEY`, `TREG_API_KEY`. `PLUSVIBE_API_KEY`, `PLUSVIBE_WORKSPACE_ID`, `MAILDOSO_API_KEY`, `INSTANTLY_API_KEY`, `AGENTMAIL_API_KEY`, `LEAD_CREDIT_CAP`. Scrapers `ONE_API_URL`, `ONE_API_TOKEN` (a revocable agent key from the One API console), `SCRAPEBOX_TOKEN`, `SCRAPEBOX_URL`, `DECODO_PROXY_USER`, `DECODO_PROXY_PASSWORD`. `RADAR_APP_URL`, `RADAR_DASHBOARD_PASSWORD`, `LINKEDIN_DASH_TOKEN`. `SPEAKERAGENT_API_URL`, `SPEAKERAGENT_API_KEY`, `SPEAKERAGENT_SPEAKER_ID`. `RANKSPOT_API_KEY`, `BEEHIIV_API_KEY`. `MEDIUM_INTEGRATION_TOKEN` only if you already have an old one | None (existing accounts) | The tools each role uses |
+| 6 | [ ] Private intake values, names only | By hidden prompt or secret card, the bot writes each as `NAME=value` into `gtm-box/box.env` (mode 600; `crm.py` and the cold tools read it there) and `.secrets/intake.env` (loaded with `set -a; . .secrets/intake.env; set +a` before the skill scripts): `GHL_COMPANY_ID`, `CSO_HOME`, `CSO_DB`, `SPEAKER_RUNNER`, `SEO_CAMPAIGN_ID`, `BOOKING_LINK`, `INSTANTLY_HELD_CAMPAIGN`, `HELD_CAMPAIGN_NAME`, `INSTANTLY_WINNR_TAG_ID`, `COLD_SITE_URL`, `REACHER_URL`, `REACHER_DASHBOARD_URL`, `REACHER_CONSUMER_KEY` (secret: rotate it first), `ONE_API_HUB_URL`, `LINKEDIN_DASH_URL`, `SLACK_ARTIFACT_CHANNEL_ID`, `CONTENT_REPO_REMOTE`, `CONTENT_REPO_SSH_HOST`, `PACK_RELEASE_URL`, `COURSE_MATERIAL_DIR`. Also `SCRAPEBOX_URL`, `ONE_API_URL` and `SPEAKERAGENT_API_URL` from item 5, which now have no default | None | CRM location check, booking links, held campaign, cold copy check, email verification, scrapers, LinkedIn dashboard |
+| 7 | [ ] Suppression list, never-touch and do-not-mention lists | Give the bot the suppression file when it asks (never in the repo). Give the bot the never-touch names (`NEVER_TOUCH`, or `.secrets/never-touch.txt`) and the do-not-mention names (`DO_NOT_MENTION`, or `.secrets/do-not-mention.txt`), both in the private intake file. Add each do-not-mention name to `context/suppression.csv` as a `term` row too, so partner and lead picks are held by `suppression.py`. Then check one never-touch name with `python3 repo/guards/scripts/never_touch.py check "<name>"`: it must say refused | None | Any draft to a person; any write to a computer, box, agent or org; any cold campaign passing `check.py` |
+
+Items 5 and 6 list every key the pack can use. On the Revenue Partnerships 3.0 tier the bot asks only for the ones its six functions need: Slack, Notion, GoHighLevel, the sender, Cal.com, SpeakerAgent, the data lane's scrapers, and the worker.
+
+## C. The engines and the worker
+
+| # | What | The exact step | Cost | What it unblocks |
+|---|---|---|---|---|
+| 7 | [ ] Sign the CLIs in on the bot's computer | When the bot asks (HANDOFF Part 2, step 6): `claude setup-token` and `codex login --device-auth`, through the hidden prompt, as the user the routines run as | None beyond the Claude and ChatGPT plans you already pay for | Content on Claude Code; the sales agent and SpeakerAgent on Codex. Without them those functions fall back to the bot's own run |
+| 8 | [ ] **The worker server (spend)** | DigitalOcean → Create → Droplet → Ubuntu 24.04, Basic, Regular. Then as root: `timedatectl set-timezone UTC`, `mkdir -p /opt/revenue-worker/repo && cd /opt/revenue-worker/repo`, `curl -fsSLO https://github.com/jbellsolutions/revenue-partnerships-grokbot/releases/latest/download/revenue-partnerships.zip && apt-get install -y unzip && unzip -q revenue-partnerships.zip`, `bash worker/install.sh`. Every job installs switched off | **$6 a month** (1 GB), **$12** (2 GB, recommended: Codex CLI and the engine share it), $18 (2 GB, 2 vCPU). digitalocean.com/pricing/droplets | Everything in WORKERS.md |
+| 9 | [ ] HTTPS and the worker key | Put HTTPS in front of port 8787: a Cloudflare tunnel (`cloudflared tunnel --url http://127.0.0.1:8787` for a first test, a named tunnel on a domain you own to keep) or Caddy with a name you own. Then give the bot `WORKER_URL` and `WORKER_TOKEN` by hidden prompt; read the token on the server with `sudo grep WORKER_TOKEN /etc/revenue-worker.env` and never paste it in chat | Cloudflare's own pages state no price for a tunnel; third-party pages say free. Caddy is free; a name you own, about its yearly fee | The bot's guards and digest |
+| 10 | [ ] The worker's keys | On the server: `sudo nano /etc/revenue-worker.env`, names from `worker/worker.env.example`: PlusVibe, Consulti, Lead Radar, SpeakerAgent, Decodo, Scrapebox, the verifier, the Slack alarm webhook, the bot's Reply webhook URL. Then `sudo systemctl restart revenue-worker` | None | The worker's jobs |
+| 11 | [ ] Codex on the worker | `npm install -g @openai/codex`, then **as the job user**: `sudo -u revworker -H codex login --device-auth`. Device sign-in must first be switched on in ChatGPT's security settings. A sign-in as root is invisible to the jobs | None beyond the ChatGPT plan you already pay for (Plus is $20 a month, Pro from $100) | The cheapest brain: scraper writing, reply and lead sorting |
+| 12 | [ ] The model pool, optional (spend) | Only if Codex runs out of quota: add `MODEL_API_URL`, `MODEL_API_KEY`, `MODEL_NAME`, `MODEL_USD_PER_MTOK` to `/etc/revenue-worker.env` and one line to `/opt/revenue-worker/context/spend-approvals.md`: `pool model: daily 2` | Capped by that line: **$2 a day at most** as written. Skip it and unjudged items go to the bot instead | Batch judgments when Codex can't answer |
+
+The worker is optional. Without it the bot's guards run from the workspace's own files and the volume work (reply pulling every 15 minutes, show research every 2 hours) runs inside routines instead, which uses more of the Grok allowance.
+
+## D. Supplies for the Revenue OS tier (skip on Revenue Partnerships 3.0)
+
+| # | What | The exact step | Cost | What it unblocks |
+|---|---|---|---|---|
+| 13 | [ ] **Inboxes for 2,000 a day (spend, unless you already have them)** | 200 warmed inboxes at 10 a day each, about 67 domains at 3 inboxes a domain, connected in PlusVibe; warm 14 days before any campaign. If inboxes are already warming elsewhere, the step is only: keep that plan paid, and tell the bot which 200 to use | PlusVibe Business **$77 a month** (150,000 sends a month; plusvibe.ai/pricing). New inboxes, if bought: Maildoso's page could not be read; its help centre (unverified) lists $2.50 a mailbox a month under 225 mailboxes plus about $15 a year a domain, so about **$500 a month plus about $84 a month of domains** for 200 on 67 | 2,000 cold emails a day |
+| 14 | [ ] **Consulti credits (spend, unless you hold enough)** | About 670 new verified contacts a day (14,000 a month) for a 3-step sequence at 2,000 sends a day, minus what the free scrapers find. First read your balance in Consulti; buy only the gap. Then set the daily cap on prepaid credits: `LEAD_CREDIT_CAP=670` in `/etc/revenue-worker.env` (the engine's default is 3,000 a day) | Consulti's price per credit is not on any public page that could be read (its site answered 429). The cost is the gap between your balance and 14,000 a month, at the rate your account shows | Lists at volume |
+| 15 | [ ] RankSpot top-up (spend) | rankspot.ai → sign up or sign in, connect truerevenuepartnerships.com, top up. Then tell the bot the monthly cap to write into `spend-approvals.md` | From **$10**, no subscription; their default schedules run about $90 a month, articles $3 each (not re-read on 2026-11-15) | Paid AI-visibility checks, keyword and backlink updates, articles |
+| 16 | [ ] Skool browser host | Say which computer keeps the signed-in Skool browser (`SKOOL_HOST`), sign Skool in there, and create `skool/ON`. Never a computer on the never-touch list | None | Skool inbound at volume |
+
+The base kit sized items 13 and 14 for 2,000 cold emails a day. This bot has no cold email number yet: say the daily number first and buy only for that.
+
+## E. Going live, one lane at a time
+
+| # | What | The exact step | Cost | What it unblocks |
+|---|---|---|---|---|
+| 17 | [ ] The Dream 100 and Dream 500 lists | Give the bot the lists when it asks, or the kind of partner to build them from. They stay in the workspace, never in a pack | None | Dream 100 and Dream 500 |
+| 18 | [ ] Approve each message type's words, and each channel's first post | Reply yes to each draft type in Notion Drafts (the types are in GATES.md). The six pitching templates in `gtm-box/templates/` were rewritten for this offer on 2026-11-18 and none is approved. An approval given to an earlier bot does not carry over | None | Sends and posts |
+| 19 | [ ] Repoint the webhooks (live change) | After A8. The bot reports two URLs at setup. Reply URL: into the worker's `BOT_REPLY_WEBHOOK_URL`. Booking URL: Cal.com → Settings → Developer → Webhooks | None | The two event routines |
+| 20 | [ ] The LinkedIn tool | Connect OutFlo to your LinkedIn profile, or say which of your own computers runs the LinkedIn steps | OutFlo's plan, if not already paid | LinkedIn for Dream 100, Dream 500, partners and content |
+| 21 | [ ] Turn CRM writes on | Say "crm-writes on" in the bot's chat once the reply sorting looks right | None | CRM writes |
+| 22 | [ ] Switch the worker's jobs on | On the server, in `/opt/revenue-worker/context/worker-jobs-on.md`: `test` first, then `on`, the jobs `python3 tools/tier.py <tier>` lists | None | The volume |

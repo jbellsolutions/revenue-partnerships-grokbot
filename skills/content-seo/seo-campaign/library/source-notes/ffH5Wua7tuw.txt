@@ -1,0 +1,22 @@
+The 12 Best AI SEO Tactics (Ranked)
+https://www.youtube.com/watch?v=ffH5Wua7tuw
+Published: 20260226 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Improve existing promising pages with verified useful material before scaling output.
+
+Cautions: A creator tier list is opinion; schema quantity and programmatic scale are not proven ranking levers.
+
+Topic navigation (automatically detected; check context):
+business_identity: https://www.youtube.com/watch?v=ffH5Wua7tuw&t=52s | https://www.youtube.com/watch?v=ffH5Wua7tuw&t=313s | https://www.youtube.com/watch?v=ffH5Wua7tuw&t=385s
+Our application: Check real business identity, consistent public facts and corroborating sources; schema must reflect reality.
+architecture: https://www.youtube.com/watch?v=ffH5Wua7tuw&t=552s | https://www.youtube.com/watch?v=ffH5Wua7tuw&t=608s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+ai_visibility: https://www.youtube.com/watch?v=ffH5Wua7tuw&t=97s | https://www.youtube.com/watch?v=ffH5Wua7tuw&t=251s | https://www.youtube.com/watch?v=ffH5Wua7tuw&t=756s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+technical: https://www.youtube.com/watch?v=ffH5Wua7tuw&t=745s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+measurement: https://www.youtube.com/watch?v=ffH5Wua7tuw&t=130s | https://www.youtube.com/watch?v=ffH5Wua7tuw&t=838s | https://www.youtube.com/watch?v=ffH5Wua7tuw&t=910s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

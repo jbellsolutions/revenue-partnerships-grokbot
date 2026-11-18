@@ -1,0 +1,5 @@
+Hey {{first_name}}, good to hear from you. Here's my calendar, grab whatever works: {{booking_link}}
+
+If none of those times fit, tell me what does and we'll sort it out.
+
+Justin

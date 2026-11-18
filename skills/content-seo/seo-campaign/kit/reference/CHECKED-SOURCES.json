@@ -1,0 +1,51 @@
+{
+  "checked_on": "2026-11-04",
+  "method": "Official pages opened with browser search/fetch; no target account feature tests.",
+  "sources": [
+    {
+      "id": "google-ai-guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+      "purpose": "Current AI-search fundamentals; newer guide qualifies older playbook."
+    },
+    {
+      "id": "google-ai-control",
+      "url": "https://support.google.com/webmasters/answer/16908024",
+      "purpose": "Site inclusion controls and inheritance."
+    },
+    {
+      "id": "google-ai-report",
+      "url": "https://support.google.com/webmasters/answer/16984139",
+      "purpose": "Generative AI impressions report, availability and aggregation."
+    },
+    {
+      "id": "google-spam",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "purpose": "Doorways, scaled low-value production and deceptive/manipulative techniques."
+    },
+    {
+      "id": "hermes-cron",
+      "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/cron",
+      "purpose": "Native job management, workdir, gateway and execution status."
+    },
+    {
+      "id": "hermes-delegation",
+      "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/delegation",
+      "purpose": "Delegation contexts, worker capabilities and cancellation limits."
+    },
+    {
+      "id": "hermes-board",
+      "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/kanban",
+      "purpose": "Optional native project board; inspect actual version before mapping."
+    },
+    {
+      "id": "grok-routines",
+      "url": "https://docs.x.ai/grok-bot/skills-routines-and-automations",
+      "purpose": "Skills versus actual routines; one-time reliability and schedule verification."
+    },
+    {
+      "id": "grok-computer",
+      "url": "https://docs.x.ai/grok-bot/computer-and-apps",
+      "purpose": "Verify actual computer, app and persistence capabilities."
+    }
+  ]
+}

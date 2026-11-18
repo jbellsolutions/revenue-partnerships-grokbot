@@ -1,0 +1,24 @@
+How I'm Building 1,000 AI Microsites
+https://www.youtube.com/watch?v=1-hfI9WfxBk
+Published: 20251208 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use the failure-mode checklist with real evidence and track which proposed signals actually matter on our sites.
+
+Cautions: The speakers acknowledge mixed experience with brand/profile signals; no universal single-variable explanation follows.
+
+Topic navigation (automatically detected; check context):
+business_identity: https://www.youtube.com/watch?v=1-hfI9WfxBk&t=127s | https://www.youtube.com/watch?v=1-hfI9WfxBk&t=176s | https://www.youtube.com/watch?v=1-hfI9WfxBk&t=701s
+Our application: Check real business identity, consistent public facts and corroborating sources; schema must reflect reality.
+citations_profiles: https://www.youtube.com/watch?v=1-hfI9WfxBk&t=179s | https://www.youtube.com/watch?v=1-hfI9WfxBk&t=261s | https://www.youtube.com/watch?v=1-hfI9WfxBk&t=483s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+architecture: https://www.youtube.com/watch?v=1-hfI9WfxBk&t=124s | https://www.youtube.com/watch?v=1-hfI9WfxBk&t=544s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+ai_visibility: https://www.youtube.com/watch?v=1-hfI9WfxBk&t=3s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+technical: https://www.youtube.com/watch?v=1-hfI9WfxBk&t=818s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=1-hfI9WfxBk&t=946s | https://www.youtube.com/watch?v=1-hfI9WfxBk&t=1039s
+Our application: Validate demand, competition, business fit and contribution economics before building.

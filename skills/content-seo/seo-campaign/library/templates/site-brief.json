@@ -1,0 +1,28 @@
+{
+  "business_name": null,
+  "site_url": null,
+  "publisher_type": "real_business_or_referral_publisher",
+  "business_goal": "qualified_traffic_and_leads",
+  "primary_services": [],
+  "actual_service_area": [],
+  "customer_facing_locations": [],
+  "public_phone": null,
+  "public_email": null,
+  "hours": null,
+  "existing_cms": null,
+  "owner_confirmed_facts": [],
+  "search_console_access": "unknown",
+  "analytics_access": "unknown",
+  "conversion_path": null,
+  "baseline_period": null,
+  "baseline_metrics": {},
+  "authorization": {
+    "local_research_and_drafts": true,
+    "live_site_changes": "confirm_existing_scope",
+    "profile_submissions": false,
+    "outreach_sending": false,
+    "spend_usd": 0,
+    "domain_registration": false
+  },
+  "unknowns": []
+}

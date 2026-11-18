@@ -1,0 +1,26 @@
+How I Rank 100s of Websites on Google with AI
+https://www.youtube.com/watch?v=AEMcS82vjJs
+Published: 20260924 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Prefer genuinely local/trade references and clear service coverage to random high-metric links.
+
+Cautions: Early rankings do not establish durable leads or general superiority.
+
+Topic navigation (automatically detected; check context):
+citations_profiles: https://www.youtube.com/watch?v=AEMcS82vjJs&t=172s | https://www.youtube.com/watch?v=AEMcS82vjJs&t=246s | https://www.youtube.com/watch?v=AEMcS82vjJs&t=305s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+backlinks: https://www.youtube.com/watch?v=AEMcS82vjJs&t=537s
+Our application: Investigate relevant editorial/local links and competitor evidence. Avoid assuming a paid link or a vendor metric guarantees results.
+ai_visibility: https://www.youtube.com/watch?v=AEMcS82vjJs&t=160s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+technical: https://www.youtube.com/watch?v=AEMcS82vjJs&t=438s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=AEMcS82vjJs&t=167s | https://www.youtube.com/watch?v=AEMcS82vjJs&t=222s | https://www.youtube.com/watch?v=AEMcS82vjJs&t=366s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=AEMcS82vjJs&t=176s | https://www.youtube.com/watch?v=AEMcS82vjJs&t=375s | https://www.youtube.com/watch?v=AEMcS82vjJs&t=655s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.
+measurement: https://www.youtube.com/watch?v=AEMcS82vjJs&t=332s | https://www.youtube.com/watch?v=AEMcS82vjJs&t=447s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

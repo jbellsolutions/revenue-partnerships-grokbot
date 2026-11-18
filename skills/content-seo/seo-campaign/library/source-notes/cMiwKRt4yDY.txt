@@ -1,0 +1,22 @@
+How I Build 50 Websites to Take Over Any State
+https://www.youtube.com/watch?v=cMiwKRt4yDY
+Published: 20260811 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Keep the actual business identity and service delivery coherent and measure leads by origin.
+
+Cautions: Assertions that Google knows unanswered calls cause ranking drops are not established here.
+
+Topic navigation (automatically detected; check context):
+citations_profiles: https://www.youtube.com/watch?v=cMiwKRt4yDY&t=219s | https://www.youtube.com/watch?v=cMiwKRt4yDY&t=439s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+ai_visibility: https://www.youtube.com/watch?v=cMiwKRt4yDY&t=134s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+niche: https://www.youtube.com/watch?v=cMiwKRt4yDY&t=158s | https://www.youtube.com/watch?v=cMiwKRt4yDY&t=202s | https://www.youtube.com/watch?v=cMiwKRt4yDY&t=351s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=cMiwKRt4yDY&t=79s | https://www.youtube.com/watch?v=cMiwKRt4yDY&t=408s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.
+measurement: https://www.youtube.com/watch?v=cMiwKRt4yDY&t=531s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

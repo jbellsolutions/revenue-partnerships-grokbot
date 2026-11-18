@@ -1,0 +1,28 @@
+You Should Try This to Make Money With AI
+https://www.youtube.com/watch?v=YbSIMRQRwmw
+Published: 20260923 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use low-cost research and observed query/conversion data to choose the next useful improvement.
+
+Cautions: Do not mistake domain-only cost for total model, maintenance, tracking and acquisition cost.
+
+Topic navigation (automatically detected; check context):
+citations_profiles: https://www.youtube.com/watch?v=YbSIMRQRwmw&t=337s | https://www.youtube.com/watch?v=YbSIMRQRwmw&t=659s | https://www.youtube.com/watch?v=YbSIMRQRwmw&t=761s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+backlinks: https://www.youtube.com/watch?v=YbSIMRQRwmw&t=518s
+Our application: Investigate relevant editorial/local links and competitor evidence. Avoid assuming a paid link or a vendor metric guarantees results.
+ai_visibility: https://www.youtube.com/watch?v=YbSIMRQRwmw&t=525s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+data_quality: https://www.youtube.com/watch?v=YbSIMRQRwmw&t=902s | https://www.youtube.com/watch?v=YbSIMRQRwmw&t=1071s
+Our application: Use verified source facts and useful interpretation; retain provenance, unknowns and data-use restrictions.
+technical: https://www.youtube.com/watch?v=YbSIMRQRwmw&t=1085s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=YbSIMRQRwmw&t=161s | https://www.youtube.com/watch?v=YbSIMRQRwmw&t=434s | https://www.youtube.com/watch?v=YbSIMRQRwmw&t=862s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=YbSIMRQRwmw&t=44s | https://www.youtube.com/watch?v=YbSIMRQRwmw&t=141s | https://www.youtube.com/watch?v=YbSIMRQRwmw&t=238s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.
+measurement: https://www.youtube.com/watch?v=YbSIMRQRwmw&t=892s | https://www.youtube.com/watch?v=YbSIMRQRwmw&t=1108s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

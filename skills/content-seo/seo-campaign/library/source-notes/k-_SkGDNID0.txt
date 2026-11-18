@@ -1,0 +1,22 @@
+The 5-Step Blueprint I Use to Build $10K+ Microsites on Repeat
+https://www.youtube.com/watch?v=k-_SkGDNID0
+Published: 20251127 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use a staged, verified build and measured pilot; keep the operational pipeline portable and documented.
+
+Cautions: Do not adopt cheap bulk stacks, indexing-service claims or measurement avoidance as proven requirements.
+
+Topic navigation (automatically detected; check context):
+citations_profiles: https://www.youtube.com/watch?v=k-_SkGDNID0&t=1556s | https://www.youtube.com/watch?v=k-_SkGDNID0&t=1599s | https://www.youtube.com/watch?v=k-_SkGDNID0&t=1642s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+backlinks: https://www.youtube.com/watch?v=k-_SkGDNID0&t=1641s
+Our application: Investigate relevant editorial/local links and competitor evidence. Avoid assuming a paid link or a vendor metric guarantees results.
+niche: https://www.youtube.com/watch?v=k-_SkGDNID0&t=46s | https://www.youtube.com/watch?v=k-_SkGDNID0&t=99s | https://www.youtube.com/watch?v=k-_SkGDNID0&t=164s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=k-_SkGDNID0&t=12s | https://www.youtube.com/watch?v=k-_SkGDNID0&t=1658s | https://www.youtube.com/watch?v=k-_SkGDNID0&t=2025s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.
+measurement: https://www.youtube.com/watch?v=k-_SkGDNID0&t=1521s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

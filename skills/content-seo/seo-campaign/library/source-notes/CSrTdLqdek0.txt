@@ -1,0 +1,20 @@
+I Built 50 Microsites with 100% AI Systems (Here are the results)
+https://www.youtube.com/watch?v=CSrTdLqdek0
+Published: 20260622 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use the subservice insight to clarify real customer intent and improve appropriate pages first.
+
+Cautions: Many sites do not imply many successes; revenue-share suggestions require actual fulfillment and agreements.
+
+Topic navigation (automatically detected; check context):
+ai_visibility: https://www.youtube.com/watch?v=CSrTdLqdek0&t=244s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+technical: https://www.youtube.com/watch?v=CSrTdLqdek0&t=468s | https://www.youtube.com/watch?v=CSrTdLqdek0&t=529s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=CSrTdLqdek0&t=183s | https://www.youtube.com/watch?v=CSrTdLqdek0&t=498s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=CSrTdLqdek0&t=14s | https://www.youtube.com/watch?v=CSrTdLqdek0&t=111s | https://www.youtube.com/watch?v=CSrTdLqdek0&t=322s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.

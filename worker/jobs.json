@@ -1,0 +1,23 @@
+{
+  "_doc": "Every job the worker runs. cron is UTC. tier: code (no model), subscription (Codex CLI), api (metered, model pool), browser (needs the signed-in browser host). guarded: refuses while STOP is set. orderable: the bot may POST /v1/orders for it. Switch each one in context/worker-jobs-on.md (on, test, off); everything starts off.",
+  "jobs": {
+    "watchdog":        {"cron": "*/30 * * * *", "cmd": ["python3", "{pack}/worker/jobs/watchdog.py"], "tier": "code", "guarded": false, "why": "Alarms Slack on any silent role or job, so the bot runs no watchdog of its own"},
+    "digest":          {"cron": "*/20 * * * *", "cmd": ["python3", "{pack}/worker/jobs/digest.py"], "tier": "code", "guarded": false, "why": "Folds every job's items into digest/latest.json, the one thing the bot reads"},
+    "orders":          {"cron": "*/10 * * * *", "cmd": ["python3", "{pack}/worker/jobs/orders.py"], "tier": "code", "guarded": true, "why": "Runs the bot's queued orders"},
+    "replies-pull":    {"cron": "*/15 * * * *", "cmd": ["python3", "{home}/gtm-box/cold/plusvibe.py", "replies"], "tier": "code", "guarded": false, "why": "New PlusVibe replies into gtm-box/cold/inbox.jsonl"},
+    "replies-sort":    {"cron": "5,20,35,50 * * * *", "cmd": ["python3", "{pack}/worker/jobs/reply_sort.py"], "tier": "subscription", "guarded": false, "orderable": true, "why": "Sorts every reply; opt-outs to suppression at once; only hot ones reach the bot (and its Reply webhook)"},
+    "inbox-health":    {"cron": "10 11 * * *", "cmd": ["python3", "{home}/gtm-box/cold/warmup.py", "check"], "tier": "code", "guarded": false, "why": "Warmup and inbox state, no model"},
+    "campaign-stats":  {"cron": "40 22 * * *", "cmd": ["python3", "{home}/gtm-box/cold/plusvibe.py", "stats"], "tier": "code", "guarded": false, "why": "Each campaign against 5% replies, for the copy read"},
+    "blocklist":       {"cron": "15 3 * * *", "cmd": ["python3", "{home}/gtm-box/cold/plusvibe.py", "blocklist"], "tier": "code", "guarded": true, "why": "Pushes the suppression list's emails and domains to PlusVibe every night"},
+    "list-build":      {"cron": null, "cmd": ["python3", "{home}/gtm-box/cold/list_build.py", "build", "{campaign}"], "tier": "code", "guarded": true, "orderable": true, "why": "Pull, dedupe, suppress, verify a campaign's list to target (Consulti credits: only on an order whose spend the bot cleared)"},
+    "list-load":       {"cron": null, "cmd": ["python3", "{home}/gtm-box/cold/plusvibe.py", "load", "{campaign}"], "tier": "code", "guarded": true, "orderable": true, "approval": "cold_email", "why": "Loads a verified list into its campaign; only when cold_email is auto in standing-approvals"},
+    "radar-poll":      {"cron": "20 */4 * * *", "cmd": ["python3", "{pack}/worker/jobs/radar_poll.py"], "tier": "subscription", "guarded": false, "why": "New Lead Radar leads, judged by the cheap brain; 4s and 5s to the digest"},
+    "show-research":   {"cron": "30 */2 * * *", "cmd": ["python3", "{home}/gtm-box/box/speaker_cycle.py"], "tier": "code", "guarded": true, "why": "SpeakerAgent research cycles all day, no model; stops when today's shows are found"},
+    "show-score":      {"cron": "50 */6 * * *", "cmd": ["python3", "{pack}/worker/jobs/score_items.py", "shows"], "tier": "subscription", "guarded": false, "why": "Scores new shows 1 to 5 with an episode angle; 4s and 5s to the digest for the bot's pitch drafts"},
+    "skool-read":      {"cron": "15 9,15,19 * * *", "cmd": ["python3", "{home}/gtm-box/box/skool_scrape.py"], "tier": "browser", "guarded": true, "why": "Reads Skool groups through the signed-in browser host only; refuses without skool/ON"},
+    "skool-score":     {"cron": "45 9,15,19 * * *", "cmd": ["python3", "{pack}/worker/jobs/score_items.py", "skool"], "tier": "subscription", "guarded": false, "why": "Judges Skool posts for AI and VA need; 4s and 5s to the digest"},
+    "scraper-run":     {"cron": null, "cmd": ["python3", "{pack}/worker/jobs/scraper_run.py", "{scraper}"], "tier": "code", "guarded": true, "orderable": true, "why": "Runs a saved scraper in tools/scrapers/ (paid rungs only through the scrape pool)"},
+    "scraper-write":   {"cron": null, "cmd": ["python3", "{pack}/worker/jobs/scraper_write.py", "{scraper}"], "tier": "subscription", "guarded": false, "orderable": true, "why": "Codex writes or repairs a scraper from the bot's spec, tests it on its fixture, pilots 20 rows"},
+    "scraper-retest":  {"cron": "10 4 * * *", "cmd": ["python3", "{pack}/worker/jobs/scraper_run.py", "--retest-all"], "tier": "code", "guarded": false, "why": "Re-tests every ok scraper on its fixture; broken ones to the digest"}
+  }
+}

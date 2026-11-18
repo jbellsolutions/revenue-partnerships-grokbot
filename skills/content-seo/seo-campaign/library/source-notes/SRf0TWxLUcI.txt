@@ -1,0 +1,14 @@
+How I Use LLMWiki to Make Claude Code Better
+https://www.youtube.com/watch?v=SRf0TWxLUcI
+Published: 20260913 | Tab: shorts
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Apply the relevant playbook procedure to real business facts and measured outcomes. Keep identity, external actions and costs within authorized scope.
+
+Cautions: This is a creator/interview claim or abbreviated clip. Check the surrounding full-video evidence and current platform rules before adopting a tactic; no income or ranking result is independently verified.
+
+Topic navigation (automatically detected; check context):
+memory: https://www.youtube.com/watch?v=SRf0TWxLUcI&t=13s | https://www.youtube.com/watch?v=SRf0TWxLUcI&t=69s
+Our application: Persist sourced facts, decisions and change history so an agent can resume without repeating research.

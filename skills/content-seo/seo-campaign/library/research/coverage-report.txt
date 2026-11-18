@@ -1,0 +1,22 @@
+RESEARCH COVERAGE — NOVEMBER 3, 2026
+Channel: Jesse Cunningham | UC_DfvBDqCexXZ_xtEDKHVBA
+Channel URL: https://www.youtube.com/@jessecunninghamv
+Seed: https://www.youtube.com/watch?v=9l1NyuZjl4w
+
+Public tabs returned: 77 full videos; 75 Shorts; no public streams tab.
+Inventoried: 152 unique IDs. Listed duration: 19.71 hours.
+Caption acquisition: 152/152.
+Individual analyst summaries for retrieved captions: 152/152.
+Metadata/descriptions: collected for all 152 returned items; linked public resources separately inventoried.
+Method: caption retrieval; full-caption keyword indexing; targeted passage review for each summarized item; deeper review of the supplied video and decisive local/directory/citation material. Automated timestamp hits are explicitly labeled. No frame-by-frame audiovisual review or independent private-data replication is claimed.
+Shorts and interviews often repeat the same arguments. Related passages are not independent experiments.
+
+Acquisition gaps:
+[]
+
+Timing exception: qX0Hme7J9P4 has captions extending about 78 seconds beyond its listed media duration. Possible edited-media/stale-caption mismatch; out-of-range navigation hits are omitted and the source note flags it. All caption records are acquired, but exact timing for this item is provisional.
+
+Scope limits: public channel snapshot only. Removed/private/member-only/unlisted historical videos cannot be established as complete. No private academy lessons, original ZIPs, private backlink list, contest domain list, raw scoreboard or measurement code was obtained. Published case-study revenue and causal explanations were not independently audited.
+Target domains were not supplied; the kit is general and requires verified business inputs for site-specific implementation.
+
+Rights/packaging: original notes, linked metadata, procedures and templates are distributed. Full captions, video files, raw scraped pages and private course files are not in the portable ZIP. Working acquisition data remains separate from the portable deliverable.

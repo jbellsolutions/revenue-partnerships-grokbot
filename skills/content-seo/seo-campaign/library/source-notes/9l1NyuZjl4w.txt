@@ -1,0 +1,28 @@
+I Watched 61 AI Websites Compete on Google for 40 Days
+https://www.youtube.com/watch?v=9l1NyuZjl4w
+Published: 20261103 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Test those components on our sites while retaining a baseline and separating organic rank from Maps and AI visibility.
+
+Cautions: Private daily data and confounding changes prevent a causal conclusion.
+
+Topic navigation (automatically detected; check context):
+business_identity: https://www.youtube.com/watch?v=9l1NyuZjl4w&t=298s
+Our application: Check real business identity, consistent public facts and corroborating sources; schema must reflect reality.
+citations_profiles: https://www.youtube.com/watch?v=9l1NyuZjl4w&t=97s | https://www.youtube.com/watch?v=9l1NyuZjl4w&t=348s | https://www.youtube.com/watch?v=9l1NyuZjl4w&t=561s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+portfolio: https://www.youtube.com/watch?v=9l1NyuZjl4w&t=75s
+Our application: The channel proposes separate assets across services/places. Evaluate distinct user purpose, truthful identity and upkeep before expanding domains.
+data_quality: https://www.youtube.com/watch?v=9l1NyuZjl4w&t=599s
+Our application: Use verified source facts and useful interpretation; retain provenance, unknowns and data-use restrictions.
+technical: https://www.youtube.com/watch?v=9l1NyuZjl4w&t=264s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=9l1NyuZjl4w&t=681s | https://www.youtube.com/watch?v=9l1NyuZjl4w&t=791s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=9l1NyuZjl4w&t=462s | https://www.youtube.com/watch?v=9l1NyuZjl4w&t=535s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.
+measurement: https://www.youtube.com/watch?v=9l1NyuZjl4w&t=24s | https://www.youtube.com/watch?v=9l1NyuZjl4w&t=389s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

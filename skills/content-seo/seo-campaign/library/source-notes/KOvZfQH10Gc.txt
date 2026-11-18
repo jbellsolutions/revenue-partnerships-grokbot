@@ -1,0 +1,22 @@
+My AI SEO Workflow for Competing with AI Overviews
+https://www.youtube.com/watch?v=KOvZfQH10Gc
+Published: 20260210 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Prioritize promising existing URLs using authorized Search Console data and inspect the cause of the gap.
+
+Cautions: Average position and URL depth alone do not determine opportunity or ranking; no uplift is guaranteed.
+
+Topic navigation (automatically detected; check context):
+citations_profiles: https://www.youtube.com/watch?v=KOvZfQH10Gc&t=803s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+backlinks: https://www.youtube.com/watch?v=KOvZfQH10Gc&t=659s | https://www.youtube.com/watch?v=KOvZfQH10Gc&t=718s
+Our application: Investigate relevant editorial/local links and competitor evidence. Avoid assuming a paid link or a vendor metric guarantees results.
+ai_visibility: https://www.youtube.com/watch?v=KOvZfQH10Gc&t=18s | https://www.youtube.com/watch?v=KOvZfQH10Gc&t=529s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+technical: https://www.youtube.com/watch?v=KOvZfQH10Gc&t=176s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+measurement: https://www.youtube.com/watch?v=KOvZfQH10Gc&t=327s | https://www.youtube.com/watch?v=KOvZfQH10Gc&t=413s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

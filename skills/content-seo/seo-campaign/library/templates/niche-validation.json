@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "service": null,
+      "geography": null,
+      "existing_business_fit": null,
+      "target_queries": [],
+      "serp_observed_at": null,
+      "serp_location_and_device": null,
+      "organic_competitors": [],
+      "ads_observed": null,
+      "local_pack_observed": null,
+      "ai_answer_observed": null,
+      "specific_customer_gap": null,
+      "demand_evidence": [],
+      "economics": {
+        "contribution_per_sale": null,
+        "lead_conversion_rate": null,
+        "lead_close_rate": null,
+        "estimated_incremental_qualified_visits": null,
+        "monthly_operating_cost": null
+      },
+      "fulfillment_capacity": null,
+      "evidence_strength": null,
+      "decision": "research",
+      "reason": null
+    }
+  ],
+  "rule": "No automatic scoring from invented search volume. Paid ads indicate advertisers, not proof they will buy our offer."
+}

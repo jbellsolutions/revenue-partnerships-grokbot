@@ -1,0 +1,72 @@
+[
+  {
+    "id": "G1",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features",
+    "title": "Google: AI features and your website",
+    "checked": "2026-11-03",
+    "notes": "Google describes normal Search eligibility for AI links, no special AI schema/file requirement, and reporting within Search Console Web traffic. The guide recommends Search Console for diagnosis."
+  },
+  {
+    "id": "G2",
+    "url": "https://support.google.com/business/answer/7091",
+    "title": "Google: Improve local ranking",
+    "checked": "2026-11-03",
+    "notes": "Local visibility depends on relevance, searcher distance and prominence. Accurate information, reviews and links matter; a website cannot manufacture proximity."
+  },
+  {
+    "id": "G3",
+    "url": "https://support.google.com/business/answer/3038177",
+    "title": "Google: Business Profile representation guidelines",
+    "checked": "2026-11-03",
+    "notes": "Represent the actual business and actual eligible locations. Do not interpret a location page as authorization to create a profile or invent a street address."
+  },
+  {
+    "id": "G4",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+    "title": "Google: Search spam policies",
+    "checked": "2026-11-03",
+    "notes": "Doorways, manipulative links, scaled low-value output and deceptive generative-response manipulation can cause loss of visibility. A disclosed, useful directory differs from a network made primarily to pass ranking credit."
+  },
+  {
+    "id": "G5",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/local-business",
+    "title": "Google: LocalBusiness structured data",
+    "checked": "2026-11-03",
+    "notes": "Use appropriate business markup for real business details. Markup describes visible facts; it is not a substitute for those facts or a ranking guarantee."
+  },
+  {
+    "id": "C1",
+    "url": "https://www.skool.com/rank-expand-academy/about",
+    "title": "Rank Expand Academy public offer",
+    "checked": "2026-11-03",
+    "notes": "Public sales page advertises $99/month, 221+ lessons, microsite builder and niche validator, a backlink rolodex described as 815 sites, AI directory blueprint, workflows and coaching. These are advertised claims, not independently verified contents or outcomes. No private materials accessed."
+  },
+  {
+    "id": "C2",
+    "url": "https://www.youtube.com/watch?v=9l1NyuZjl4w",
+    "title": "Seed video: 61 AI websites for 40 days",
+    "checked": "2026-11-03",
+    "notes": "Original upload metadata dated 2026-11-03. Public captions used as source; private contest leaderboard, domains and measurement code not available."
+  },
+  {
+    "id": "G6",
+    "url": "https://developers.google.com/search/docs/appearance/ranking-systems-guide",
+    "title": "Google: Ranking systems, exact-match domain system",
+    "checked": "2026-11-03",
+    "notes": "Google describes a system intended to avoid excess ranking credit for exact-match domain names."
+  },
+  {
+    "id": "G7",
+    "url": "https://developers.google.com/search/updates",
+    "title": "Google Search documentation updates: June 2026",
+    "checked": "2026-11-03",
+    "notes": "The documentation changelog says FAQ rich results no longer appear and the related documentation was removed. Retain helpful visible answers; do not promise the old feature."
+  },
+  {
+    "id": "G8",
+    "url": "https://support.google.com/business/answer/13763036",
+    "title": "Google: Business eligibility and ownership",
+    "checked": "2026-11-03",
+    "notes": "Google explicitly lists lead-generation agents/companies and online-only businesses as ineligible for Business Profiles."
+  }
+]

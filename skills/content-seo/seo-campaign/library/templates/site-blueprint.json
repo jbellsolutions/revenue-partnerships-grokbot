@@ -1,0 +1,70 @@
+{
+  "status": "original conditional blueprint; not a copy of a private product",
+  "core": [
+    {
+      "path": "/",
+      "purpose": "Service/place offer, proof and working next step"
+    },
+    {
+      "path": "/about/",
+      "purpose": "Actual publisher/business identity and credentials"
+    },
+    {
+      "path": "/contact/",
+      "purpose": "Working genuine contact and coverage"
+    },
+    {
+      "path": "/services/",
+      "purpose": "Useful hub for actual services"
+    },
+    {
+      "path": "/areas/",
+      "purpose": "Actual service area and useful location navigation"
+    },
+    {
+      "path": "/cost/",
+      "purpose": "Sourced approved ranges and cost drivers"
+    },
+    {
+      "path": "/projects/",
+      "purpose": "Real permissioned case evidence, only if available"
+    },
+    {
+      "path": "/privacy/",
+      "purpose": "Accurate data handling notice"
+    }
+  ],
+  "conditional_pages": [
+    {
+      "kind": "service detail",
+      "create_when": "A distinct real service needs its own purchase explanation",
+      "count": "as justified; no compulsory minimum"
+    },
+    {
+      "kind": "location detail",
+      "create_when": "The business genuinely covers it and has distinct useful local facts",
+      "count": "as justified; avoid city swaps"
+    },
+    {
+      "kind": "service-location detail",
+      "create_when": "Intent, real coverage and distinct evidence justify a separate page",
+      "count": "do not generate the entire cross product"
+    },
+    {
+      "kind": "comparison/cost/FAQ/resource",
+      "create_when": "An actual decision requires distinct useful content",
+      "count": "combine where intent is the same"
+    },
+    {
+      "kind": "disclosure/editorial method",
+      "create_when": "A referral, paid, owned or ranked relationship needs explanation",
+      "count": "appropriate to actual operation"
+    }
+  ],
+  "linking": {
+    "home": "Core service/area hubs and key decision pages",
+    "hubs": "Relevant child pages with useful summaries",
+    "details": "Relevant service/area, source evidence, cost guidance and contact",
+    "prohibited": "No automatically manufactured network cross-links or giant repetitive keyword blocks"
+  }
+}

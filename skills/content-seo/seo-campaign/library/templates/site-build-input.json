@@ -1,0 +1,79 @@
+{
+  "canonical_base": "https://example.invalid",
+  "approved_for_publication": false,
+  "publisher": {
+    "name": "Example publishing template",
+    "identity_verified": false,
+    "same_as": []
+  },
+  "publisher_disclosure": "Draft template only. No real business or service is represented.",
+  "pages": [
+    {
+      "path": "/",
+      "nav_label": "Overview",
+      "title": "Draft local service website",
+      "h1": "Plan a useful service website",
+      "description": "An unpublished original starter for verified local service content.",
+      "status": "draft",
+      "evidence_ids": [],
+      "sections": [
+        {
+          "heading": "Start with the actual business",
+          "text": "Replace this example with a verified service, actual area, useful evidence and a working conversion path."
+        }
+      ],
+      "links": [
+        {
+          "path": "/service/",
+          "label": "Prepare a service page"
+        },
+        {
+          "path": "/area/",
+          "label": "Prepare an area page"
+        }
+      ]
+    },
+    {
+      "path": "/service/",
+      "nav_label": "Service",
+      "title": "Draft service page",
+      "h1": "Explain the actual service",
+      "description": "Draft service content structure.",
+      "status": "draft",
+      "evidence_ids": [],
+      "sections": [
+        {
+          "heading": "Help the customer decide",
+          "text": "Supply the real process, suitability, approved costs, limitations and project evidence. This example is not ready for publication."
+        }
+      ],
+      "links": [
+        {
+          "path": "/area/",
+          "label": "Actual service coverage"
+        }
+      ]
+    },
+    {
+      "path": "/area/",
+      "nav_label": "Coverage",
+      "title": "Draft service area page",
+      "h1": "Describe genuine service coverage",
+      "description": "Draft location content structure.",
+      "status": "draft",
+      "evidence_ids": [],
+      "sections": [
+        {
+          "heading": "Use evidence specific to the area",
+          "text": "Verify coverage and add useful local differences. Do not create a fictional branch, review or project."
+        }
+      ],
+      "links": [
+        {
+          "path": "/service/",
+          "label": "Service information"
+        }
+      ]
+    }
+  ]
+}

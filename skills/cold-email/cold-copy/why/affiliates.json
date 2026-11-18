@@ -1,0 +1,35 @@
+{
+  "big": "Coaches, agency owners, consultants and accountants all have the same worry, which is their name. So this campaign says how little it takes and what happens to the people they send. It doesn't explain the product. Nobody in this list wants to become the AI expert, and they don't have to. The word 'affiliate' stays out of the ask, because these people see themselves as partners. The price of the build never appears, and '20% of what' is a reason to reply.",
+  "steps": {
+    "1A": [
+      "The US version of Justin's email",
+      "The same podcast proof and claims, then the partner ask, for a list that's being asked to refer rather than buy."
+    ],
+    "1B": [
+      "Your clients need an AI guy",
+      "This one leads with their problem. Clients are asking about AI, and they don't want to learn it all. 'It doesn't have to be you' is the relief. It suits consultants and accountants, who get asked this most."
+    ],
+    "1C": [
+      "One name",
+      "It shrinks the ask to one person they can already picture. It also deals with the fear of a bad referral: if the client doesn't buy, they still got a useful call."
+    ],
+    "2A": [
+      "The 14,000 affiliates deal",
+      "This one is proof for people who run partner programs themselves. It's a real signed deal, unnamed, as Justin told it on the show."
+    ],
+    "2B": [
+      "Your name",
+      "This says the objection out loud, then answers it with the promise. It's the strongest line for a partner, because the risk they're carrying is reputation."
+    ],
+    "3A": [
+      "Clean exit",
+      "A short, polite exit that points at the moment they'd come back: a client asking about AI."
+    ],
+    "3B": [
+      "Right person",
+      "At an agency or a firm, someone else may own partnerships. This gives them an easy way to pass it on."
+    ]
+  },
+  "subsequences": "These go only to people who replied. The yes path repeats the link and asks them to think of the one client or list to start with, so the call has a real first step. Both emails read fine if they've already booked. The not-now email goes out about three months later, which matches the reply they got.",
+  "replies": "The reply agent sends these as written, with no spintax. The yes reply is the details we promised in the email, then the link. The terms in the question reply are the ones set on 2026-11-06. Any question about the size of the build goes to Justin through the price reply."
+}

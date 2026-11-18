@@ -1,0 +1,18 @@
+How I Build AI Websites that Sell for $1,000s (No Tech Skills)
+https://www.youtube.com/watch?v=Ps6oidygAGU
+Published: 20260914 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use design principles as inspiration, then verify original copy, accessibility, layout and conversion behavior.
+
+Cautions: A visually comparable homepage is not proof of equivalent revenue; avoid copying protected site assets.
+
+Topic navigation (automatically detected; check context):
+architecture: https://www.youtube.com/watch?v=Ps6oidygAGU&t=314s | https://www.youtube.com/watch?v=Ps6oidygAGU&t=372s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+technical: https://www.youtube.com/watch?v=Ps6oidygAGU&t=390s | https://www.youtube.com/watch?v=Ps6oidygAGU&t=561s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+monetization: https://www.youtube.com/watch?v=Ps6oidygAGU&t=83s | https://www.youtube.com/watch?v=Ps6oidygAGU&t=577s | https://www.youtube.com/watch?v=Ps6oidygAGU&t=651s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.

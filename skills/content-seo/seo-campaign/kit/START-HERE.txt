@@ -1,0 +1,24 @@
+AUTONOMOUS SEO / AEO — PORTABLE AGENT KIT
+Version 1.0 | Prepared 2026-11-04
+
+For one attachment, give your agent AUTONOMOUS-SEO-CHARTER.md; it embeds the operating instructions. For ready-made templates and separate role files, give this entire folder to your agent. Paste LAUNCH-PROMPT.txt and supply the website URL. Read AGENTS.md first; it is the standalone campaign charter.
+
+Minimum architecture: one campaign director, one durable project store, one work queue, one dispatcher schedule, and specialist agents created only when needed. Each specific role has its own instructions under roles/. A role is a job specification; it does not require an always-running bot.
+
+Website alone starts research, architecture, a local project and drafts. Live execution additionally needs actual account access and an owner-issued authority grant. A website cannot confer ownership, credentials, business facts that are absent, or a spending budget.
+
+For a local starting project (Python 3, no extra packages):
+  python3 scripts/bootstrap.py --website https://example.com --out /absolute/path/to/campaign
+
+The helper creates a project structure and task graph. It does not crawl the site, provision accounts, start workers, publish, or schedule anything. An agent performs those steps using this charter and the verified host tools. The hostname above is an example, not a campaign target.
+
+Use config/campaign.example.json as the operating configuration and config/authority.example.json as the standing-grant shape. OWNER-GRANT.txt provides an optional single activation instruction instead of hand-editing every config field. Empty grants confer no live authority. Never paste secrets into these files. Use secure connection references.
+
+Runtime setup: adapters/HERMES.md or adapters/GROK-BOT.md.
+Tools and project integration: TOOLS-AND-PROJECT.md.
+Production workflows and metrics: CAMPAIGN-PLAYBOOK.md.
+Recovery and scheduling: RUNTIME.md.
+What to check before unattended launch: ACCEPTANCE.md.
+Current-documentation corrections to the old research: reference/CURRENT-NOTES.md.
+
+This is an instruction/configuration kit with a local bootstrap helper, not a deployed autonomous service or a ranking guarantee. All schedules in this package are desired-state templates until the harness creates and verifies real jobs.

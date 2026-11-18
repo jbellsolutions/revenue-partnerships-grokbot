@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "website": "https://truerevenuepartnerships.com",
+  "campaign_id": "<SEO_CAMPAIGN_ID>",
+  "owner_reference": null,
+  "mode": "research_and_drafts",
+  "timezone": "America/New_York",
+  "initial_work_window_days": 90,
+  "starts_at": null,
+  "expires_at": null,
+  "objective": {
+    "primary": "qualified business outcomes from useful organic and referral discovery",
+    "qualified_outcome_definition": null,
+    "baseline": null,
+    "target": null,
+    "target_decision": "set from evidence and owner goal after discovery; do not promise rankings"
+  },
+  "project": {
+    "authority": "local",
+    "provider": "local_json",
+    "existing_destination_ref": null,
+    "canonical_queue": "board.json",
+    "external_id_map": "registry/external-ids.json"
+  },
+  "runtime": {
+    "runner": null,
+    "scheduler_verified": false,
+    "max_concurrent_specialists": 3,
+    "max_delegation_depth": 1,
+    "max_invocation_minutes": 45,
+    "max_task_minutes": 20,
+    "dispatcher_every_minutes_proposed": 60,
+    "single_director_required": true,
+    "enforced_lock_ref": null,
+    "cancel_route": null
+  },
+  "limits": {
+    "currency": "USD",
+    "campaign_incremental_spend": 0,
+    "daily_incremental_spend": 0,
+    "per_run_incremental_spend": 0,
+    "per_task_incremental_spend": 0,
+    "max_new_live_pages_per_batch": 5,
+    "initial_crawl_url_limit": 100,
+    "initial_ai_panel_prompt_limit": 12,
+    "hard_cap_mechanism": null
+  },
+  "cadence": {
+    "metrics_review_days": 7,
+    "ai_panel_review_days": 7,
+    "post_release_recheck_hours": 24,
+    "decision_days": [
+      30,
+      60,
+      90
+    ]
+  },
+  "notifications": {
+    "destination_ref": null,
+    "meaningful_change_only": true,
+    "weekly_review_if_authorized": true
+  },
+  "references": {
+    "charter": "AGENTS.md",
+    "current_notes": "reference/CURRENT-NOTES.md",
+    "authority": "config/authority.json",
+    "role_registry": "registry/roles.json"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "checks": [
+    {
+      "item": "Business identity and factual claims verified",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Publish authorization covers the intended action",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Useful page batch complete; no unresolved placeholders",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Canonical URLs, redirects and HTTPS tested live",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Index rules appropriate; staging protections removed only for approved release",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Important copy in served/rendered HTML",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Internal links, navigation and breadcrumbs work",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Sitemap contains only intended canonical URLs",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Missing URL returns HTTP 404 on actual host",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Structured data matches visible verified facts",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Mobile layout and images checked",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Phone and forms deliver to the correct destination",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Analytics events distinguish tests from real inquiries",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Directory methodology and paid/owned placements disclosed where applicable",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Baseline and rollback copy saved",
+      "status": "not_checked",
+      "evidence": null
+    },
+    {
+      "item": "Live release inspected and change log updated",
+      "status": "not_checked",
+      "evidence": null
+    }
+  ]
+}

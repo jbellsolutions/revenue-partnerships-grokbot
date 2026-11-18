@@ -1,0 +1,13 @@
+Hi {{hosts}},
+
+{{opening}}
+
+Paid ads cost more every month, and people don't trust what they see anymore. They believe trusted sources. So the businesses that win stop paying for leads and turn their partnerships and relationships into true revenue partnerships. I can show your listeners how to do that, step by step.
+
+I'm Justin (truerevenuepartnerships.com). Here's me on the Orgo podcast with Nick: https://www.youtube.com/watch?v=ZV-JLIQ1wXw
+
+Episode angles I could cover for your listeners:
+{{angles}}
+
+Thanks for reading,
+Justin

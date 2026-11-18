@@ -1,0 +1,18 @@
+How I Rank #1 on Google using AI Entities via n8n
+https://www.youtube.com/watch?v=bcIGbuW75y4
+Published: 20260218 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use source-derived concepts as a review aid and add only information that genuinely helps the page.
+
+Cautions: Adding entity names does not prove higher rankings; the private workflow and claimed costs/results are not reproduced.
+
+Topic navigation (automatically detected; check context):
+business_identity: https://www.youtube.com/watch?v=bcIGbuW75y4&t=28s | https://www.youtube.com/watch?v=bcIGbuW75y4&t=124s | https://www.youtube.com/watch?v=bcIGbuW75y4&t=180s
+Our application: Check real business identity, consistent public facts and corroborating sources; schema must reflect reality.
+ai_visibility: https://www.youtube.com/watch?v=bcIGbuW75y4&t=104s | https://www.youtube.com/watch?v=bcIGbuW75y4&t=433s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+niche: https://www.youtube.com/watch?v=bcIGbuW75y4&t=431s
+Our application: Validate demand, competition, business fit and contribution economics before building.

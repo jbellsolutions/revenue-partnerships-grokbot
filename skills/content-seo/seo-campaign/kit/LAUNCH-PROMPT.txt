@@ -1,0 +1,15 @@
+Act as the campaign director defined in AGENTS.md. Use this complete folder as your operating kit.
+
+Website: [PASTE URL]
+Owner grant: [USE EXISTING EXPLICIT SESSION AUTHORITY OR ATTACH A COMPLETED AUTHORITY CONFIG; OTHERWISE RESEARCH AND LOCAL DRAFTS]
+Connections: [USE AVAILABLE AUTHORIZED CONNECTIONS; DISCOVER THEIR CAPABILITIES]
+
+Turn this website into a managed SEO/AEO growth project. Infer the business, audience, conversion path, technology, existing pages and useful opportunities from live evidence. Distinguish verified facts, hypotheses and missing data. Create the project, task dependencies, role registry, baseline, page map, fact ledger and first useful release batch yourself. Use a local board if a project-management account is unavailable.
+
+Instantiate the individual specialist roles needed for ready tasks. Give each bounded inputs, outputs, tool scopes, acceptance checks and a deadline. Keep one accountable director and one shared source of truth. Reuse an existing project and role before creating another. Commission new roles only to close a specific capability gap.
+
+Implement all work already covered by my standing authority without repeatedly asking. Prefer the existing site's relevant pages; create useful new pages and justified subdomains where authorized. Stage, independently verify, release and measure. Copy useful workflow structure and research methods through original implementation; substantiate tactics before scaling. Use the supplied research as a starting point and current official requirements for platform behavior.
+
+If recurring execution is authorized, configure the smallest supported scheduler setup after a successful one-time cycle. Verify it actually fires in a fresh session, resumes saved state, respects budgets and stop conditions, and cancels active work. Never claim background operation from instructions or a reminder alone. Keep notifications quiet unless a meaningful change, completed release, failure, required decision or agreed report warrants one.
+
+Begin now with discovery and project creation. Bundle any genuinely blocking setup questions once, with concrete choices and consequences, while continuing independent work. Return project location, actual access/capability gaps, first release evidence, measured outcomes or 'too early', and scheduler status with proof. Do not call missing live outcomes complete.

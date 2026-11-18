@@ -1,0 +1,20 @@
+Can Claude Code Rebuild a Local Business Website in Two Hours?
+https://www.youtube.com/watch?v=RoJqgIAPBJQ
+Published: 20260620 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Preserve useful URLs, collect factual inputs and verify mobile/contact behavior before release.
+
+Cautions: The example’s speed and page count do not prove search or business outcomes.
+
+Topic navigation (automatically detected; check context):
+architecture: https://www.youtube.com/watch?v=RoJqgIAPBJQ&t=482s | https://www.youtube.com/watch?v=RoJqgIAPBJQ&t=579s | https://www.youtube.com/watch?v=RoJqgIAPBJQ&t=719s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+portfolio: https://www.youtube.com/watch?v=RoJqgIAPBJQ&t=226s
+Our application: The channel proposes separate assets across services/places. Evaluate distinct user purpose, truthful identity and upkeep before expanding domains.
+technical: https://www.youtube.com/watch?v=RoJqgIAPBJQ&t=973s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=RoJqgIAPBJQ&t=343s | https://www.youtube.com/watch?v=RoJqgIAPBJQ&t=1033s
+Our application: Validate demand, competition, business fit and contribution economics before building.

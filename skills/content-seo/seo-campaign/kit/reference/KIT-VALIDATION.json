@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": [
+    "All bundled JSON parses.",
+    "13 distinct roles resolve to individual prompts.",
+    "24 tasks have valid owners, epics, checks and acyclic dependencies.",
+    "Default grant, budget and runtime do not imply live execution.",
+    "One desired dispatcher is disabled and has no native job ID.",
+    "Website-only bootstrap produces portable project, truthful state and no active jobs.",
+    "Rerun preserves every project byte; another website is rejected without mutation.",
+    "Credential-bearing, query-bearing and malformed input rejected before project creation.",
+    "All required standalone instructions, adapters and research references exist.",
+    "Both helper scripts compile without generating local runtime files."
+  ],
+  "not_tested": [
+    "No live website, project SaaS, account grant or SEO/AEO outcome tested.",
+    "No Hermes/Grok Bot deployment, worker, schedule, runtime lock, cost cap or cancellation drill executed.",
+    "Runtime and campaign scenarios are specified/reviewed contracts, not empirical host verification."
+  ]
+}

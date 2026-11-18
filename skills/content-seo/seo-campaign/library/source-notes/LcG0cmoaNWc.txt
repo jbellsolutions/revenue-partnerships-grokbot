@@ -1,0 +1,20 @@
+How I Build AI Microsites to Take Over Google
+https://www.youtube.com/watch?v=LcG0cmoaNWc
+Published: 20260818 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use briefs, verified facts and actual output checks, and distinguish generated assertions from tested results.
+
+Cautions: The private ZIP is unavailable; a model saying validation passed is not independent verification.
+
+Topic navigation (automatically detected; check context):
+architecture: https://www.youtube.com/watch?v=LcG0cmoaNWc&t=197s | https://www.youtube.com/watch?v=LcG0cmoaNWc&t=477s | https://www.youtube.com/watch?v=LcG0cmoaNWc&t=783s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+technical: https://www.youtube.com/watch?v=LcG0cmoaNWc&t=155s | https://www.youtube.com/watch?v=LcG0cmoaNWc&t=285s | https://www.youtube.com/watch?v=LcG0cmoaNWc&t=533s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=LcG0cmoaNWc&t=100s | https://www.youtube.com/watch?v=LcG0cmoaNWc&t=462s | https://www.youtube.com/watch?v=LcG0cmoaNWc&t=505s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+measurement: https://www.youtube.com/watch?v=LcG0cmoaNWc&t=471s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

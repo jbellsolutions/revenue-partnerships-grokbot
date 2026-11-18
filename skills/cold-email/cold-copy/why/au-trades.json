@@ -1,0 +1,35 @@
+{
+  "big": "Step 1 is Justin's own email, word for word. Version A is exactly as he wrote it. Version B rotates only the lines with no claim in them. Version C links the site instead of the podcast, to test which draws more replies.",
+  "steps": {
+    "1A": [
+      "Justin's email, unchanged",
+      "Each lead opens on a line written from their own website."
+    ],
+    "1B": [
+      "Justin's email, with rotation",
+      "Each lead opens on a line written from their own website."
+    ],
+    "1C": [
+      "Justin's email, with the site link",
+      "Each lead opens on a line written from their own website."
+    ],
+    "2A": [
+      "Trades guys building CRMs",
+      "Justin's own proof line, and it's from their world. It takes down 'that's not for blokes like me' without saying so."
+    ],
+    "2B": [
+      "The Facebook post",
+      "A picture they've lived. The job gets asked for in a local group and they see it too late. It adds one new thing the agent does, in Justin's words. It's also the only email with the city, so it's easy to pull if city data is thin."
+    ],
+    "3A": [
+      "Clean exit",
+      "A short, polite exit that leaves the door open. It ties back to the paperwork, which is the likeliest thing to change their mind later."
+    ],
+    "3B": [
+      "The steak dinner",
+      "Saved for last here, because trades want the plain job first. For the people who read everything and never answered, it's a new reason to reply and it takes the risk off them."
+    ]
+  },
+  "subsequences": "These go only to people who replied. The yes path allows for being on the tools during booking times, and both emails read fine if they've already booked. The not-now email goes out about three months later, which matches the reply they got.",
+  "replies": "The reply agent sends these as written, with no spintax. The yes reply is your approved booking template with 'my calendar' changed to 'the calendar', and a line added on what to bring. If someone asks something specific, answer that first using Justin's claims only. Price, terms or anyone upset goes to Justin."
+}

@@ -1,0 +1,26 @@
+How I Rank ANY Local Business in Google Using AI
+https://www.youtube.com/watch?v=yXCuhlWvJfY
+Published: 20261027 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Run the five-part audit and fix the largest observed gap before generating more pages.
+
+Cautions: Exact-match names, word counts and schema are not ranking guarantees; some FAQ advice is outdated.
+
+Topic navigation (automatically detected; check context):
+business_identity: https://www.youtube.com/watch?v=yXCuhlWvJfY&t=241s | https://www.youtube.com/watch?v=yXCuhlWvJfY&t=323s | https://www.youtube.com/watch?v=yXCuhlWvJfY&t=606s
+Our application: Check real business identity, consistent public facts and corroborating sources; schema must reflect reality.
+citations_profiles: https://www.youtube.com/watch?v=yXCuhlWvJfY&t=65s | https://www.youtube.com/watch?v=yXCuhlWvJfY&t=337s | https://www.youtube.com/watch?v=yXCuhlWvJfY&t=466s
+Our application: Research relevant third-party business references. Record eligibility, consistency and observed outcomes; a profile count does not prove causality.
+backlinks: https://www.youtube.com/watch?v=yXCuhlWvJfY&t=16s | https://www.youtube.com/watch?v=yXCuhlWvJfY&t=608s
+Our application: Investigate relevant editorial/local links and competitor evidence. Avoid assuming a paid link or a vendor metric guarantees results.
+ai_visibility: https://www.youtube.com/watch?v=yXCuhlWvJfY&t=23s | https://www.youtube.com/watch?v=yXCuhlWvJfY&t=299s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+data_quality: https://www.youtube.com/watch?v=yXCuhlWvJfY&t=81s
+Our application: Use verified source facts and useful interpretation; retain provenance, unknowns and data-use restrictions.
+technical: https://www.youtube.com/watch?v=yXCuhlWvJfY&t=136s | https://www.youtube.com/watch?v=yXCuhlWvJfY&t=187s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+measurement: https://www.youtube.com/watch?v=yXCuhlWvJfY&t=684s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.

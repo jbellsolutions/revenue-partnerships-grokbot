@@ -1,0 +1,24 @@
+Alex Hormozi on AI Destroying Agencies. Is This Getting Ugly?
+https://www.youtube.com/watch?v=8B704UodZsM
+Published: 20260320 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Build a useful coherent service site and check the actual linking page before treating a backlink report as current.
+
+Cautions: The source itself cannot find one reported link on the page; vendor records may be stale.
+
+Topic navigation (automatically detected; check context):
+backlinks: https://www.youtube.com/watch?v=8B704UodZsM&t=982s
+Our application: Investigate relevant editorial/local links and competitor evidence. Avoid assuming a paid link or a vendor metric guarantees results.
+architecture: https://www.youtube.com/watch?v=8B704UodZsM&t=891s | https://www.youtube.com/watch?v=8B704UodZsM&t=1141s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+ai_visibility: https://www.youtube.com/watch?v=8B704UodZsM&t=138s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+technical: https://www.youtube.com/watch?v=8B704UodZsM&t=1124s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=8B704UodZsM&t=17s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=8B704UodZsM&t=226s | https://www.youtube.com/watch?v=8B704UodZsM&t=1300s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.

@@ -1,0 +1,5 @@
+Pages: 3
+Mode: unpublished draft
+No domain, hosting or deployment action performed.
+Host must enforce redirect behavior, HTTPS and real HTTP 404 status; a 404.html file does not establish that behavior.
+Search indexing and rankings were not checked or guaranteed.

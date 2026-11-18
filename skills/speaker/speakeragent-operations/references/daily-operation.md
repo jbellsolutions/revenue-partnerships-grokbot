@@ -1,0 +1,33 @@
+# Daily research and recovery
+
+## What each cycle does
+
+1. Read the mission, persona, account choice, prior reports, saved cases and pending actions. Honor changed client instructions. Do not re-onboard a known client.
+2. Recheck urgent open calls and high-value unresolved payment/contact questions. Expire old application routes without deleting their history. Pending uncertain provider actions require reconciliation, not replay.
+3. Research new official calendars and public social recruitment signals using topic/industry terms. Rotate source coverage over days. Search seminars, webinars, panels and invited corporate education as well as conferences. Distinguish direct invitations from general organizer prospects.
+4. Apply client hard constraints, source-backed eligibility, compensation and route checks. Use original score mechanics where relevant; retain scores as ranking aids. Save raw discoveries before enrichment and retain exclusion reasons.
+5. Update existing cases instead of announcing the same opportunity as new. Search the full saved case set by official URL, feed, organizer, event name and edition; account for aliases and revised dates. Use a stable case_id across revisions. A newly opened CFP for the same upcoming event is an update; next year's edition is a new opportunity.
+6. Draft a proposed talk/angle and, when evidence supports it, a personalized pitch. Store drafts for review. A brief is useful without sending anything.
+7. Write the day's brief and run result. Include genuinely new opportunities, meaningful changes, approaching deadlines, useful organizer routes, holds, rejections and coverage limits. Keep confirmed-paid, expenses-only/unpaid and payment-unknown queues distinct.
+
+## Runtime contract
+
+`runtime/daily.py run --workspace PATH` launches a single bounded Hermes CLI session using the destination's configured model and credentials. It passes the date, run ID, mission workspace, required artifacts and skills. It enforces a nonblocking OS file lock, daily receipt, positive turn/time bounds and an outer process timeout. The child inherits the ownership descriptor so an unexpected parent death cannot immediately admit a second researcher. Do not delete the lock file to “repair” an active run.
+
+The agent must save `runs/<run-id>/result.json` with run_id, status, reason, case_paths, brief_path, coverage, new_case_ids, updated_case_ids and next_action, as shown in the launch prompt. Every listed case must satisfy the case contract. `complete` means the unique qualified target was reached; `partial` means useful work with a shortfall; `no_matches` requires actual checked coverage; `blocked` requires a concrete dependency. A successful process exit without these artifacts fails validation.
+
+The wrapper validates structure, client identity, unique accepted counts, paid-only/minimum-fee gates, event windows and expired application deadlines. It does not independently establish that a source really says what the agent recorded. Source review remains necessary during acceptance and periodic quality sampling. Do not call a passing JSON file fact-checked solely because it passed validation.
+
+The wrapper also saves a pre-run case inventory and copies existing case files into that run's before-cases directory, preserving prior versions. It rejects a previously known exact opportunity recreated under a new case_id. Its verified new/updated counts come from actual saved files; unchanged cases are neither new nor updated. Preserve source aliases and use human-style review for renamed events, changed dates or alternate URLs that exact identity comparison cannot resolve. Set an explicit client backup/retention policy before pruning run history.
+
+Completed/partial/no-match cycles receive a daily receipt and will not silently run again the same day. `--force` is an explicit additional run. Failed/blocked/interrupted cycles retain logs and artifacts but receive no successful daily receipt. The native daily schedule can try the next scheduled cycle; inspect recurring failures instead of increasing tool use. Preserve partial cases and reconcile external effects before a retry. A stable request ID is required for a retry of an uncertain paid API action.
+
+`stop --workspace PATH` creates a STOP marker; an active wrapper observes it, requests graceful CLI termination and then terminates its process group. Modern Hermes chat may run the actual turn through a separate gateway: a dead launcher alone is not proof the turn stopped. Interruptions, timeouts, signal deaths and stale running state therefore create RECOVERY_REQUIRED.json and block another cycle until the specific gateway turn and external effects are checked. Normal provider failures that return cleanly preserve their failure receipt and can be retried at the next scheduled cycle.
+
+Save the observation that proves the identified turn and tool children have settled, then run `reconcile --workspace PATH --run-id EXACT_ID --evidence-file PATH_TO_OBSERVATION`. This records operator/controlling-agent evidence; it cannot determine remote execution state from a text file alone. Do not create that observation merely to clear a marker. Then `resume` removes STOP, if present. Resume neither clears an unresolved recovery marker nor launches a process or creates a schedule. Native `cron pause` alone stops future fires and may leave an active run running. Surviving external provider jobs must still be reconciled. The controller can perform these checks within existing daily-work authorization; it need not ask permission again unless a real new decision is needed.
+
+The native cron shim runs the wrapper as a script-only job; the wrapper launches the actual research agent. This avoids an extra LLM scheduling layer and makes the outer runtime bound enforceable. Do not create an additional agent cron for the same workspace. Store one job ID in schedule-receipt.json. Uncertain schedule creation must be reconciled against the native cron list before retrying.
+
+## Daily quality and maintenance
+
+Review a small sample of accepted and rejected cases, every claimed speaker fee, and any changed source/eligibility rules. Track source yield, duplicates, false positives, usable routes and actual costs where measurable. Learn synonyms and preferred audiences from the client's feedback; never rewrite source-derived facts to make results look better. Check gateway status, disk space, credential expiry and last successful research date. A stopped/deleted Orgo computer cannot perform research; no local script can wake a deleted VM. Back up private client state to an approved private location independently of the distributable package.

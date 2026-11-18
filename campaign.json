@@ -1,0 +1,31 @@
+{
+  "_doc": "This bot's Revenue OS settings: the business that sells Revenue Partnerships 3.0 and the Revenue OS. Names of things only: no keys, no contact lists, no partner names, no private figures. Agent state: on, test, paused, partial, missing, off. Everything starts on test or off; nothing has run on a Grok bot.",
+  "campaign": "revenue-partnerships",
+  "business": "True Revenue Partnerships",
+  "kind": "internal",
+  "base_pack": "revenue-os-max v2.0.0",
+  "tier": "revenue-partnerships",
+  "grok": {"account": "the owner's main Grok account", "bot_name": "Revenue Partnerships", "timezone": "UTC"},
+  "approver": "owner",
+  "offer": "Revenue Partnerships 3.0 and the Revenue OS (OFFER.md); every lane ends in the call link given at intake",
+  "icp": "Small businesses and solopreneurs",
+  "site": "truerevenuepartnerships.com",
+  "crm": {"name": "GoHighLevel", "writer": "sales-crm"},
+  "sending": {"cold_email": "PlusVibe", "one_to_one": "the owner's mailbox"},
+  "engines": {"host": "grokbot-computer", "claude_subscription": "owner", "codex_subscription": "owner", "overrides": {}},
+  "linkedin": {"mode": "outflo+local", "local_computer": "the owner's own", "caps": {}},
+  "conversation_log": {"vault": "vault/People", "crm_recorder": "sales-crm"},
+  "agents": {
+    "dream-100":  {"state": "test", "source": "roles/dream.md, agents/dream-100/", "waits_on": "the Dream 100 list, given at intake"},
+    "dream-500":  {"state": "test", "source": "roles/dream.md, agents/dream-500/", "waits_on": "the Dream 500 list, given at intake"},
+    "partners":   {"state": "test", "source": "roles/partners.md, roles/social.md (creator pull), agents/partners/", "waits_on": "the sending tool for partner email at volume"},
+    "speaker":    {"state": "test", "source": "roles/speaker.md, agents/speaker/", "waits_on": "the SpeakerAgent keys and pitch details"},
+    "sales-crm":  {"state": "test", "source": "roles/sales-crm.md, agents/sales-crm/", "waits_on": "the CRM key and crm-writes: on"},
+    "content":    {"state": "test", "source": "roles/content-seo.md, roles/channels.md, roles/social.md (LinkedIn), agents/content/", "waits_on": "the owner's content setup"},
+    "cold-email": {"state": "off", "source": "roles/cold-email.md, agents/cold-email/", "waits_on": "not in the Revenue Partnerships 3.0 tier; on with tier revenue-os"},
+    "lead-radar": {"state": "off", "source": "roles/social.md, agents/lead-radar/", "waits_on": "not in the Revenue Partnerships 3.0 tier; on with tier revenue-os"},
+    "aeo-seo":    {"state": "off", "source": "roles/content-seo.md, agents/aeo-seo/", "waits_on": "not in the Revenue Partnerships 3.0 tier; on with tier revenue-os"}
+  },
+  "lanes": [],
+  "coordinate_with": "the Revenue OS template's main chat"
+}

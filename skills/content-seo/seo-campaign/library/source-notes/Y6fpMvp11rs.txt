@@ -1,0 +1,28 @@
+Here's the Microsite Blueprint That Takes Over Cities
+https://www.youtube.com/watch?v=Y6fpMvp11rs
+Published: 20260907 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Build a useful page map and contextual internal links around real services and places.
+
+Cautions: The private ZIP rules and backlink rolodex are not revealed in full.
+
+Topic navigation (automatically detected; check context):
+backlinks: https://www.youtube.com/watch?v=Y6fpMvp11rs&t=393s
+Our application: Investigate relevant editorial/local links and competitor evidence. Avoid assuming a paid link or a vendor metric guarantees results.
+architecture: https://www.youtube.com/watch?v=Y6fpMvp11rs&t=204s | https://www.youtube.com/watch?v=Y6fpMvp11rs&t=330s | https://www.youtube.com/watch?v=Y6fpMvp11rs&t=389s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+ai_visibility: https://www.youtube.com/watch?v=Y6fpMvp11rs&t=607s
+Our application: Research actual AI questions and citations. Separate mentions, links and traffic, and test claims by provider rather than assuming a universal mechanism.
+technical: https://www.youtube.com/watch?v=Y6fpMvp11rs&t=473s
+Our application: Check served content, index rules, canonical URLs and real HTTP behavior. Static files are an option, not proof of visibility.
+niche: https://www.youtube.com/watch?v=Y6fpMvp11rs&t=154s | https://www.youtube.com/watch?v=Y6fpMvp11rs&t=560s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+monetization: https://www.youtube.com/watch?v=Y6fpMvp11rs&t=349s
+Our application: Distinguish lead rental, per-lead, per-job and service revenue; source income claims are not independently verified.
+measurement: https://www.youtube.com/watch?v=Y6fpMvp11rs&t=211s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.
+memory: https://www.youtube.com/watch?v=Y6fpMvp11rs&t=297s
+Our application: Persist sourced facts, decisions and change history so an agent can resume without repeating research.

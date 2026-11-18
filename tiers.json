@@ -1,0 +1,33 @@
+{
+ "_doc": "What each offer includes, by Revenue OS function (the ids in agents.json). tools/tier.py turns a tier into the routines to create and the worker jobs to switch on. `core` (the lead role and the data lane) runs on every tier and is not listed. Prices are the public price points; the percentage is given at intake and is never in this pack.",
+ "default": "revenue-partnerships",
+ "tiers": {
+  "revenue-partnerships": {
+   "name": "Revenue Partnerships 3.0",
+   "price": "$2,000 up front, plus a percentage of the revenue that comes from the partnerships",
+   "what": "We build the partnership outreach, then manage the partnerships and the outreach for you.",
+   "functions": ["dream-100", "dream-500", "partners", "speaker", "sales-crm", "content"]
+  },
+  "revenue-os": {
+   "name": "Revenue OS",
+   "price": "$5,000",
+   "what": "Everything in Revenue Partnerships 3.0, plus cold leads, Lead Radar, and AEO and SEO.",
+   "functions": ["dream-100", "dream-500", "partners", "speaker", "sales-crm", "content", "cold-email", "lead-radar", "aeo-seo"]
+  }
+ },
+ "add_ons": {
+  "coaching": {
+   "name": "Coaching and training",
+   "price": "$500 to $1,000 a month",
+   "what": "Optional, on either tier. Without it, it is a straight revenue partnership."
+  }
+ },
+ "worker_jobs": {
+  "_doc": "Which function each worker job serves; core jobs run on every tier.",
+  "watchdog": "core", "digest": "core", "orders": "core", "scraper-run": "core", "scraper-write": "core", "scraper-retest": "core", "list-build": "core",
+  "replies-pull": "sales-crm", "replies-sort": "sales-crm",
+  "show-research": "speaker", "show-score": "speaker",
+  "inbox-health": "cold-email", "campaign-stats": "cold-email", "blocklist": "cold-email", "list-load": "cold-email",
+  "radar-poll": "lead-radar", "skool-read": "lead-radar", "skool-score": "lead-radar"
+ }
+}

@@ -1,0 +1,170 @@
+{
+  "_comment": "How the CRM team reads the live GoHighLevel location. A value written \"<NAME>\" is read from the environment variable NAME (set NAME at intake; see .env.example). Ids are looked up by name on every run, so a renamed stage fails loudly instead of writing to the wrong place. campaign_pages (real campaign name to its page) is private: crm.py reads it from campaigns/campaign-pages.json when that file is given at intake.",
+  "location": "<GHL_LOCATION_ID>",
+  "pipeline": "Sales",
+  "read_only_pipelines": [
+    "Client Onboarding"
+  ],
+  "owner_user": "Justin",
+  "stages": [
+    "Interested",
+    "Call booked",
+    "Said yes",
+    "Agreement sent"
+  ],
+  "stage_tags": {
+    "Call booked": "gtm:call-booked",
+    "Said yes": "gtm:said-yes",
+    "Agreement sent": "gtm:agreement-sent"
+  },
+  "evidence": {
+    "Interested": [
+      "reply",
+      "public-ask",
+      "instantly-interested"
+    ],
+    "Call booked": [
+      "booking"
+    ],
+    "Said yes": [
+      "call-note"
+    ],
+    "Agreement sent": [
+      "agreement"
+    ]
+  },
+  "fields": {
+    "campaign": "contact.lead_campaign",
+    "offer": "contact.onb_offer",
+    "stream": "contact.onb_stream",
+    "booking_uid": "contact.booking_uid"
+  },
+  "tags": {
+    "cohort": "gtm:managed",
+    "new": "gtm:new",
+    "replied": "gtm:replied",
+    "later": "gtm:later",
+    "dnc": "gtm:dnc",
+    "not_interested": "gtm:not-interested",
+    "needs_justin": "gtm:needs-justin",
+    "takeover": "gtm:justin-handling",
+    "opener_queued": "gtm:opener-queued",
+    "opener_drafted": "gtm:opener-drafted",
+    "showed": "gtm:showed",
+    "no_show": "gtm:no-show",
+    "deal": "gtm:deal",
+    "first_touch": "gtm:first-touch-drafted"
+  },
+  "lane_tag_prefix": "gtm:lane-",
+  "tag_prefix_allowed": "gtm:",
+  "tag_prefixes_refused": [
+    "src:",
+    "onb:"
+  ],
+  "excluded_campaigns": [
+    {
+      "name": "<HELD_CAMPAIGN_NAME>",
+      "id": "<INSTANTLY_HELD_CAMPAIGN>",
+      "reason": "held-campaign"
+    }
+  ],
+  "lanes": {
+    "gtm-lead": {
+      "stream": "aios",
+      "replies_land_in": "Slack, from Justin",
+      "box_can_read": true
+    },
+    "podcast": {
+      "stream": "podcaster",
+      "replies_land_in": "No send path yet, so no replies",
+      "box_can_read": false,
+      "first_touch": "lane"
+    },
+    "lead-radar": {
+      "stream": "aios",
+      "replies_land_in": "The radar dashboard",
+      "box_can_read": true
+    },
+    "linkedin": {
+      "stream": "aios",
+      "replies_land_in": "OutFlo and the LinkedIn dashboard",
+      "box_can_read": true,
+      "first_touch": "lane"
+    },
+    "cold-email": {
+      "stream": "aios",
+      "replies_land_in": "PlusVibe",
+      "box_can_read": true,
+      "first_touch": "lane",
+      "bulk": true
+    },
+    "rev-partner": {
+      "stream": "affiliate",
+      "replies_land_in": "No send path yet, so no replies",
+      "box_can_read": false,
+      "first_touch": "lane"
+    },
+    "warm": {
+      "stream": "aios",
+      "replies_land_in": "Gmail, through the business inbox",
+      "box_can_read": false,
+      "first_touch": "lane"
+    },
+    "skool": {
+      "stream": "aios",
+      "bulk": true,
+      "replies_land_in": "The radar dashboard, and Skool DMs by hand",
+      "box_can_read": false
+    },
+    "deals": {
+      "stream": "commission",
+      "replies_land_in": "Gmail, through the business inbox",
+      "box_can_read": false
+    },
+    "instantly": {
+      "stream": "aios",
+      "replies_land_in": "Instantly",
+      "box_can_read": true,
+      "card_owner": "ONB 0",
+      "first_touch": "lane",
+      "bulk": true
+    }
+  },
+  "clocks": {
+    "quiet_business_days": 5,
+    "rest_business_days": 2,
+    "stale_board_hours": 8
+  },
+  "kickoff": {
+    "sender": "Justin",
+    "wave_size": 25,
+    "max_words": 120,
+    "booking_link": "https://truerevenuepartnerships.com"
+  },
+  "lane_pages": {
+    "podcast": "podcast.md",
+    "lead-radar": "lead-radar.md",
+    "warm": "warm-past-calls.md",
+    "linkedin": "linkedin.md",
+    "rev-partner": "rev-partner.md",
+    "skool": "skool.md",
+    "deals": "reactivation-deals.md",
+    "cold-email": "README.md"
+  },
+  "campaign_pages": {},
+  "hold_tags": [
+    "newsletter-opt-out"
+  ],
+  "templates": {
+    "approved": {
+      "reply_book_call": "reply",
+      "booking_confirmation": "confirmation"
+    },
+    "booking_link": "<BOOKING_LINK>",
+    "subjects": {
+      "reply_book_call": "Grabbing a time",
+      "booking_confirmation": "You're booked",
+      "crm_opener": "A quick question"
+    }
+  }
+}

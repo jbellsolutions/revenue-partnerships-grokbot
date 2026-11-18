@@ -1,0 +1,22 @@
+How I Rank #1 on Google with Claude Code
+https://www.youtube.com/watch?v=uA8_SCJjt6o
+Published: 20260623 | Tab: videos
+Caption: retrieved | Review: Automated full-caption topic index; individual analyst synthesis pending
+
+Caption acquired and indexed. No individual analyst summary is claimed yet.
+
+Agent application: Use the page map and live evidence to prioritize fixes and verify the result of every agent edit.
+
+Cautions: Do not reproduce thin combinations just because they once ranked, or assume a model’s estimated API budget is reliable.
+
+Topic navigation (automatically detected; check context):
+business_identity: https://www.youtube.com/watch?v=uA8_SCJjt6o&t=188s
+Our application: Check real business identity, consistent public facts and corroborating sources; schema must reflect reality.
+backlinks: https://www.youtube.com/watch?v=uA8_SCJjt6o&t=443s
+Our application: Investigate relevant editorial/local links and competitor evidence. Avoid assuming a paid link or a vendor metric guarantees results.
+architecture: https://www.youtube.com/watch?v=uA8_SCJjt6o&t=65s | https://www.youtube.com/watch?v=uA8_SCJjt6o&t=194s | https://www.youtube.com/watch?v=uA8_SCJjt6o&t=285s
+Our application: Map services and genuine coverage into useful, connected pages; avoid mechanical city/service duplication.
+niche: https://www.youtube.com/watch?v=uA8_SCJjt6o&t=476s
+Our application: Validate demand, competition, business fit and contribution economics before building.
+measurement: https://www.youtube.com/watch?v=uA8_SCJjt6o&t=539s | https://www.youtube.com/watch?v=uA8_SCJjt6o&t=586s
+Our application: Save comparable baselines, dates and result settings; measure qualified traffic and leads and retain uncertainty.
