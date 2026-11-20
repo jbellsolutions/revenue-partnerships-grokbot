@@ -38,7 +38,7 @@ This pack was put together from the base kit, which was written for an earlier o
 | Where | What it still says | What the bot does |
 |---|---|---|
 | `skills/lead/gtm-shared`, `gtm-role`, `ai-guy-agent-team`; the `gtm-crm-*` skills | Skill names and descriptions say "AI Guy" and "the GTM box" | They are names. The steps apply as written |
-| `skills/cold-email/cold-campaigns`, `cold-copy` | The earlier offer's campaign table, measured rates and copy checks (one check fails the word "money") | Only on the Revenue OS tier. New campaigns for this offer are written at bring-up, and Justin approves the copy |
+| `skills/cold-email/cold-campaigns`, `cold-copy` | The earlier offer's campaign table, measured rates and copy checks (one check fails the word "money") | Not used. Cold leads on this bot is the one `fractional` campaign in `fractional/settings/cold-email.json` |
 | `gtm-box/campaigns/*.md` | Lane pages written for the earlier offer; the offer line in each now points to OFFER.md | Use the lane's steps, take the offer from OFFER.md |
 | `gtm-box/cold/crm_sync.py`, `new_client.py`, `box/rankspot.py` | The CRM id `ai-guy` and the site id `aiguy` in code | Leave them: they are ids, and renaming them changes tested code |
 | `PLAYS.md`, `CONTENT.md` | Research written for the earlier offer's audience | Use the plays, take the topic from OFFER.md |

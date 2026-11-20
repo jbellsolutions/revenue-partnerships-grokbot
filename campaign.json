@@ -4,27 +4,85 @@
   "business": "True Revenue Partnerships",
   "kind": "internal",
   "base_pack": "revenue-os-max v2.0.0",
-  "tier": "revenue-partnerships",
-  "grok": {"account": "the owner's main Grok account", "bot_name": "Revenue Partnerships", "timezone": "UTC"},
+  "tier": "revenue-os",
+  "grok": {
+    "account": "the owner's main Grok account",
+    "bot_name": "Revenue Partnerships",
+    "timezone": "UTC"
+  },
   "approver": "owner",
-  "offer": "Revenue Partnerships 3.0 and the Revenue OS (OFFER.md); every lane ends in the call link given at intake",
-  "icp": "Small businesses and solopreneurs",
+  "offer": "The core email is the fractional job (fractional/MESSAGES.md): Dream 100, Dream 500 and cold leads. Partners, SpeakerAgent, content, and AEO and SEO carry the partnerships message (OFFER.md)",
+  "icp": "Fractional job: owners and founders of a few small and mid-size companies. Partnerships message: small businesses and solopreneurs",
   "site": "truerevenuepartnerships.com",
-  "crm": {"name": "GoHighLevel", "writer": "sales-crm"},
-  "sending": {"cold_email": "PlusVibe", "one_to_one": "the owner's mailbox"},
-  "engines": {"host": "grokbot-computer", "claude_subscription": "owner", "codex_subscription": "owner", "overrides": {}},
-  "linkedin": {"mode": "outflo+local", "local_computer": "the owner's own", "caps": {}},
-  "conversation_log": {"vault": "vault/People", "crm_recorder": "sales-crm"},
+  "crm": {
+    "name": "GoHighLevel",
+    "writer": "sales-crm"
+  },
+  "sending": {
+    "cold_email": "PlusVibe",
+    "one_to_one": "the owner's mailbox"
+  },
+  "engines": {
+    "host": "grokbot-computer",
+    "claude_subscription": "owner",
+    "codex_subscription": "owner",
+    "overrides": {}
+  },
+  "linkedin": {
+    "mode": "outflo+local",
+    "local_computer": "the owner's own",
+    "caps": {}
+  },
+  "conversation_log": {
+    "vault": "vault/People",
+    "crm_recorder": "sales-crm"
+  },
   "agents": {
-    "dream-100":  {"state": "test", "source": "roles/dream.md, agents/dream-100/", "waits_on": "the Dream 100 list, given at intake"},
-    "dream-500":  {"state": "test", "source": "roles/dream.md, agents/dream-500/", "waits_on": "the Dream 500 list, given at intake"},
-    "partners":   {"state": "test", "source": "roles/partners.md, roles/social.md (creator pull), agents/partners/", "waits_on": "the sending tool for partner email at volume"},
-    "speaker":    {"state": "test", "source": "roles/speaker.md, agents/speaker/", "waits_on": "the SpeakerAgent keys and pitch details"},
-    "sales-crm":  {"state": "test", "source": "roles/sales-crm.md, agents/sales-crm/", "waits_on": "the CRM key and crm-writes: on"},
-    "content":    {"state": "test", "source": "roles/content-seo.md, roles/channels.md, roles/social.md (LinkedIn), agents/content/", "waits_on": "the owner's content setup"},
-    "cold-email": {"state": "off", "source": "roles/cold-email.md, agents/cold-email/", "waits_on": "not in the Revenue Partnerships 3.0 tier; on with tier revenue-os"},
-    "lead-radar": {"state": "off", "source": "roles/social.md, agents/lead-radar/", "waits_on": "not in the Revenue Partnerships 3.0 tier; on with tier revenue-os"},
-    "aeo-seo":    {"state": "off", "source": "roles/content-seo.md, agents/aeo-seo/", "waits_on": "not in the Revenue Partnerships 3.0 tier; on with tier revenue-os"}
+    "dream-100": {
+      "state": "test",
+      "source": "roles/dream.md, agents/dream-100/, fractional/settings/dream-100.json",
+      "waits_on": "the Dream 100 list, given at intake"
+    },
+    "dream-500": {
+      "state": "test",
+      "source": "roles/dream.md, agents/dream-500/, fractional/settings/dream-500.json",
+      "waits_on": "the Dream 500 list, given at intake"
+    },
+    "partners": {
+      "state": "test",
+      "source": "roles/partners.md, roles/social.md (creator pull), agents/partners/",
+      "waits_on": "the sending tool for partner email at volume"
+    },
+    "speaker": {
+      "state": "test",
+      "source": "roles/speaker.md, agents/speaker/",
+      "waits_on": "the SpeakerAgent keys and pitch details"
+    },
+    "sales-crm": {
+      "state": "test",
+      "source": "roles/sales-crm.md, agents/sales-crm/",
+      "waits_on": "the CRM key and crm-writes: on"
+    },
+    "content": {
+      "state": "test",
+      "source": "roles/content-seo.md, roles/channels.md, roles/social.md (LinkedIn), agents/content/",
+      "waits_on": "the owner's content setup"
+    },
+    "cold-email": {
+      "state": "test",
+      "source": "roles/cold-email.md, agents/cold-email/, fractional/settings/cold-email.json",
+      "waits_on": "the audience and the daily number, given at intake"
+    },
+    "lead-radar": {
+      "state": "test",
+      "source": "roles/social.md, agents/lead-radar/, fractional/settings/lead-radar.json",
+      "waits_on": "the Lead Radar dashboard's address and its job-board campaigns"
+    },
+    "aeo-seo": {
+      "state": "test",
+      "source": "roles/content-seo.md, agents/aeo-seo/",
+      "waits_on": "the RankSpot key and the site named at intake"
+    }
   },
   "lanes": [],
   "coordinate_with": "the Revenue OS template's main chat"

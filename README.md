@@ -1,6 +1,6 @@
 # Revenue Partnerships 3.0: GrokBot pack
 
-One Grok bot that runs the Revenue OS to sell two offers, on the message "never buy leads again": turn your partnerships and relationships into true revenue partnerships.
+One Grok bot that runs all nine Revenue OS functions. Its core email (Dream 100, Dream 500, cold leads) is Justin looking for a fractional staff role; Lead Radar reads the AI Guy Lead Radar and the job sites for it. Partners, SpeakerAgent, content, and AEO and SEO run on the partnerships message, "never buy leads again". Which function says what: [OFFER.md](OFFER.md).
 
 **One link.** Tell a Grok bot to download `https://github.com/jbellsolutions/revenue-partnerships-grokbot/releases/latest/download/revenue-partnerships.zip` and follow [HANDOFF.md](HANDOFF.md). The exact line to paste is in HANDOFF.md, Part 1, step 4.
 
@@ -20,7 +20,7 @@ Coaching and training is optional on either, at $500 to $1,000 a month. The word
 
 ## One pack, two tiers
 
-All nine Revenue OS functions are in the pack. A tier decides which are switched on: `python3 tools/tier.py revenue-partnerships` lists 31 routines, `python3 tools/tier.py revenue-os` all 40. The bot is set up on the Revenue Partnerships 3.0 tier by default, and moving to the Revenue OS tier is one line at intake. The same pack is what a customer's own bot is installed from, with the customer's business in `campaign.json` and the tier they bought.
+All nine Revenue OS functions are in the pack. A tier decides which are switched on: `python3 tools/tier.py revenue-partnerships` lists 31 routines, `python3 tools/tier.py revenue-os` all 41. This bot runs all nine by default. The same pack is what a customer's own bot is installed from, with the customer's business in `campaign.json` and the tier they bought.
 
 ## What it is built from
 
@@ -30,7 +30,8 @@ The Revenue OS template (the nine functions in [agents/](agents/README.md), the 
 |---|---|
 | [HANDOFF.md](HANDOFF.md) | Justin's steps, then the bot's |
 | [NEEDS-JUSTIN.md](NEEDS-JUSTIN.md) | Decisions, sign-ins, keys by name, spend, yeses |
-| [OFFER.md](OFFER.md) | What is sold and the words for it, in Justin's words |
+| [OFFER.md](OFFER.md) | Which function says what, and the partnerships message and offers, in Justin's words |
+| [fractional/](fractional/MESSAGES.md) | The fractional job: the messages, the first-line and job-post prompts, and the settings for Dream 100, Dream 500, cold leads and Lead Radar |
 | [tiers.json](tiers.json), `tools/tier.py` | What each tier includes, and the routines and worker jobs it gets |
 | [campaign.json](campaign.json) | This bot's Revenue OS settings; check with `python3 tools/check_campaign.py campaign.json` |
 | [MASTER-PROMPT.md](MASTER-PROMPT.md) | The bot's master prompt |

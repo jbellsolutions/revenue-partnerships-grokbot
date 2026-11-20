@@ -1,6 +1,6 @@
 # Lead Radar
 
-Public posts and comments from people asking for the help in `repo/OFFER.md` (leads, partners, referrals, sponsors, shows, without buying leads or ads). The radar finds and scores them; a high-intent asker gets a helpful public reply, and at most one direct message after it. The radar's own sender and caps apply.
+Public posts and comments from people asking for help with AI, automation or a virtual assistant, and job posts from businesses hiring a virtual assistant or an AI role (`repo/fractional/settings/lead-radar.json`). The radar finds and scores them; a high-intent asker gets a helpful public reply, and at most one direct message after it. The radar's own sender and caps apply.
 
 Message types in `guardrails.json`: radar_public_reply, radar_skool_dm.
 

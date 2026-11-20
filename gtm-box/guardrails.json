@@ -1,9 +1,9 @@
 {
-  "version": "2026-11-18",
+  "version": "2026-11-20",
   "stop_file": "STOP",
   "standing_authorization": {
     "present": false,
-    "note": "Until Justin adds the standing authorization himself, every message type runs as draft whatever its mode says, except a type with authorized: true. Approval records (who said yes, when, in which words) are kept privately, not in this file. 2026-11-18: this pack sells a new offer (OFFER.md), so every type whose words pitch the offer is back to draft and not approved until Justin approves the new words. The reply-with-calendar and no-show notes do not pitch and keep their approval."
+    "note": "Until Justin adds the standing authorization himself, every message type runs as draft whatever its mode says, except a type with authorized: true. Approval records (who said yes, when, in which words) are kept privately, not in this file. 2026-11-18: this pack sells a new offer (OFFER.md), so every type whose words pitch the offer is back to draft and not approved until Justin approves the new words. The reply-with-calendar and no-show notes do not pitch and keep their approval. 2026-11-20: the core email is the fractional job (fractional/MESSAGES.md); its four templates are drafts until Justin approves the words."
   },
   "message_types": {
     "past_call_reconnect": {
@@ -109,15 +109,17 @@
       "channel": "cold-email",
       "mode": "draft",
       "per_day": null,
-      "to": "an approved test cell",
-      "copy_approved": false
+      "to": "the fractional campaign's list, each row with a true first line",
+      "copy_approved": false,
+      "copy": "agents/gtm-box/templates/fractional_first_touch.txt"
     },
     "cold_follow_up": {
       "channel": "cold-email",
       "mode": "draft",
       "per_day": null,
-      "to": "an approved test cell",
-      "copy_approved": false
+      "to": "the same people, once, after a week of silence",
+      "copy_approved": false,
+      "copy": "agents/gtm-box/templates/fractional_follow_up.txt"
     },
     "github_note": {
       "channel": "cold-email",
@@ -159,6 +161,37 @@
       "to": "creators who pass the bar in the rev-partner charter",
       "copy": "agents/gtm-box/templates/collab_outreach.txt",
       "subject": "A collaboration idea for your audience"
+    },
+    "dream100_first_touch": {
+      "channel": "dream",
+      "mode": "draft",
+      "per_day": 5,
+      "copy_approved": false,
+      "to": "Dream 100 targets, one hand-written message each from the dossier (fractional/MESSAGES.md section 2)"
+    },
+    "dream500_first_touch": {
+      "channel": "dream",
+      "mode": "draft",
+      "per_day": null,
+      "copy_approved": false,
+      "copy": "agents/gtm-box/templates/fractional_first_touch.txt",
+      "to": "Dream 500 targets, each with a true first line"
+    },
+    "dream_follow_up": {
+      "channel": "dream",
+      "mode": "draft",
+      "per_day": null,
+      "copy_approved": false,
+      "copy": "agents/gtm-box/templates/fractional_follow_up.txt",
+      "to": "Dream 100 and Dream 500 targets, once, after a week of silence"
+    },
+    "fractional_dm": {
+      "channel": "dream",
+      "mode": "draft",
+      "per_day": null,
+      "copy_approved": false,
+      "copy": "agents/gtm-box/templates/fractional_dm.txt",
+      "to": "a Dream target with no email on the list; LinkedIn only through OutFlo or the owner's own computer"
     }
   },
   "never": [

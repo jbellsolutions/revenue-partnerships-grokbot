@@ -1,0 +1,77 @@
+{
+ "_doc": "This bot's cold leads settings: the fractional job. Names of things only.",
+ "campaign": "revenue-partnerships",
+ "sending_tool": "PlusVibe",
+ "daily_sends": 0,
+ "per_inbox_a_day": 10,
+ "inboxes_per_domain": 3,
+ "targets": {
+  "reply_rate": 0.1,
+  "booking_rate": 0.01,
+  "_doc": "Both are counted per person contacted, not per email sent."
+ },
+ "pause_at": {
+  "bounce_rate": 0.02,
+  "_doc": "The daily read says PAUSE for a campaign at or over this. Not the owner's number: see STATUS.md."
+ },
+ "charter": {
+  "who": "companies that could use Justin as a fractional staff member; the audience is his to name at intake, and companies Lead Radar found hiring a virtual assistant or an AI role are the first list",
+  "how": "a plain email from a real person: plain text, no images, no tracking, no link, reply only",
+  "personalization": "one true, specific thing about them and why he reached out (repo/fractional/prompts/first-line.md); with nothing true to say, the row waits",
+  "_doc": "From Justin's words of 2026-11-20, in repo/fractional/MESSAGES.md."
+ },
+ "list": {
+  "source": "the data lane",
+  "required": [
+   "email",
+   "first_name",
+   "company"
+  ],
+  "verified_column": "verified",
+  "verified_values": [
+   "verified",
+   "valid",
+   "ok",
+   "true"
+  ]
+ },
+ "first_lines": {
+  "engine": "codex",
+  "model": "",
+  "model_named_by_owner": "GPT-6 Luna",
+  "batch": 50,
+  "uses": [
+   "company",
+   "title",
+   "industry",
+   "city",
+   "note"
+  ],
+  "fallback": "",
+  "_doc": "model: the exact id the Codex CLI lists for the model the owner named; blank uses the CLI's own default. fallback: the line a row gets when the engine gives none; it uses columns the list has. On this bot there is no fallback line: a row with no true line waits.",
+  "prompt": "repo/fractional/prompts/first-line.md"
+ },
+ "campaigns": {
+  "fractional": {
+   "on": true,
+   "share": 1.0,
+   "audience": "given at intake; job-post companies from Lead Radar first",
+   "must": {},
+   "contains": {
+    "title": [
+     "owner",
+     "founder",
+     "ceo",
+     "president"
+    ]
+   },
+   "steps": 2,
+   "sequence_file": "gtm-box/templates/fractional_first_touch.txt, then gtm-box/templates/fractional_follow_up.txt after 7 days",
+   "merge_fields": [
+    "first_name",
+    "first_line"
+   ]
+  }
+ },
+ "_daily_sends": "No daily number is set for this bot; Justin gives it at intake."
+}

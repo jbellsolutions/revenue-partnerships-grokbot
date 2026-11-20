@@ -1,6 +1,6 @@
 # Templates
 
-One file per message type. `reply_book_call.txt` and `no_show_rebook.txt` are words Justin approved. The other six were rewritten on 2026-11-18 for the offer in `OFFER.md` and are drafts until he approves them (`guardrails.json` says which). Once approved, a file is the copy of record: a new wording needs his yes again.
+One file per message type. `reply_book_call.txt` and `no_show_rebook.txt` are words Justin approved. The three `fractional_*` files are the core email, from Justin's words of 2026-11-20 (`fractional/MESSAGES.md`). The other six were rewritten on 2026-11-18 for the offer in `OFFER.md`. All nine are drafts until he approves them (`guardrails.json` says which). Once approved, a file is the copy of record: a new wording needs his yes again.
 
 | File | Type | Used by | Blanks |
 |---|---|---|---|
@@ -11,6 +11,9 @@ One file per message type. `reply_book_call.txt` and `no_show_rebook.txt` are wo
 | `linkedin_first_degree.txt` | `linkedin_first_degree` | `linkedin` | `{{first_name}}` |
 | `crm_follow_up.txt` | `crm_follow_up` | `closer` | `{{first_name}}`, `{{booking_link}}` |
 | `no_show_rebook.txt` | `no_show_rebook` | `closer` | `{{first_name}}`, `{{booking_link}}` |
+| `fractional_first_touch.txt` | `cold_first_touch`, `dream500_first_touch` | `dream`, `cold-email` | `{{first_name}}`, `{{first_line}}` |
+| `fractional_follow_up.txt` | `cold_follow_up`, `dream_follow_up` | `dream`, `cold-email` | `{{first_name}}` |
+| `fractional_dm.txt` | `fractional_dm` | `dream` | `{{first_name}}`, `{{first_line}}` |
 | `partner_outreach.txt` | `partner_outreach` | `deals`, `warm` | `{{first_name}}`, `{{booking_link}}` |
 
 Which types are approved, and which are on auto, lives in `guardrails.json` (`copy_approved`, `mode`, `authorized`); the record of each approval is kept privately. In a podcast pitch, the opening and the angles change for each show and must stay true of it; everything else is fixed.

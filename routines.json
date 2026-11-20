@@ -159,6 +159,12 @@
   },
   {
    "role": "social",
+   "routine": "Job site sweep",
+   "cron": "15 15 * * *",
+   "function": "lead-radar"
+  },
+  {
+   "role": "social",
    "routine": "Skool join and owner notes",
    "cron": "40 16 * * *",
    "function": "lead-radar"

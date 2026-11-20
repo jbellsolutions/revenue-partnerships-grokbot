@@ -1,0 +1,119 @@
+{
+ "_doc": "This bot's Dream 100 settings: the fractional job. Names of things only; the list lives in the workspace. Numbers are the template's starting numbers.",
+ "campaign": "revenue-partnerships",
+ "target_kind": "clients",
+ "_target_kind": "partners or clients. The owner is focusing on partners.",
+ "ideal_customer": "a company Justin would work inside as a fractional staff member",
+ "who_qualifies": "the owner or founder of a company he would most want to work with; who those are is his list, given at intake",
+ "list": {
+  "size": 100,
+  "file": "data/dream100.csv",
+  "columns": [
+   "person",
+   "audience",
+   "platform",
+   "url",
+   "audience_size",
+   "score",
+   "evidence",
+   "sources",
+   "warm_path",
+   "channel",
+   "status",
+   "next_step",
+   "next_date"
+  ]
+ },
+ "sources": {
+  "skool": {
+   "on": true,
+   "what": "communities and their owners",
+   "tool": "the scraping tool"
+  },
+  "facebook_groups": {
+   "on": true,
+   "what": "group admins",
+   "tool": ""
+  },
+  "communities_other": {
+   "on": true,
+   "what": "admins of other communities the ideal customer is in",
+   "tool": ""
+  },
+  "lead_tools": {
+   "on": true,
+   "what": "people found through the business's own lead tools",
+   "tool": ""
+  },
+  "job_posts": {
+   "on": true,
+   "what": "companies Lead Radar found hiring a virtual assistant or an AI role",
+   "tool": "lead-radar"
+  }
+ },
+ "rank_on": {
+  "audience_fit": 30,
+  "engagement": 20,
+  "different_offer": 15,
+  "audience_size": 15,
+  "already_promotes_others": 10,
+  "reachable": 10
+ },
+ "offer": {
+  "message": "repo/fractional/MESSAGES.md, section 2: written by hand from the dossier",
+  "what": "Justin as a fractional staff member: he brings AI automation and lands partnerships, collaborations, sponsorships, speaking engagements and podcasts, leads the company does not pay for",
+  "ask": "a reply",
+  "proof_asset": {
+   "kind": "none in the message",
+   "title": "",
+   "url": ""
+  }
+ },
+ "channels": {
+  "skool_dm": {
+   "on": true,
+   "account": "",
+   "runs_on": ""
+  },
+  "facebook_dm": {
+   "on": true,
+   "account": "",
+   "runs_on": ""
+  },
+  "email": {
+   "on": true,
+   "mailbox": ""
+  },
+  "linkedin": {
+   "on": false,
+   "runs_on": "OutFlo or the local computer"
+  },
+  "x_dm": {
+   "on": false,
+   "account": "",
+   "runs_on": ""
+  },
+  "instagram_dm": {
+   "on": false,
+   "account": "",
+   "runs_on": ""
+  }
+ },
+ "pace": {
+  "drafts_a_day": 5,
+  "follow_up_days": [
+   5,
+   14,
+   30
+  ],
+  "_note": "Starting numbers from this function's chat, not the owner's."
+ },
+ "approval": "the owner approves each draft",
+ "reference_funnel": {
+  "reached": 100,
+  "replied": 20,
+  "looked": 12,
+  "stayed": 6,
+  "worth_it": 3
+ }
+}

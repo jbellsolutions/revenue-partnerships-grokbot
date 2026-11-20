@@ -22,7 +22,7 @@ The loop is deterministic: schedules and webhooks start every step, and the agen
 
 ## Every schedule and event, by role
 
-38 schedules and 2 event routines: 40 of the 50 a bot allows, leaving 10 spare. No two start within 5 minutes of each other (checked by `tools/gen_roles.py`). Chat requests from Justin are not routines. Scheduled bot runs with every function on: 265 a week; the volume work runs on the worker (WORKERS.md). The Function column is the Revenue OS function a routine belongs to (`core` runs on every tier); `python3 tools/tier.py <tier>` lists the routines a tier creates.
+39 schedules and 2 event routines: 41 of the 50 a bot allows, leaving 9 spare. No two start within 5 minutes of each other (checked by `tools/gen_roles.py`). Chat requests from Justin are not routines. Scheduled bot runs with every function on: 272 a week; the volume work runs on the worker (WORKERS.md). The Function column is the Revenue OS function a routine belongs to (`core` runs on every tier); `python3 tools/tier.py <tier>` lists the routines a tier creates.
 
 ### lead
 
@@ -86,6 +86,7 @@ The loop is deterministic: schedules and webhooks start every step, and the agen
 |---|---|---|---|
 | Schedule | `45 12 * * *` | LinkedIn board, messages and post | content |
 | Schedule | `5 14 * * *` | Radar and Skool askers from the worker | lead-radar |
+| Schedule | `15 15 * * *` | Job site sweep | lead-radar |
 | Schedule | `40 16 * * *` | Skool join and owner notes | lead-radar |
 | Schedule | `10 17 * * *` | Creator pull and partner drafts | partners |
 

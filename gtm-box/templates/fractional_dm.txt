@@ -1,0 +1,1 @@
+Hi {{first_name}}, it's Justin. {{first_line}} We've decided to close our agency, and I'm looking to work with a few companies as a fractional staff member: I bring the AI automation, and I go get you partnerships, collaborations, sponsorships, speaking spots and podcasts. Not a gimmick, a real fractional job. Worth a quick talk?

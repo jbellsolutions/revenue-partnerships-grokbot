@@ -1,6 +1,26 @@
-# The offer: what this bot sells, and the words for it
+# The offer: what this bot says, and the words for it
 
-Every role reads this page before it drafts. It is the source for what is sold; the rest of the pack is how the work is done.
+Every role reads this page before it drafts. It is the source for what is said; the rest of the pack is how the work is done.
+
+## Two messages, by function (Justin, 2026-11-20)
+
+"Our core email is strictly about fractional." "Dream 100, Dream 500, and cold leads are going to be about fractional and getting a job." "SpeakerAgent and content, we're still doing normal... Partners, collabs, and influencers are going to be normal." "AEO SEO stays the same. Lead Radar is going to check all the job sites and pull the AI Guy Lead Radar... people who are looking to hire VAs and hire AI jobs."
+
+| Function | What it says | Where the words are |
+|---|---|---|
+| Dream 100 | The fractional job, written by hand for one person | [fractional/MESSAGES.md](fractional/MESSAGES.md) |
+| Dream 500 | The fractional job, a plain email with a true first line | [fractional/MESSAGES.md](fractional/MESSAGES.md) |
+| Cold leads | The fractional job, the same plain email | [fractional/MESSAGES.md](fractional/MESSAGES.md) |
+| Lead Radar | Says nothing. Finds people asking for AI or VA help, and businesses hiring a virtual assistant or an AI role; the hiring ones feed the fractional email | [fractional/settings/lead-radar.json](fractional/settings/lead-radar.json) |
+| Partners, collaborators, influencers | The partnerships message below, as before | This page |
+| SpeakerAgent | Podcasts, as before | This page |
+| Content | Content, as before | This page |
+| AEO and SEO | As before | This page |
+| Sales agent | Answers every reply in the message its lane used | Both |
+
+**The fractional job, in his words:** "With all the craziness and uncertainty, we've decided to close our agency. I'm looking to work with a few companies as a staff member, a fractional staff member. Bring my secrets of AI automation and everything else to help you land partnerships, collaborations, sponsorships, speaking engagements, and podcasts. Generate leads without you having to pay anything, sharing all the industry secrets along the way. Not a marketing gimmick. Really looking for a fractional job here, and not going to work with everybody." It goes out as a plain email from a real person, with something specific about them and the reason he reached out.
+
+The rest of this page is the partnerships message and the offers behind it, for the functions that stay as before.
 
 ## In one line
 

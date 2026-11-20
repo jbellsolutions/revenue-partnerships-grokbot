@@ -1,0 +1,81 @@
+{
+ "_doc": "This bot's Dream 500 settings: the fractional job. No keys, lists, names or private figures.",
+ "campaign": "revenue-partnerships",
+ "state": "test",
+ "bands": {
+  "dream_100_from": 1000000,
+  "dream_500_from": 100000
+ },
+ "columns": {
+  "required": [
+   "name",
+   "audience"
+  ],
+  "reach": [
+   "email",
+   "linkedin_url",
+   "x_url",
+   "instagram_url",
+   "community_url"
+  ],
+  "optional": [
+   "first_name",
+   "brand",
+   "platform",
+   "topic",
+   "group_name",
+   "site",
+   "source_list",
+   "audience_source"
+  ]
+ },
+ "fill": {
+  "message": "repo/fractional/MESSAGES.md, section 1",
+  "template_email": "gtm-box/templates/fractional_first_touch.txt",
+  "template_dm": "gtm-box/templates/fractional_dm.txt",
+  "template_follow_up": "gtm-box/templates/fractional_follow_up.txt",
+  "first_line_prompt": "repo/fractional/prompts/first-line.md",
+  "signs_as": "Justin",
+  "link": "none: the ask is a reply",
+  "unsubscribe_line": "Reply 'no thanks' and I won't write again."
+ },
+ "first_batch": {
+  "approve_first": 10,
+  "approver": "the owner"
+ },
+ "email": {
+  "on": true,
+  "emails_per_day_target": 0,
+  "sending_tool": "",
+  "inboxes": "Justin's own mailbox, plain text",
+  "inbox_count": 0,
+  "per_inbox_per_day": 0,
+  "share_of_capacity": 1.0,
+  "follow_ups": [
+   7
+  ],
+  "_note": "No daily number is set for this bot; Justin gives it at intake."
+ },
+ "dm": {
+  "linkedin": {
+   "on": true,
+   "path": "OutFlo, or the owner's own computer"
+  },
+  "x": {
+   "on": false,
+   "path": ""
+  },
+  "instagram": {
+   "on": false,
+   "path": ""
+  },
+  "community": {
+   "on": false,
+   "path": ""
+  }
+ },
+ "message_types": [
+  "dream500_first_touch",
+  "dream500_follow_up"
+ ]
+}

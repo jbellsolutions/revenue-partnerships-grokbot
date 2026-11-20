@@ -99,21 +99,21 @@ ROLES = [
          kpis="1 to 2 collaborations agreed a day; targets found and qualified; terms messages after interest; partners agreed; calls from partners' lists.",
          skills="*"),
     dict(name="dream", title="Dream 100 and 500", folds="dream-100, dream-500",
-         job="The Dream 100 and the Dream 500: a researched dossier and a warm path for each, one hand-written first touch per Dream 100 target, small waves with a personal first line for the Dream 500, by email and on socials, then patient follow-up. Processes: repo/agents/dream-100/PROCESS.md and repo/agents/dream-500/PROCESS.md.",
+         job="The Dream 100 and the Dream 500, both about the fractional job: the companies Justin would most want to work inside as a fractional staff member. A researched dossier for each, one hand-written first touch per Dream 100 target, small waves with a true first line for the Dream 500, as plain email from a real person, then one follow-up. The words: repo/fractional/MESSAGES.md. Settings: repo/fractional/settings/dream-100.json and dream-500.json. The steps (dossier, score, first touch, follow-up) are the template's: repo/agents/dream-100/PROCESS.md and repo/agents/dream-500/PROCESS.md.",
          inputs="The Dream lists, public sources, the collab pipeline",
          outputs="Dossiers with a warm path, first-touch and follow-up drafts in Justin's queue, handoffs to partners or speaker",
          accounts=["Gmail"],
          sched=[("Dossiers", "20 16 * * *"), ("Dream 100 first touches and follow-up", "55 15 * * 1-5"), ("Dream 500 wave", "35 19 * * 1-5")],
          events=[],
-         rules="The lists themselves are private, given at intake (data/dream/). Every first touch is a draft for Justin until he approves the type. LinkedIn goes through OutFlo or his own computer (repo/LINKEDIN.md), never this computer.",
-         kpis="Dossiers done; Dream 100 and Dream 500 targets reached; replies and calls from each list.",
+         rules="The lists themselves are private, given at intake (data/dream/). Every message opens with one true, specific thing about them and why Justin reached out; with nothing true to say, the person waits. Plain text, no link, no figure; the ask is a reply. Every first touch is a draft for Justin until he approves the type. LinkedIn goes through OutFlo or his own computer (repo/LINKEDIN.md), never this computer.",
+         kpis="Dossiers done; Dream 100 and Dream 500 targets reached; replies and conversations about a fractional role from each list.",
          skills="*"),
     dict(name="social", title="Social and Inbound", folds="linkedin, lead-radar, skool, rev-partner",
          job="Inbound and social: the worker reads Skool's non-AI groups and Lead Radar and scores every post; this role answers the real askers, works Justin's LinkedIn, and pulls creators over 10,000 followers.",
          inputs="Skool groups through Justin's signed-in session, the Lead Radar dashboard, the LinkedIn dashboard and his connections, creator lists",
          outputs="Judged leads with evidence handed to sales-crm, reply and owner-note drafts, groups joined, LinkedIn messages and posts, creator lists",
          accounts=["Skool", "Lead Radar", "LinkedIn dashboard", "LinkedIn", "Consulti", "treg"],
-         sched=[("LinkedIn board, messages and post", "45 12 * * *"), ("Radar and Skool askers from the worker", "5 14 * * *"),
+         sched=[("LinkedIn board, messages and post", "45 12 * * *"), ("Radar and Skool askers from the worker", "5 14 * * *"), ("Job site sweep", "15 15 * * *"),
                 ("Skool join and owner notes", "40 16 * * *"), ("Creator pull and partner drafts", "10 17 * * *")],
          events=[],
          rules="Free non-AI Skool groups only, at most 5 joins a day, a person's pace. Stop the platform for the day on the first browser check, limit or account warning. The first public post and each message type wait for Justin. One browser profile per account. Lead Radar and the X intent search never contact anyone: read only, every lead goes to sales-crm with its evidence.",
@@ -188,7 +188,14 @@ PROCESS = {
     "content-seo": "repo/agents/aeo-seo/PROCESS.md and repo/agents/content/PROCESS.md",
     "channels": "repo/agents/content/PROCESS.md",
 }
+FRACTIONAL = {
+    "cold-email": "On this bot cold leads carry the fractional job (repo/fractional/MESSAGES.md, settings repo/fractional/settings/cold-email.json): a plain email from a real person with a true first line per row (repo/fractional/prompts/first-line.md), no link, reply only. Companies Lead Radar found hiring arrive in requests/cold-email/ with their post and first line. The earlier offer's campaigns in the cold skills are not used.",
+    "social": "Lead Radar on this bot is the AI Guy Lead Radar plus job sites (repo/fractional/settings/lead-radar.json): people asking for AI, automation or VA help go to sales-crm; the Job site sweep reads the job sites for businesses hiring a virtual assistant or an AI role, judges each post with repo/fractional/prompts/job-fit.md through repo/engines/route.py --agent lead-radar, and hands every post scored 4 or 5 to requests/cold-email/ with its link and first line. Reads only: nothing applies to a job, answers a post or contacts anyone.",
+    "sales-crm": "A reply to a fractional email is answered as the Replies table in repo/fractional/MESSAGES.md says: a yes gets a time on Justin's calendar; the base, the commission and \"is this a real person\" go to Justin.",
+}
 for _r in ROLES:
+    if _r["name"] in FRACTIONAL:
+        _r["rules"] = _r["rules"] + " " + FRACTIONAL[_r["name"]]
     _r["rules"] = _r["rules"] + " What is sold and the words for it: repo/OFFER.md. Every message drafted, sent or received is written to the conversation log (repo/CONVERSATION-LOG.md, `python3 repo/convlog/gate.py`)."
     if _r["name"] in PROCESS:
         _r["rules"] = _r["rules"] + " Process: " + PROCESS[_r["name"]] + "."

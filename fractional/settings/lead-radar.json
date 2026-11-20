@@ -1,0 +1,199 @@
+{
+ "_doc": "This bot's Lead Radar settings: the AI Guy Lead Radar plus job sites. No key or token here.",
+ "campaign": "revenue-partnerships",
+ "offer": "help with AI, automation or a virtual assistant; and, for a company that is hiring for that work, Justin as a fractional staff member: he brings AI automation and lands partnerships, collaborations, sponsorships, speaking engagements and podcasts, leads the company does not pay for",
+ "buyer": "business owners and operators asking for AI or VA help, and companies hiring a virtual assistant or an AI role",
+ "area": "",
+ "leave_outs": [
+  "people selling the same thing",
+  "job seekers",
+  "staffing agencies and recruiters posting for someone else",
+  "how-to questions with no need behind them"
+ ],
+ "keep_at": 4,
+ "max_age_days": 7,
+ "account": "owner",
+ "routes": {
+  "_doc": "The four routes. The data route is named here and not built yet.",
+  "social": {
+   "on": true,
+   "channels": [
+    "facebook",
+    "instagram",
+    "reddit"
+   ]
+  },
+  "community_leads": {
+   "on": true,
+   "channels": [
+    "skool",
+    "whop"
+   ]
+  },
+  "partnerships": {
+   "on": true,
+   "channels": [
+    "skool",
+    "whop"
+   ],
+   "list": "state/lead-radar/partners.jsonl"
+  },
+  "data": {
+   "on": false,
+   "tools": [
+    "treg",
+    "consulti"
+   ],
+   "for": "the email campaigns' lists"
+  }
+ },
+ "sources": {
+  "_doc": "Which sources are on. With account owner, Treg is reached inside One API. With account client, one-api is off.",
+  "one-api": {
+   "on": true,
+   "trial": "the name of the trial the owner funded for this business",
+   "max_usd_per_call": 0.25
+  },
+  "treg": {
+   "on": false,
+   "team": "the client's own Treg team",
+   "max_usd_per_call": 0.25
+  },
+  "dashboard-radar": {
+   "on": true,
+   "note": "the AI Guy Lead Radar: its campaigns of people asking for AI or VA help, and its job-board campaigns. The worker's radar-poll job reads it"
+  },
+  "lead-radar-agent": {
+   "on": false,
+   "note": "the standalone Lead Radar agent, where the business runs one; its leads go to the sales agent like any other source"
+  },
+  "x-search": {
+   "on": false
+  },
+  "metamuse": {
+   "on": false,
+   "note": "reads Facebook and Instagram through the owner's own Meta account, where the business has it set up"
+  }
+ },
+ "daily_cap_usd": 5,
+ "channels": {
+  "_doc": "via: account means the source the account setting gives (One API for the owner, Treg for a client). read holds the tool ids found in the catalog for that channel. terms are the phrases people use when they ask.",
+  "reddit": {
+   "on": true,
+   "via": "account",
+   "read": [],
+   "terms": [
+    "need a <thing>",
+    "looking for someone to <job>",
+    "can anyone recommend a <thing>"
+   ],
+   "places": []
+  },
+  "facebook": {
+   "on": true,
+   "via": "account",
+   "read": [],
+   "terms": [],
+   "places": [
+    "public groups, by link",
+    "private groups, by link: read through a signed-in browser"
+   ]
+  },
+  "linkedin": {
+   "on": false,
+   "via": "account",
+   "read": [],
+   "terms": []
+  },
+  "instagram": {
+   "on": true,
+   "via": "account",
+   "read": [],
+   "terms": [],
+   "places": [
+    "posts whose comments are read"
+   ]
+  },
+  "tiktok": {
+   "on": false,
+   "via": "account",
+   "read": [],
+   "terms": [],
+   "places": [
+    "posts whose comments are read"
+   ]
+  },
+  "youtube": {
+   "on": false,
+   "via": "account",
+   "read": [],
+   "terms": [],
+   "places": [
+    "videos whose comments are read"
+   ]
+  },
+  "x": {
+   "on": false,
+   "via": "x-search",
+   "read": [],
+   "terms": []
+  },
+  "skool": {
+   "on": true,
+   "via": "signed-in browser",
+   "read": [],
+   "terms": [],
+   "places": [
+    "the Skool groups joined, by link: posts and comments"
+   ],
+   "note": "read through a signed-in browser; Treg carries no read for it"
+  },
+  "whop": {
+   "on": true,
+   "via": "signed-in browser",
+   "read": [],
+   "terms": [],
+   "places": [
+    "the Whop groups joined, by link: posts and comments"
+   ],
+   "note": "read through a signed-in browser; Treg carries no read for it"
+  }
+ },
+ "hand_off": {
+  "askers": "sales-crm, as the template does",
+  "hiring": "requests/cold-email/ as a row for the fractional campaign, with the post's link and the first line; the Dream lists when the company is one Justin would most want",
+  "crm": "every kept lead, at once, through the conversation log",
+  "partners": "each possible influencer or partner found in a group, added to the list and pointed to in requests/partners/"
+ },
+ "routines": {
+  "sweep": "daily",
+  "tune": "weekly"
+ },
+ "job_sites": {
+  "_doc": "People looking to hire VAs and AI roles (Justin, 2026-11-20: 'AI Guy Lead Radar plus all the job sites'). Read as public pages by the data lane's scrapers, cheapest rung first, or through Treg's job-posting reads inside One API. The site list is a starting list from this build, not his: he adds or removes freely. LinkedIn Jobs is read only through OutFlo or his own computer.",
+  "on": true,
+  "sites": [
+   "indeed",
+   "upwork",
+   "onlinejobs.ph",
+   "weworkremotely",
+   "wellfound",
+   "ziprecruiter",
+   "remoteok",
+   "craigslist (gigs and jobs)"
+  ],
+  "terms": [
+   "virtual assistant",
+   "executive assistant remote",
+   "AI automation",
+   "AI specialist",
+   "AI consultant",
+   "automation specialist",
+   "partnerships manager",
+   "fractional"
+  ],
+  "judge_with": "repo/fractional/prompts/job-fit.md, through python3 repo/engines/route.py --agent lead-radar",
+  "keep_at": 4,
+  "max_age_days": 14
+ }
+}

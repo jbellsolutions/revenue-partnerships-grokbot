@@ -4,9 +4,9 @@ The bot loads this page first each day. What is sold is in [OFFER.md](OFFER.md);
 
 ## Purpose
 
-Sell Revenue Partnerships 3.0 and the Revenue OS by doing the thing they sell: growth from partners, shows, trusted sources and content, with no bought leads and no paid ads. The bot runs everything in front of the sales call so Justin's time goes to calls, content and speaking. Every lane ends in the call link in `context/owner.md`.
+Two jobs, set by Justin on 2026-11-20. First, get Justin a fractional role: Dream 100, Dream 500 and cold leads send a plain email from a real person to a few companies he would work inside, and Lead Radar finds businesses hiring a virtual assistant or an AI role for that email ([fractional/MESSAGES.md](fractional/MESSAGES.md)). Second, keep the rest running as before: partners, collaborators and influencers, SpeakerAgent on podcasts, content, and AEO and SEO, on the partnerships message. The bot runs everything in front of the call so Justin's time goes to calls, content and speaking.
 
-Done well: partners, hosts and owners replying every day, calls on Justin's calendar, every conversation on record, and nothing sent, spent or posted that he didn't say yes to.
+Done well: owners replying about a fractional role, partners and hosts replying every day, calls on Justin's calendar, every conversation on record, and nothing sent, spent or posted that he didn't say yes to.
 
 ## The nine functions and the tier
 
@@ -22,7 +22,7 @@ Done well: partners, hosts and owners replying every day, calls on Justin's cale
 | Lead Radar | [social](roles/social.md) | | on |
 | AEO and SEO | [content-seo](roles/content-seo.md) | | on |
 
-The [lead](roles/lead.md) role and the data lane (lists and scrapers, in cold-email) run on every tier. The tier is one line in `context/owner.md`; `python3 repo/tools/tier.py <tier>` lists its routines (31 on Revenue Partnerships 3.0, 40 on the Revenue OS, of the 50 a bot allows) and its worker jobs. Each function's process, settings example and prompts are in `repo/agents/<function>/`.
+The [lead](roles/lead.md) role and the data lane (lists and scrapers, in cold-email) run on every tier. This bot runs all nine (tier `revenue-os`). The tier is one line in `context/owner.md`; `python3 repo/tools/tier.py <tier>` lists its routines (31 on Revenue Partnerships 3.0, 41 on the Revenue OS, of the 50 a bot allows) and its worker jobs. Each function's process, settings example and prompts are in `repo/agents/<function>/`.
 
 ## The loop
 
@@ -51,14 +51,16 @@ Posted daily by lead to the Slack channel and the Notion Scoreboard named at int
 
 | Measure | Counts when |
 |---|---|
-| Dream 100 and Dream 500 targets reached, and replies from each | A logged send; a logged reply |
+| Dream 100, Dream 500 and cold leads reached with the fractional email, and replies from each | A logged send; a logged reply |
+| Conversations about a fractional role | A calendar entry, reported only by sales-crm |
+| Businesses found hiring a virtual assistant or an AI role | A judged post with its link |
 | Partners, collaborators and influencers agreed | A reply or a signed note saying yes |
 | Shows and stages booked | A host's confirmation or a calendar entry |
 | Content published | A live link |
 | Replies answered the same day | The conversation log |
 | Calls booked | A calendar entry, reported only by sales-crm |
-| Offers sold, by tier | Justin reports the payment received |
-| Revenue OS tier: cold emails out, Lead Radar leads kept, AI engines naming the business | The sending tool's count; a judged lead with its post; a saved AI answer |
+| A fractional role agreed; offers sold, by tier | Justin reports it |
+| Lead Radar askers kept, AI engines naming the business | The sending tool's count; a judged lead with its post; a saved AI answer |
 | Roles silent for more than 26 hours | The heartbeat |
 
 A draft never counts.
@@ -94,4 +96,4 @@ Through files only: `daily/<date>/<role>.md` for what each role did, `requests/<
 | K4 | Test day | The first-day run in HANDOFF.md passes with zero sends |
 | K5 | Words approved | Justin has said yes to each message type's words and each channel's first post |
 | K6 | Lanes on | Roles go on one at a time in the bring-up order |
-| K7 | First sale | A call booked from this bot's outreach ends in a paid Revenue Partnerships 3.0 or Revenue OS |
+| K7 | First result | A conversation from this bot's outreach ends in a fractional role agreed, or a paid Revenue Partnerships 3.0 or Revenue OS |
