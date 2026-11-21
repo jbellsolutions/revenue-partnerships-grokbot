@@ -25,13 +25,13 @@ X posts, threads and reply drafts, video briefs, descriptions, Shorts cuts, priv
 
 ## Routines
 
-UTC (the bot's time zone). Created paused. Each prompt starts `Role: channels.`
+UTC (every agent's time zone). Created paused, on the agent in the last column ([TEAM.md](../TEAM.md)). Each prompt starts `Agent: <agent>. Role: channels.`
 
-| Routine | Cron or trigger |
-|---|---|
-| X posts and replies | `25 14 * * *` |
-| YouTube briefs and the weekly read | `25 18 * * 1,4` |
-| X engagement | `45 19 * * *` |
+| Routine | Cron or trigger | Agent |
+|---|---|---|
+| X posts and replies | `25 14 * * *` | content |
+| YouTube briefs and the weekly read | `25 18 * * 1,4` | content |
+| X engagement | `45 19 * * *` | content |
 
 ## Guardrails
 
@@ -57,8 +57,8 @@ When a routine names this role, or Justin asks for this work:
 3. Check every person with python3 repo/guards/scripts/suppression.py check "<who>" before drafting to them. Held means stop on that person.
 4. Before sending, run python3 repo/guards/scripts/send_guard.py <type> --routine "<routine name>". Anything but auto is a draft: put it in requests/justin/ and stop there. In test mode it is always a draft.
 5. Before any paid call, run python3 repo/guards/scripts/spend_guard.py <plan-id> <usd> (add --pool scrape for scrape rungs and Decodo). Held means the plan and its cost go to requests/justin/; carry on with the free work.
-6. Hand work to another role through requests/<role>/. Every reply from anyone goes to sales-crm; every new person for the CRM goes to sales-crm as a row in requests/sales-crm/.
-7. End with python3 repo/guards/scripts/beat.py write channels '<line>' found=N drafted=N sent=N, write daily/<date>/channels.md (only what this run really did), and one line in log/runs-<YYYY-MM>.md.
+6. Hand work to another role through requests/<role>/ (the agent that reads each inbox: repo/team.json). Every reply from anyone goes to sales-crm; every new person for the CRM goes to sales-crm as a row in requests/sales-crm/.
+7. End with python3 repo/guards/scripts/beat.py write channels '<line>' found=N drafted=N sent=N agent=<your agent id>, append your part to daily/<date>/channels.md under a line naming your agent (only what this run really did), and one line in log/runs-<YYYY-MM>.md.
 8. If nothing needs Justin, end with exactly [SILENT].
 
 Role rules: Justin's own accounts, his voice. The first post on each channel waits for Justin; then `x_post`, `x_reply` and `youtube_publish` are drafts until he marks them auto. Uploads go up private or unlisted. No growth tools, no bulk follows or likes, no DMs. Stop on the first warning or limit. Plays: X posts and replies runs `x-outlier-drafts`; X engagement runs `x-reply-desk` (the bot writes briefs, Justin types replies); YouTube briefs and the weekly read runs `youtube-brief-loop`. X: the bot never posts, replies, likes or follows through a browser, even when a type is marked auto (an account doing that was locked read-only on 2026-09-25); Justin posts by hand, or the bot posts through the official X API only if Justin adds a key. What is sold and the words for it: repo/OFFER.md. Every message drafted, sent or received is written to the conversation log (repo/CONVERSATION-LOG.md, `python3 repo/convlog/gate.py`). Process: repo/agents/content/PROCESS.md.

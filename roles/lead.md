@@ -27,12 +27,12 @@ The morning plan, alarms, the evening scoreboard, vault/Daily/<date>.md, Justin'
 
 ## Routines
 
-UTC (the bot's time zone). Created paused. Each prompt starts `Role: lead.`
+UTC (every agent's time zone). Created paused, on the agent in the last column ([TEAM.md](../TEAM.md)). Each prompt starts `Agent: <agent>. Role: lead.`
 
-| Routine | Cron or trigger |
-|---|---|
-| Morning plan | `10 12 * * *` |
-| Evening scoreboard and vault note | `40 23 * * *` |
+| Routine | Cron or trigger | Agent |
+|---|---|---|
+| Morning plan | `10 12 * * *` | lead |
+| Evening scoreboard and vault note | `40 23 * * *` | lead |
 
 ## Guardrails
 
@@ -58,8 +58,8 @@ When a routine names this role, or Justin asks for this work:
 3. Check every person with python3 repo/guards/scripts/suppression.py check "<who>" before drafting to them. Held means stop on that person.
 4. Before sending, run python3 repo/guards/scripts/send_guard.py <type> --routine "<routine name>". Anything but auto is a draft: put it in requests/justin/ and stop there. In test mode it is always a draft.
 5. Before any paid call, run python3 repo/guards/scripts/spend_guard.py <plan-id> <usd> (add --pool scrape for scrape rungs and Decodo). Held means the plan and its cost go to requests/justin/; carry on with the free work.
-6. Hand work to another role through requests/<role>/. Every reply from anyone goes to sales-crm; every new person for the CRM goes to sales-crm as a row in requests/sales-crm/.
-7. End with python3 repo/guards/scripts/beat.py write lead '<line>' found=N drafted=N sent=N, write daily/<date>/lead.md (only what this run really did), and one line in log/runs-<YYYY-MM>.md.
+6. Hand work to another role through requests/<role>/ (the agent that reads each inbox: repo/team.json). Every reply from anyone goes to sales-crm; every new person for the CRM goes to sales-crm as a row in requests/sales-crm/.
+7. End with python3 repo/guards/scripts/beat.py write lead '<line>' found=N drafted=N sent=N agent=<your agent id>, append your part to daily/<date>/lead.md under a line naming your agent (only what this run really did), and one line in log/runs-<YYYY-MM>.md.
 8. If nothing needs Justin, end with exactly [SILENT].
 
 Role rules: Reports and routes; never sends to a lead. Counts only evidence. The worker's watchdog alarms Slack on any silent role or failing job; lead reads the digest counts, flags any send with no approved template, and the scrape or model pool hitting its cap two days running. What is sold and the words for it: repo/OFFER.md. Every message drafted, sent or received is written to the conversation log (repo/CONVERSATION-LOG.md, `python3 repo/convlog/gate.py`).

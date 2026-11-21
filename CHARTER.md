@@ -1,28 +1,30 @@
 # Project charter: Revenue Partnerships 3.0
 
-The bot loads this page first each day. What is sold is in [OFFER.md](OFFER.md); what Justin has said must hold is in [MASTER-PROMPT.md](MASTER-PROMPT.md).
+Every agent loads this page before its first run of the day. What is sold is in [OFFER.md](OFFER.md); what Justin has said must hold is in [MASTER-PROMPT.md](MASTER-PROMPT.md).
 
 ## Purpose
 
-Two jobs, set by Justin on 2026-11-20. First, get Justin a fractional role: Dream 100, Dream 500 and cold leads send a plain email from a real person to a few companies he would work inside, and Lead Radar finds businesses hiring a virtual assistant or an AI role for that email ([fractional/MESSAGES.md](fractional/MESSAGES.md)). Second, keep the rest running as before: partners, collaborators and influencers, SpeakerAgent on podcasts, content, and AEO and SEO, on the partnerships message. The bot runs everything in front of the call so Justin's time goes to calls, content and speaking.
+Two jobs, set by Justin on 2026-11-20. First, get Justin a fractional role: Dream 100, Dream 500 and cold leads send a plain email from a real person to a few companies he would work inside, and Lead Radar finds businesses hiring a virtual assistant or an AI role for that email ([fractional/MESSAGES.md](fractional/MESSAGES.md)). Second, keep the rest running as before: partners, collaborators and influencers, SpeakerAgent on podcasts, content, and AEO and SEO, on the partnerships message. The team runs everything in front of the call so Justin's time goes to calls, content and speaking.
 
 Done well: owners replying about a fractional role, partners and hosts replying every day, calls on Justin's calendar, every conversation on record, and nothing sent, spent or posted that he didn't say yes to.
 
-## The nine functions and the tier
+## The team: nine functions, nine agents, and the lead
 
-| Function | Role that runs it | Revenue Partnerships 3.0 ($2,000 + a percentage) | Revenue OS ($5,000) |
-|---|---|---|---|
-| Dream 100 | [dream](roles/dream.md) | on | on |
-| Dream 500 | [dream](roles/dream.md) | on | on |
-| Partners, collaborators, influencers | [partners](roles/partners.md), creator pull in [social](roles/social.md) | on | on |
-| SpeakerAgent | [speaker](roles/speaker.md) | on | on |
-| Sales agent (replies and the CRM) | [sales-crm](roles/sales-crm.md) | on | on |
-| Content | [content-seo](roles/content-seo.md) (daily content), [channels](roles/channels.md), LinkedIn in [social](roles/social.md) | on | on |
-| Cold leads | [cold-email](roles/cold-email.md) | | on |
-| Lead Radar | [social](roles/social.md) | | on |
-| AEO and SEO | [content-seo](roles/content-seo.md) | | on |
+Each function is its own Grok agent, and the lead is the tenth: the one Justin talks to ([TEAM.md](TEAM.md)). An agent works as one or more of the base kit's roles; a routine's first line names both (`Agent: dream-500. Role: dream.`).
 
-The [lead](roles/lead.md) role and the data lane (lists and scrapers, in cold-email) run on every tier. This bot runs all nine (tier `revenue-os`). The tier is one line in `context/owner.md`; `python3 repo/tools/tier.py <tier>` lists its routines (31 on Revenue Partnerships 3.0, 41 on the Revenue OS, of the 50 a bot allows) and its worker jobs. Each function's process, settings example and prompts are in `repo/agents/<function>/`.
+| Function | Its agent | Roles the agent works as | Revenue Partnerships 3.0 ($2,000 + a percentage) | Revenue OS ($5,000) |
+|---|---|---|---|---|
+| Dream 100 | [dream-100](team/dream-100.md) | [dream](roles/dream.md) | on | on |
+| Dream 500 | [dream-500](team/dream-500.md) | [dream](roles/dream.md) | on | on |
+| Partners, collaborators, influencers | [partners](team/partners.md) | [partners](roles/partners.md), creator pull in [social](roles/social.md) | on | on |
+| SpeakerAgent | [speaker](team/speaker.md) | [speaker](roles/speaker.md) | on | on |
+| Sales agent (replies and the CRM) | [sales-crm](team/sales-crm.md) | [sales-crm](roles/sales-crm.md) | on | on |
+| Content | [content](team/content.md) | [content-seo](roles/content-seo.md) (daily content), [channels](roles/channels.md), LinkedIn in [social](roles/social.md) | on | on |
+| Cold leads | [cold-email](team/cold-email.md) | [cold-email](roles/cold-email.md) | | on |
+| Lead Radar | [lead-radar](team/lead-radar.md) | [social](roles/social.md) | | on |
+| AEO and SEO | [aeo-seo](team/aeo-seo.md) | [content-seo](roles/content-seo.md) | | on |
+
+The [lead](team/lead.md) agent runs on every tier. The data lane (lists and scrapers) runs on the cold leads agent, or on the lead when cold leads is not on the tier. This install runs all nine (tier `revenue-os`): ten agents, 41 routines, at most 9 on one agent of the 50 a bot allows. The tier is one line in `context/owner.md`; `python3 repo/tools/team.py list --tier <tier>` lists its agents and `python3 repo/tools/tier.py <tier>` its routines and worker jobs. Each function's process, settings example and prompts are in `repo/agents/<function>/`.
 
 ## The loop
 
@@ -65,9 +67,9 @@ Posted daily by lead to the Slack channel and the Notion Scoreboard named at int
 
 A draft never counts.
 
-## Handoffs between roles
+## Handoffs between agents
 
-Through files only: `daily/<date>/<role>.md` for what each role did, `requests/<role>/<id>.md` for work handed over, `requests/justin/` for Justin's queue.
+Through files in the shared workspace only, never an agent's chat memory. The inboxes are named by role; [TEAM.md](TEAM.md) says which agent reads each.  `daily/<date>/<role>.md` for what each agent did (each appends its part under its agent id), `requests/<role>/<id>.md` for work handed over, `requests/justin/` for Justin's queue.
 
 | From | What | To |
 |---|---|---|
@@ -83,17 +85,17 @@ Through files only: `daily/<date>/<role>.md` for what each role did, `requests/<
 
 ## Workspace
 
-`/workspace/revenue-partnerships/`: `repo/` (this pack), `gtm-box/` (the engine's working copy), `context/` (owner, routines-on, standing-approvals, spend-approvals, team-registry, suppression), `daily/<date>/`, `requests/<role>/` and `requests/justin/`, `approved/`, `data/` (mode 600: lists, the Dream lists, pipelines), `tools/scrapers/`, `log/` (runs, the conversation log, engine calls), `vault/` (Obsidian: `Daily/`, `People/`, `Decisions.md`), `state/` and `state/test/`, `.secrets/` (mode 700).
+One workspace, shared by all ten agents. `/workspace/revenue-partnerships/`: `repo/` (this pack), `gtm-box/` (the engine's working copy), `context/` (owner, routines-on, standing-approvals, spend-approvals, team-registry, suppression), `daily/<date>/`, `requests/<role>/` and `requests/justin/`, `approved/`, `data/` (mode 600: lists, the Dream lists, pipelines), `tools/scrapers/`, `log/` (runs, the conversation log, engine calls), `vault/` (Obsidian: `Daily/`, `People/`, `Decisions.md`), `state/` and `state/test/`, `.secrets/` (mode 700).
 
 ## Milestones
 
 | # | Milestone | Done when |
 |---|---|---|
-| K0 | The pack is on the bot | The bot unpacked it and wrote `log/setup.md` with the check results |
+| K0 | The pack is on the lead | The lead unpacked it and wrote `log/setup.md` with the check results |
 | K1 | Intake | The tier, the call link, the percentage and the rest of the intake answers are in `context/owner.md` |
 | K2 | Read-only | Every app the tier needs is connected read-only, each with one real record read back |
-| K3 | Routines | The tier's routines are created paused and read back into `team-registry.md` |
+| K3 | The team | The tier's agents exist, each has done its set-up page and written `log/setup-<agent>.md`, and each one's routines are created paused and read back into `team-registry.md` |
 | K4 | Test day | The first-day run in HANDOFF.md passes with zero sends |
 | K5 | Words approved | Justin has said yes to each message type's words and each channel's first post |
-| K6 | Lanes on | Roles go on one at a time in the bring-up order |
+| K6 | Lanes on | Agents go on one at a time in the bring-up order |
 | K7 | First result | A conversation from this bot's outreach ends in a fractional role agreed, or a paid Revenue Partnerships 3.0 or Revenue OS |

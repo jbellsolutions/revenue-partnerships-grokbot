@@ -32,13 +32,13 @@ Verified lists, campaign copy and variants, prospector drafts, scrapers in tools
 
 ## Routines
 
-UTC (the bot's time zone). Created paused. Each prompt starts `Role: cold-email.`
+UTC (every agent's time zone). Created paused, on the agent in the last column ([TEAM.md](../TEAM.md)). Each prompt starts `Agent: <agent>. Role: cold-email.`
 
-| Routine | Cron or trigger |
-|---|---|
-| Lists, scrapers and worker orders | `35 12 * * *` |
-| Campaign read and copy | `5 15 * * *` |
-| Prospector research and drafts | `50 16 * * 1-5` |
+| Routine | Cron or trigger | Agent |
+|---|---|---|
+| Lists, scrapers and worker orders | `35 12 * * *` | cold-email |
+| Campaign read and copy | `5 15 * * *` | cold-email |
+| Prospector research and drafts | `50 16 * * 1-5` | cold-email |
 
 ## Guardrails
 
@@ -64,8 +64,8 @@ When a routine names this role, or Justin asks for this work:
 3. Check every person with python3 repo/guards/scripts/suppression.py check "<who>" before drafting to them. Held means stop on that person.
 4. Before sending, run python3 repo/guards/scripts/send_guard.py <type> --routine "<routine name>". Anything but auto is a draft: put it in requests/justin/ and stop there. In test mode it is always a draft.
 5. Before any paid call, run python3 repo/guards/scripts/spend_guard.py <plan-id> <usd> (add --pool scrape for scrape rungs and Decodo). Held means the plan and its cost go to requests/justin/; carry on with the free work.
-6. Hand work to another role through requests/<role>/. Every reply from anyone goes to sales-crm; every new person for the CRM goes to sales-crm as a row in requests/sales-crm/.
-7. End with python3 repo/guards/scripts/beat.py write cold-email '<line>' found=N drafted=N sent=N, write daily/<date>/cold-email.md (only what this run really did), and one line in log/runs-<YYYY-MM>.md.
+6. Hand work to another role through requests/<role>/ (the agent that reads each inbox: repo/team.json). Every reply from anyone goes to sales-crm; every new person for the CRM goes to sales-crm as a row in requests/sales-crm/.
+7. End with python3 repo/guards/scripts/beat.py write cold-email '<line>' found=N drafted=N sent=N agent=<your agent id>, append your part to daily/<date>/cold-email.md under a line naming your agent (only what this run really did), and one line in log/runs-<YYYY-MM>.md.
 8. If nothing needs Justin, end with exactly [SILENT].
 
 Role rules: No cold send until the health check passes on the exact domains. Consulti is the only paid data source. Paid scrape rungs and Decodo run only under the scrape pool (`spend_guard.py ... --pool scrape`, $5 a day). No link to the site in a first cold email. No sends from a domain Justin uses for real mail. Every prospector email approved by Justin. Copy names no price. Plays: Inbox health and warmup and Lists and data top-up also run `dead-lead-recycle`; Prospector research and drafts also runs `ad-library-leads`. On this bot cold leads carry the fractional job (repo/fractional/MESSAGES.md, settings repo/fractional/settings/cold-email.json): a plain email from a real person with a true first line per row (repo/fractional/prompts/first-line.md), no link, reply only. Companies Lead Radar found hiring arrive in requests/cold-email/ with their post and first line. The earlier offer's campaigns in the cold skills are not used. What is sold and the words for it: repo/OFFER.md. Every message drafted, sent or received is written to the conversation log (repo/CONVERSATION-LOG.md, `python3 repo/convlog/gate.py`). Process: repo/agents/cold-email/PROCESS.md.

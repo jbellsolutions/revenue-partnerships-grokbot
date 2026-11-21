@@ -134,11 +134,19 @@ def main():
     # Webhook-started routines count toward the 50 too.
     schedules = len(re.findall(r"^\| (?:Schedule \| `[^`]+`|Event \|)", tm, re.M))
     orphan = [s for s in sections if s not in roles()]
-    out.append(f"4. Routines: {schedules} routines (schedules and events) of {ROUTINE_CAP} allowed, across {len(sections)} role sections; {len(roles())} role charters")
+    # The limit is per bot. With team.json each agent is its own bot, so the count that matters is the most on one agent.
+    team = json.load(open("team.json"))["agents"] if os.path.exists("team.json") else {}
+    most = max((len(a["routines"]) for a in team.values()), default=schedules)
+    on_team = sum(len(a["routines"]) for a in team.values()) if team else schedules
+    no_page = [a for a in team if not os.path.exists(f"team/{a}.md")]
+    out.append(f"4. Routines: {schedules} routines (schedules and events) across {len(sections)} role sections and {len(team) or 1} agents; the most on one agent is {most} of {ROUTINE_CAP} allowed; {len(roles())} role charters")
     out += [f"   FAIL TRIGGER-MAP section '{s}' has no roles/{s}.md" for s in orphan]
-    if schedules > ROUTINE_CAP:
-        out.append(f"   FAIL {schedules} schedules is over the {ROUTINE_CAP} a bot allows")
-    if orphan or schedules > ROUTINE_CAP:
+    out += [f"   FAIL team.json agent '{a}' has no team/{a}.md" for a in no_page]
+    if most > ROUTINE_CAP:
+        out.append(f"   FAIL {most} routines on one agent is over the {ROUTINE_CAP} a bot allows")
+    if on_team != schedules:
+        out.append(f"   FAIL team.json lists {on_team} routines, TRIGGER-MAP.md {schedules}")
+    if orphan or no_page or most > ROUTINE_CAP or on_team != schedules:
         fails.append("routines")
 
     # 5 placeholders

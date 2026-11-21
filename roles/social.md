@@ -29,15 +29,15 @@ Judged leads with evidence handed to sales-crm, reply and owner-note drafts, gro
 
 ## Routines
 
-UTC (the bot's time zone). Created paused. Each prompt starts `Role: social.`
+UTC (every agent's time zone). Created paused, on the agent in the last column ([TEAM.md](../TEAM.md)). Each prompt starts `Agent: <agent>. Role: social.`
 
-| Routine | Cron or trigger |
-|---|---|
-| LinkedIn board, messages and post | `45 12 * * *` |
-| Radar and Skool askers from the worker | `5 14 * * *` |
-| Job site sweep | `15 15 * * *` |
-| Skool join and owner notes | `40 16 * * *` |
-| Creator pull and partner drafts | `10 17 * * *` |
+| Routine | Cron or trigger | Agent |
+|---|---|---|
+| LinkedIn board, messages and post | `45 12 * * *` | content |
+| Radar and Skool askers from the worker | `5 14 * * *` | lead-radar |
+| Job site sweep | `15 15 * * *` | lead-radar |
+| Skool join and owner notes | `40 16 * * *` | lead-radar |
+| Creator pull and partner drafts | `10 17 * * *` | partners |
 
 ## Guardrails
 
@@ -63,8 +63,8 @@ When a routine names this role, or Justin asks for this work:
 3. Check every person with python3 repo/guards/scripts/suppression.py check "<who>" before drafting to them. Held means stop on that person.
 4. Before sending, run python3 repo/guards/scripts/send_guard.py <type> --routine "<routine name>". Anything but auto is a draft: put it in requests/justin/ and stop there. In test mode it is always a draft.
 5. Before any paid call, run python3 repo/guards/scripts/spend_guard.py <plan-id> <usd> (add --pool scrape for scrape rungs and Decodo). Held means the plan and its cost go to requests/justin/; carry on with the free work.
-6. Hand work to another role through requests/<role>/. Every reply from anyone goes to sales-crm; every new person for the CRM goes to sales-crm as a row in requests/sales-crm/.
-7. End with python3 repo/guards/scripts/beat.py write social '<line>' found=N drafted=N sent=N, write daily/<date>/social.md (only what this run really did), and one line in log/runs-<YYYY-MM>.md.
+6. Hand work to another role through requests/<role>/ (the agent that reads each inbox: repo/team.json). Every reply from anyone goes to sales-crm; every new person for the CRM goes to sales-crm as a row in requests/sales-crm/.
+7. End with python3 repo/guards/scripts/beat.py write social '<line>' found=N drafted=N sent=N agent=<your agent id>, append your part to daily/<date>/social.md under a line naming your agent (only what this run really did), and one line in log/runs-<YYYY-MM>.md.
 8. If nothing needs Justin, end with exactly [SILENT].
 
 Role rules: Free non-AI Skool groups only, at most 5 joins a day, a person's pace. Stop the platform for the day on the first browser check, limit or account warning. The first public post and each message type wait for Justin. One browser profile per account. Lead Radar and the X intent search never contact anyone: read only, every lead goes to sales-crm with its evidence. Plays: Radar sweep and Needs-you also runs `x-intent-search` (read only); LinkedIn board, messages and post runs `linkedin-ghostwriter` for posts and `linkedin-reply-desk` for the comment queue, and Justin's "posted" message runs `linkedin-reply-desk`. LinkedIn posts and comments are drafts Justin publishes by hand from his own device; never sign the bot's cloud browser into his LinkedIn for posting or reading the feed. Lead Radar on this bot is the AI Guy Lead Radar plus job sites (repo/fractional/settings/lead-radar.json): people asking for AI, automation or VA help go to sales-crm; the Job site sweep reads the job sites for businesses hiring a virtual assistant or an AI role, judges each post with repo/fractional/prompts/job-fit.md through repo/engines/route.py --agent lead-radar, and hands every post scored 4 or 5 to requests/cold-email/ with its link and first line. Reads only: nothing applies to a job, answers a post or contacts anyone. What is sold and the words for it: repo/OFFER.md. Every message drafted, sent or received is written to the conversation log (repo/CONVERSATION-LOG.md, `python3 repo/convlog/gate.py`). Process: repo/agents/lead-radar/PROCESS.md for the radar; LinkedIn only as repo/LINKEDIN.md says.

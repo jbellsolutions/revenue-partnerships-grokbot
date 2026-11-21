@@ -50,8 +50,7 @@ def check():
         if not j.startswith("_") and f != "core" and f not in agents:
             bad.append(f"worker job '{j}': function '{f}' is not in agents.json")
     biggest = max(len(split(n)[0]) for n in t["tiers"])
-    if biggest > 50:
-        bad.append(f"{biggest} routines is over the 50 a bot allows")
+    # The 50-routine limit is per bot. Each agent in team.json is its own bot; tools/team.py --check counts each one.
     print("\n".join("FAIL " + b for b in bad) if bad else f"ok: {len(t['tiers'])} tiers, {len(agents)} functions, largest tier {biggest} routines")
     return 1 if bad else 0
 
@@ -79,9 +78,9 @@ def main():
         return 0
     tier = t["tiers"][a[0]]
     print(f"{tier['name']} ({tier['price']})")
-    print(f"\nCreate these {len(on)} routines, paused:")
+    print(f"\nCreate these {len(on)} routines, paused, each on its own agent (python3 tools/team.py list --tier {a[0]}):")
     for r in on:
-        print(f"  [{r['function']}] Role: {r['role']}. {r['routine']}  ({r.get('cron') or 'event'})")
+        print(f"  [{r['function']}] Agent: {r.get('agent', '?')}. Role: {r['role']}. {r['routine']}  ({r.get('cron') or 'event'})")
     print(f"\nLeft out on this tier ({len(off)}):")
     for r in off:
         print(f"  [{r['function']}] {r['role']}: {r['routine']}")

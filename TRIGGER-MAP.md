@@ -22,90 +22,90 @@ The loop is deterministic: schedules and webhooks start every step, and the agen
 
 ## Every schedule and event, by role
 
-39 schedules and 2 event routines: 41 of the 50 a bot allows, leaving 9 spare. No two start within 5 minutes of each other (checked by `tools/gen_roles.py`). Chat requests from Justin are not routines. Scheduled bot runs with every function on: 272 a week; the volume work runs on the worker (WORKERS.md). The Function column is the Revenue OS function a routine belongs to (`core` runs on every tier); `python3 tools/tier.py <tier>` lists the routines a tier creates.
+39 schedules and 2 event routines, 41 in all, spread over the ten agents in TEAM.md: the most on one agent is 9 of the 50 a bot allows. No two start within 5 minutes of each other (checked by `tools/gen_roles.py`). Chat requests from Justin are not routines. Scheduled bot runs with every function on: 272 a week; the volume work runs on the worker (WORKERS.md). The Function column is the Revenue OS function a routine belongs to (`core` runs on every tier); the Agent column is the agent the routine is created on. `python3 tools/tier.py <tier>` lists the routines a tier creates and `python3 tools/team.py <agent>` the ones an agent runs.
 
 ### lead
 
-| Kind | When or what | Does | Function |
-|---|---|---|---|
-| Schedule | `10 12 * * *` | Morning plan | core |
-| Schedule | `40 23 * * *` | Evening scoreboard and vault note | core |
+| Kind | When or what | Does | Function | Agent |
+|---|---|---|---|---|
+| Schedule | `10 12 * * *` | Morning plan | core | lead |
+| Schedule | `40 23 * * *` | Evening scoreboard and vault note | core | lead |
 
 ### sales-crm
 
-| Kind | When or what | Does | Function |
-|---|---|---|---|
-| Schedule | `5 11 * * *` | Call prep | sales-crm |
-| Schedule | `15 13,17,21 * * *` | Reply check (hot replies from the worker) | sales-crm |
-| Schedule | `25 12,20 * * *` | Pipeline sweep | sales-crm |
-| Schedule | `35 14 * * *` | Openers | sales-crm |
-| Schedule | `45 15 * * *` | Warm reconnects and referral asks | sales-crm |
-| Schedule | `25 22 * * *` | Deal ledger | sales-crm |
-| Schedule | `20 23 * * *` | Daily close and no-shows | sales-crm |
-| Event | The worker posts hot reply ids (interested, question, referral, angry) after its sort; GoHighLevel inbound may post here too | Reply webhook: Read those replies, record them, draft the next step | sales-crm |
-| Event | Cal.com posts a new booking | Booking webhook: Move to Call booked, write the call brief | sales-crm |
+| Kind | When or what | Does | Function | Agent |
+|---|---|---|---|---|
+| Schedule | `5 11 * * *` | Call prep | sales-crm | sales-crm |
+| Schedule | `15 13,17,21 * * *` | Reply check (hot replies from the worker) | sales-crm | sales-crm |
+| Schedule | `25 12,20 * * *` | Pipeline sweep | sales-crm | sales-crm |
+| Schedule | `35 14 * * *` | Openers | sales-crm | sales-crm |
+| Schedule | `45 15 * * *` | Warm reconnects and referral asks | sales-crm | sales-crm |
+| Schedule | `25 22 * * *` | Deal ledger | sales-crm | sales-crm |
+| Schedule | `20 23 * * *` | Daily close and no-shows | sales-crm | sales-crm |
+| Event | The worker posts hot reply ids (interested, question, referral, angry) after its sort; GoHighLevel inbound may post here too | Reply webhook: Read those replies, record them, draft the next step | sales-crm | sales-crm |
+| Event | Cal.com posts a new booking | Booking webhook: Move to Call booked, write the call brief | sales-crm | sales-crm |
 
 ### cold-email
 
-| Kind | When or what | Does | Function |
-|---|---|---|---|
-| Schedule | `35 12 * * *` | Lists, scrapers and worker orders | core |
-| Schedule | `5 15 * * *` | Campaign read and copy | cold-email |
-| Schedule | `50 16 * * 1-5` | Prospector research and drafts | cold-email |
+| Kind | When or what | Does | Function | Agent |
+|---|---|---|---|---|
+| Schedule | `35 12 * * *` | Lists, scrapers and worker orders | core | cold-email |
+| Schedule | `5 15 * * *` | Campaign read and copy | cold-email | cold-email |
+| Schedule | `50 16 * * 1-5` | Prospector research and drafts | cold-email | cold-email |
 
 ### speaker
 
-| Kind | When or what | Does | Function |
-|---|---|---|---|
-| Schedule | `30 14 * * *` | Show shortlist and pitches | speaker |
-| Schedule | `5 17 * * 1,3,5` | Stages and conferences | speaker |
-| Schedule | `50 20 * * *` | Follow-up | speaker |
-| Schedule | `10 21 * * *` | Pitch submit | speaker |
+| Kind | When or what | Does | Function | Agent |
+|---|---|---|---|---|
+| Schedule | `30 14 * * *` | Show shortlist and pitches | speaker | speaker |
+| Schedule | `5 17 * * 1,3,5` | Stages and conferences | speaker | speaker |
+| Schedule | `50 20 * * *` | Follow-up | speaker | speaker |
+| Schedule | `10 21 * * *` | Pitch submit | speaker | speaker |
 
 ### partners
 
-| Kind | When or what | Does | Function |
-|---|---|---|---|
-| Schedule | `50 11 * * *` | Partner find | partners |
-| Schedule | `40 12,18 * * *` | Work the tickets | partners |
-| Schedule | `50 13,17,21 * * *` | Partner replies | partners |
-| Schedule | `20 18 * * *` | Collab blitz | partners |
-| Schedule | `30 21 * * *` | Portfolio review | partners |
+| Kind | When or what | Does | Function | Agent |
+|---|---|---|---|---|
+| Schedule | `50 11 * * *` | Partner find | partners | partners |
+| Schedule | `40 12,18 * * *` | Work the tickets | partners | partners |
+| Schedule | `50 13,17,21 * * *` | Partner replies | partners | partners |
+| Schedule | `20 18 * * *` | Collab blitz | partners | partners |
+| Schedule | `30 21 * * *` | Portfolio review | partners | partners |
 
 ### dream
 
-| Kind | When or what | Does | Function |
-|---|---|---|---|
-| Schedule | `20 16 * * *` | Dossiers | dream-100 |
-| Schedule | `55 15 * * 1-5` | Dream 100 first touches and follow-up | dream-100 |
-| Schedule | `35 19 * * 1-5` | Dream 500 wave | dream-500 |
+| Kind | When or what | Does | Function | Agent |
+|---|---|---|---|---|
+| Schedule | `20 16 * * *` | Dossiers | dream-100 | dream-100 |
+| Schedule | `55 15 * * 1-5` | Dream 100 first touches and follow-up | dream-100 | dream-100 |
+| Schedule | `35 19 * * 1-5` | Dream 500 wave | dream-500 | dream-500 |
 
 ### social
 
-| Kind | When or what | Does | Function |
-|---|---|---|---|
-| Schedule | `45 12 * * *` | LinkedIn board, messages and post | content |
-| Schedule | `5 14 * * *` | Radar and Skool askers from the worker | lead-radar |
-| Schedule | `15 15 * * *` | Job site sweep | lead-radar |
-| Schedule | `40 16 * * *` | Skool join and owner notes | lead-radar |
-| Schedule | `10 17 * * *` | Creator pull and partner drafts | partners |
+| Kind | When or what | Does | Function | Agent |
+|---|---|---|---|---|
+| Schedule | `45 12 * * *` | LinkedIn board, messages and post | content | content |
+| Schedule | `5 14 * * *` | Radar and Skool askers from the worker | lead-radar | lead-radar |
+| Schedule | `15 15 * * *` | Job site sweep | lead-radar | lead-radar |
+| Schedule | `40 16 * * *` | Skool join and owner notes | lead-radar | lead-radar |
+| Schedule | `10 17 * * *` | Creator pull and partner drafts | partners | partners |
 
 ### content-seo
 
-| Kind | When or what | Does | Function |
-|---|---|---|---|
-| Schedule | `45 14 * * 1` | AI visibility read | aeo-seo |
-| Schedule | `25 15 * * *` | SEO daily | aeo-seo |
-| Schedule | `10 16 * * 2,4` | Article pick | aeo-seo |
-| Schedule | `10 16 * * 5` | Links and keywords | aeo-seo |
-| Schedule | `5 19 * * 2,4` | Medium | aeo-seo |
-| Schedule | `5 22 * * *` | Daily content | content |
-| Schedule | `55 17 * * 5` | Channel read | content |
+| Kind | When or what | Does | Function | Agent |
+|---|---|---|---|---|
+| Schedule | `45 14 * * 1` | AI visibility read | aeo-seo | aeo-seo |
+| Schedule | `25 15 * * *` | SEO daily | aeo-seo | aeo-seo |
+| Schedule | `10 16 * * 2,4` | Article pick | aeo-seo | aeo-seo |
+| Schedule | `10 16 * * 5` | Links and keywords | aeo-seo | aeo-seo |
+| Schedule | `5 19 * * 2,4` | Medium | aeo-seo | aeo-seo |
+| Schedule | `5 22 * * *` | Daily content | content | content |
+| Schedule | `55 17 * * 5` | Channel read | content | content |
 
 ### channels
 
-| Kind | When or what | Does | Function |
-|---|---|---|---|
-| Schedule | `25 14 * * *` | X posts and replies | content |
-| Schedule | `25 18 * * 1,4` | YouTube briefs and the weekly read | content |
-| Schedule | `45 19 * * *` | X engagement | content |
+| Kind | When or what | Does | Function | Agent |
+|---|---|---|---|---|
+| Schedule | `25 14 * * *` | X posts and replies | content | content |
+| Schedule | `25 18 * * 1,4` | YouTube briefs and the weekly read | content | content |
+| Schedule | `45 19 * * *` | X engagement | content | content |

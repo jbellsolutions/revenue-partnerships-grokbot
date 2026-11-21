@@ -201,6 +201,176 @@ for _r in ROLES:
         _r["rules"] = _r["rules"] + " Process: " + PROCESS[_r["name"]] + "."
 
 
+# The team (Justin, 2026-11-20: "nine functions = 9 agents"; "each role being its own agent", like the subchat
+# each function has under the main chat). Ten agents: the lead, which Justin talks to, and one per function.
+# A routine runs on the agent of its function; a core routine runs on the lead, except the data lane, which
+# runs on the cold leads agent when that function is on the tier (tools/team.py moves it to the lead when not).
+HOME = {"cold-email": "cold-email"}
+
+
+def bot_of(role, routine):
+    f = agent_of(role, routine)
+    return f if f != "core" else ("lead" if role == "lead" else HOME[role])
+
+
+TEAM = [
+    dict(id="lead", title="Lead", engine="grokbot",
+         job="The agent Justin talks to. Creates the other nine agents and checks each one's setup, plans the day from the worker's digest and the agents' daily files, keeps Justin's one queue (requests/justin/), posts the scoreboard to Slack and Notion and writes the vault daily note. Never writes to a prospect.",
+         reads="requests/lead/; requests/justin/ (to show Justin and record his answers); every file in daily/<date>/",
+         accounts=["Slack", "Notion", "GoHighLevel (read only)", "Worker"]),
+    dict(id="dream-100", title="Dream 100", engine="grokbot",
+         job="The Dream 100: the companies Justin would most want to work inside as a fractional staff member. One researched dossier and one hand-written fractional first touch each, then one follow-up.",
+         reads="requests/dream/ items that name the Dream 100",
+         accounts=["Gmail"]),
+    dict(id="dream-500", title="Dream 500", engine="grokbot",
+         job="The Dream 500: small waves of the plain fractional email, each with a true first line about the person, then one follow-up.",
+         reads="requests/dream/ items that name the Dream 500",
+         accounts=["Gmail"]),
+    dict(id="partners", title="Partners, collaborators and influencers", engine="grokbot",
+         job="Partners, collaborators and influencers on the partnerships message: finds and qualifies them daily, drafts personal notes, works partner tickets and replies, pulls creators over 10,000 followers, reviews the portfolio.",
+         reads="requests/partners/; requests/social/ items about a creator or an influencer",
+         accounts=["Gmail", "Consulti", "treg"]),
+    dict(id="speaker", title="SpeakerAgent", engine="codex",
+         job="Keeps Justin booked on podcasts, YouTube interviews, stages and summits: pitches the shows the worker scored 4 or 5, fills guest forms, follows up.",
+         reads="requests/speaker/",
+         accounts=["SpeakerAgent", "Gmail"]),
+    dict(id="sales-crm", title="Sales agent", engine="codex",
+         job="The one answerer and the one CRM writer: every reply from every agent's lane, openers, warm reconnects, call prep, the pipeline sweep, the deal ledger and the daily close. Reads the person's note before every reply.",
+         reads="requests/sales-crm/ (every other agent hands replies and new people here)",
+         accounts=["GoHighLevel", "Guarded sender", "Cal.com", "Gmail", "Google Calendar"]),
+    dict(id="content", title="Content", engine="claude",
+         job="Daily content, Justin's X and YouTube, and his LinkedIn board, messages and posts. Drafts only until each channel's first post has his yes.",
+         reads="requests/channels/; requests/content-seo/ items that are a story, a recording or a post; requests/social/ items about LinkedIn",
+         accounts=["X", "YouTube", "LinkedIn dashboard", "LinkedIn", "beehiiv", "treg"]),
+    dict(id="cold-email", title="Cold leads", engine="grokbot",
+         job="Cold leads on the plain fractional email, and the data lane: every agent orders its lists and scrapers here.",
+         reads="requests/cold-email/ (list and scraper orders from every agent; hiring posts from Lead Radar)",
+         accounts=["Consulti", "PlusVibe", "Maildoso", "Instantly", "AgentMail", "One API", "Scrapebox", "Decodo", "treg"]),
+    dict(id="lead-radar", title="Lead Radar", engine="codex",
+         job="The AI Guy Lead Radar, Skool's non-AI groups and the job sites. People asking for AI, automation or VA help go to the sales agent; businesses hiring a virtual assistant or an AI role go to cold leads with the post as the reason. Reads only: it contacts no one.",
+         reads="requests/social/ items about an asker, a Skool group or a job post",
+         accounts=["Skool", "Lead Radar", "treg"]),
+    dict(id="aeo-seo", title="AEO and SEO", engine="codex",
+         job="Gets the business named by AI engines and found in search: the AI visibility read, SEO daily, articles as pull requests, links and keywords, Medium.",
+         reads="requests/content-seo/ items about an article, a keyword, a link or a citation",
+         accounts=["RankSpot", "Medium", "treg", "GitHub"]),
+]
+
+
+def bot_name(a):
+    return "Revenue Partnerships" if a["id"] == "lead" else "RP " + a["title"].split(",")[0]
+
+
+def team_routines(a):
+    out = [(r["name"], n, c) for r in ROLES for n, c in r["sched"] if bot_of(r["name"], n) == a["id"]]
+    out += [(r["name"], n, "event: " + w) for r in ROLES for n, w, _ in r["events"] if bot_of(r["name"], n) == a["id"]]
+    return out
+
+
+def team_roles(a):
+    seen = []
+    for role, _, _ in team_routines(a):
+        if role not in seen:
+            seen.append(role)
+    return seen
+
+
+def team_section(a):
+    rs = team_routines(a)
+    roles = team_roles(a)
+    names = "; ".join(f"{n} (role {role})" for role, n, _ in rs)
+    if a["id"] == "lead":
+        extra = ("You are the lead: the one agent Justin plans with. You create the other nine agents from repo/team/<agent>.md (repo/HANDOFF.md, Part 2), each with every routine off, and you never create or change a routine without his yes. "
+                 "Justin's queue is one queue: requests/justin/. Every agent puts its drafts and questions there; you show them to Justin in this chat, and write his answer, his words and the date where repo/GATES.md says (context/standing-approvals.md, context/spend-approvals.md, context/owner.md) so every agent reads the same yes. "
+                 "When Justin asks for work in this chat, write it to the owning agent's inbox (repo/team.json) and say which agent has it; do not do another agent's work yourself.")
+    else:
+        extra = ("You do this function's work and no other. The lead (the agent Justin talks to) plans the day and keeps his one queue: anything for Justin (a draft, a question, a spend) goes in requests/justin/ as a file that starts with your agent id, and you carry on with the rest. "
+                 "Use your own chat with Justin only for what only this chat can show: a sign-in, a secret prompt, or an approval card the app raises here. A yes he gives is in context/standing-approvals.md or context/spend-approvals.md; a yes you only remember does not count. "
+                 "Never create, change or switch on a routine, here or on another agent, unless a file from the lead in requests/" + roles[0] + "/ says Justin said so.")
+    return f"""Agent: {a['id']} ({a['title']}). You are one of the ten agents of Revenue Partnerships: the lead, and one agent for each of the nine functions (repo/team.json).
+
+Your job: {a['job']}
+
+You work as the role{'s' if len(roles) > 1 else ''}: {', '.join(roles)}. Every routine's first line names you and the role ("Agent: {a['id']}. Role: {roles[0]}."). Load that role's section and follow its numbered steps for the run.
+
+Your routines: {names}.
+
+{extra}
+
+All ten agents share one workspace, /workspace/revenue-partnerships/, and work together only through its files, never through chat memory:
+- You read: {a['reads']}.
+- You hand work over as a file in the inbox the role section names (requests/<role>/); repo/team.json says which agent reads each inbox.
+- A daily file can have more than one writer. Append your part to daily/<date>/<role>.md under the line "## {a['id']}" and never rewrite another agent's part.
+- End each run's beat with agent={a['id']} after the counts.
+- If you cannot read or write the workspace, stop, do nothing else, and say so in this chat: the team cannot work without it."""
+
+
+def team_page(a):
+    rs = team_routines(a)
+    roles = team_roles(a)
+    rows = "\n".join(f"| {n} | {role} | {c if c.startswith('event') else '`' + c + '`'} |" for role, n, c in rs)
+    acc = "\n".join(f"- {x}" for x in a["accounts"])
+    sk = "; ".join(f"{role}: " + ", ".join(f"`{s}`" for s in skills_for(next(r for r in ROLES if r["name"] == role))) for role in roles)
+    name = bot_name(a)
+    if a["id"] == "lead":
+        first = "The lead is the bot Justin pastes the one line into (HANDOFF.md, Part 1). It needs no first message from another agent."
+    else:
+        first = f"""The lead creates this agent (or asks Justin to, if the app does not let a bot create one), then gives it this as its first message:
+
+> You are the {a['title']} agent of Revenue Partnerships, agent id `{a['id']}`. The pack is already unpacked at /workspace/revenue-partnerships/repo/. Read repo/team/{a['id']}.md and do its "Set up" steps, in order. Create no routine until the lead's file says Justin said yes. Nothing sends, posts, spends or writes to a CRM until Justin says yes."""
+    return f"""# Agent: {a['title']}
+
+Agent id `{a['id']}`. Bot name: **{name}**. One of the ten agents in [TEAM.md](../TEAM.md). Generated by `tools/gen_roles.py`.
+
+## Job
+
+{a['job']}
+
+## First message
+
+{first}
+
+## Set up
+
+1. Read `/workspace/revenue-partnerships/context/team-registry.md` and write `log/setup-{a['id']}.md` with the date. If either fails, this agent cannot see the shared workspace: stop and say so.
+2. Save to memory, word for word and in this order: `repo/MASTER-PROMPT.md`, the "Agent section" below, then the "System prompt section" of {', '.join(f'`repo/roles/{r}.md`' for r in roles)}.
+3. Save as private skills, if this agent does not already see them: `repo/guards/SKILL.md` and the skills of its role{'s' if len(roles) > 1 else ''} ({sk}).
+4. Set this bot's time zone to UTC. Connect only the accounts below, read-only, one at a time, each with one real record read back into `log/setup-{a['id']}.md` (the checks are in HANDOFF.md, Part 2).
+5. Run `python3 repo/tools/team.py {a['id']}` and paste the routine list into `log/setup-{a['id']}.md`. Create the routines only when the lead's file says to, each paused, each prompt starting `Agent: {a['id']}. Role: <role>.` and naming the routine. Add each to `context/team-registry.md`.
+6. Write one line to `requests/lead/setup-{a['id']}.md`: what is done, what is blocked and why.
+
+## Roles it works as
+
+{', '.join(f'[{r}](../roles/{r}.md)' for r in roles)}
+
+## Routines
+
+UTC. Created paused, on this agent only.
+
+| Routine | Role | Cron or trigger |
+|---|---|---|
+{rows}
+
+## Reads
+
+{a['reads']}
+
+## Accounts it needs (names only)
+
+{acc}
+
+## Engine
+
+`{a['engine']}` ([agents.json](../agents.json)). `grokbot` means the agent's own run does the thinking; the others are called through `python3 repo/engines/route.py`.
+
+## Agent section to paste
+
+```
+{team_section(a)}
+```
+"""
+
+
 def skills_for(r):
     if r["skills"] != "*":
         return ["bot-guards"] + r["skills"]
@@ -255,8 +425,8 @@ When a routine names this role, or Justin asks for this work:
 3. Check every person with python3 repo/guards/scripts/suppression.py check "<who>" before drafting to them. Held means stop on that person.
 4. Before sending, run python3 repo/guards/scripts/send_guard.py <type> --routine "<routine name>". Anything but auto is a draft: put it in requests/justin/ and stop there. In test mode it is always a draft.
 5. Before any paid call, run python3 repo/guards/scripts/spend_guard.py <plan-id> <usd> (add --pool scrape for scrape rungs and Decodo). Held means the plan and its cost go to requests/justin/; carry on with the free work.
-6. Hand work to another role through requests/<role>/. Every reply from anyone goes to sales-crm; every new person for the CRM goes to sales-crm as a row in requests/sales-crm/.
-7. End with python3 repo/guards/scripts/beat.py write {r['name']} '<line>' found=N drafted=N sent=N, write daily/<date>/{r['name']}.md (only what this run really did), and one line in log/runs-<YYYY-MM>.md.
+6. Hand work to another role through requests/<role>/ (the agent that reads each inbox: repo/team.json). Every reply from anyone goes to sales-crm; every new person for the CRM goes to sales-crm as a row in requests/sales-crm/.
+7. End with python3 repo/guards/scripts/beat.py write {r['name']} '<line>' found=N drafted=N sent=N agent=<your agent id>, append your part to daily/<date>/{r['name']}.md under a line naming your agent (only what this run really did), and one line in log/runs-<YYYY-MM>.md.
 8. If nothing needs Justin, end with exactly [SILENT].
 
 Role rules: {r['rules']}"""
@@ -264,7 +434,7 @@ Role rules: {r['rules']}"""
 
 def charter(r):
     acc = "\n".join(f"- {a}" for a in r["accounts"]) or "None of its own: it works from files and the public web."
-    rows = "\n".join(f"| {n} | `{c}` |" for n, c in r["sched"]) + "".join(f"\n| {n} | Event: {w} |" for n, w, _ in r["events"])
+    rows = "\n".join(f"| {n} | `{c}` | {bot_of(r['name'], n)} |" for n, c in r["sched"]) + "".join(f"\n| {n} | Event: {w} | {bot_of(r['name'], n)} |" for n, w, _ in r["events"])
     sk = ", ".join(f"`{s}`" for s in skills_for(r))
     return f"""# Role charter: {r['title']}
 
@@ -292,10 +462,10 @@ def charter(r):
 
 ## Routines
 
-UTC (the bot's time zone). Created paused. Each prompt starts `Role: {r['name']}.`
+UTC (every agent's time zone). Created paused, on the agent in the last column ([TEAM.md](../TEAM.md)). Each prompt starts `Agent: <agent>. Role: {r['name']}.`
 
-| Routine | Cron or trigger |
-|---|---|
+| Routine | Cron or trigger | Agent |
+|---|---|---|
 {rows}
 
 ## Guardrails
@@ -318,9 +488,9 @@ UTC (the bot's time zone). Created paused. Each prompt starts `Role: {r['name']}
 def trigger_sections():
     out = []
     for r in ROLES:
-        out.append(f"### {r['name']}\n\n| Kind | When or what | Does | Function |\n|---|---|---|---|")
-        out += [f"| Schedule | `{c}` | {n} | {agent_of(r['name'], n)} |" for n, c in r["sched"]]
-        out += [f"| Event | {w} | {n}: {d} | {agent_of(r['name'], n)} |" for n, w, d in r["events"]]
+        out.append(f"### {r['name']}\n\n| Kind | When or what | Does | Function | Agent |\n|---|---|---|---|---|")
+        out += [f"| Schedule | `{c}` | {n} | {agent_of(r['name'], n)} | {bot_of(r['name'], n)} |" for n, c in r["sched"]]
+        out += [f"| Event | {w} | {n}: {d} | {agent_of(r['name'], n)} | {bot_of(r['name'], n)} |" for n, w, d in r["events"]]
         out.append("")
     return "\n".join(out)
 
@@ -336,16 +506,37 @@ def main():
            "skills": {r["name"]: skills_for(r) for r in ROLES},
            "accounts": {k: {"path": p, "keys": ks} for k, (p, ks) in ACCOUNTS.items()}}
     json.dump(cfg, open(os.path.join(B, "skills.json"), "w"), indent=2)
-    routines = [{"role": r["name"], "routine": n, "cron": c, "function": agent_of(r["name"], n)} for r in ROLES for n, c in r["sched"]]
-    routines += [{"role": r["name"], "routine": n, "event": w, "function": agent_of(r["name"], n)} for r in ROLES for n, w, _ in r["events"]]
-    json.dump({"_doc": "Every routine, its role and the Revenue OS function it belongs to. Generated by tools/gen_roles.py; tools/tier.py reads it with tiers.json.", "routines": routines},
+    routines = [{"role": r["name"], "routine": n, "cron": c, "function": agent_of(r["name"], n), "agent": bot_of(r["name"], n)} for r in ROLES for n, c in r["sched"]]
+    routines += [{"role": r["name"], "routine": n, "event": w, "function": agent_of(r["name"], n), "agent": bot_of(r["name"], n)} for r in ROLES for n, w, _ in r["events"]]
+    json.dump({"_doc": "Every routine, its role, the Revenue OS function it belongs to and the agent it runs on (team.json). Generated by tools/gen_roles.py; tools/tier.py and tools/team.py read it with tiers.json.", "routines": routines},
               open(os.path.join(B, "routines.json"), "w"), indent=1)
+    union = {r["name"]: {x.split(" (")[0] for x in r["accounts"]} for r in ROLES}
+    os.makedirs(os.path.join(B, "team"), exist_ok=True)
+    team = {}
+    for a in TEAM:
+        rs = team_routines(a)
+        if not rs:
+            raise SystemExit(f"agent {a['id']} has no routine")
+        allowed = set().union(*(union[x] for x in team_roles(a)))
+        stray = [x for x in a["accounts"] if x.split(" (")[0] not in allowed]
+        if stray:
+            raise SystemExit(f"agent {a['id']}: accounts {stray} are not in its roles' charters")
+        open(os.path.join(B, "team", a["id"] + ".md"), "w").write(team_page(a))
+        team[a["id"]] = {"name": a["title"], "bot_name": bot_name(a),
+                         "function": "core" if a["id"] == "lead" else a["id"], "engine": a["engine"], "roles": team_roles(a),
+                         "reads": a["reads"], "accounts": a["accounts"], "routines": [n for _, n, _ in rs]}
+    if set(team) - {"lead"} != set(json.load(open(os.path.join(B, "agents.json")))["agents"]):
+        raise SystemExit("team is not the lead plus the nine functions in agents.json")
+    json.dump({"_doc": "The team: the lead and one agent per Revenue OS function. Generated by tools/gen_roles.py; tools/team.py reads it. A routine runs on the agent of its function (routines.json). When a function is not on the tier its agent is not created, and a core routine it would run goes to the lead. reads: the inbox folders the agent takes work from.",
+               "lead": "lead", "agents": team}, open(os.path.join(B, "team.json"), "w"), indent=1)
+    big = max(len(v["routines"]) for v in team.values())
     tm = os.path.join(B, "TRIGGER-MAP.md")
     t = open(tm).read()
     head = t.split("## Every schedule and event, by role")[0]
     n_s = sum(len(r["sched"]) for r in ROLES); n_e = sum(len(r["events"]) for r in ROLES)
     runs = sum(len(minutes(c)) for r in ROLES for _, c in r["sched"])
-    open(tm, "w").write(head + f"## Every schedule and event, by role\n\n{n_s} schedules and {n_e} event routines: {n_s + n_e} of the 50 a bot allows, leaving {50 - n_s - n_e} spare. No two start within 5 minutes of each other (checked by `tools/gen_roles.py`). Chat requests from Justin are not routines. Scheduled bot runs with every function on: {runs} a week; the volume work runs on the worker (WORKERS.md). The Function column is the Revenue OS function a routine belongs to (`core` runs on every tier); `python3 tools/tier.py <tier>` lists the routines a tier creates.\n\n" + trigger_sections())
+    open(tm, "w").write(head + f"## Every schedule and event, by role\n\n{n_s} schedules and {n_e} event routines, {n_s + n_e} in all, spread over the ten agents in TEAM.md: the most on one agent is {big} of the 50 a bot allows. No two start within 5 minutes of each other (checked by `tools/gen_roles.py`). Chat requests from Justin are not routines. Scheduled bot runs with every function on: {runs} a week; the volume work runs on the worker (WORKERS.md). The Function column is the Revenue OS function a routine belongs to (`core` runs on every tier); the Agent column is the agent the routine is created on. `python3 tools/tier.py <tier>` lists the routines a tier creates and `python3 tools/team.py <agent>` the ones an agent runs.\n\n" + trigger_sections())
+    print(f"ok: {len(TEAM)} agents (most routines on one: {big})")
     print(f"ok: {len(ROLES)} roles, {n_s} schedules + {n_e} events = {n_s + n_e} routines, {runs} scheduled bot runs a week")
 
 
