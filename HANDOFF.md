@@ -26,7 +26,7 @@ What Justin does, then what the lead agent does on its own. The install is ten a
    1a. The fractional email: show Justin `repo/fractional/MESSAGES.md` sections 1 to 4 and ask for his yes or his changes, the subject line he picks, and which mailbox it goes from.
    1b. Who gets it: the Dream 100 and Dream 500 lists or the kind of company he would work inside, the cold leads audience, and how many a day.
    1c. The answer to "what's the base, what's the commission": his figures, or "I'll say it on the call".
-   1d. The Lead Radar dashboard's address (`RADAR_APP_URL`), whether its job-board campaigns exist, and any job site to add to or drop from `repo/fractional/settings/lead-radar.json`.
+   1d. The Lead Radar dashboard: its address is in `repo/fractional/settings/lead-radar.json` (set `RADAR_APP_URL` to it); ask only for the password, by hidden prompt in the Lead Radar agent's chat, then read `/api/data` once. Also ask whether its job-board campaigns exist, the Skool and Whop group links, and any job site to add to or drop from `repo/fractional/settings/lead-radar.json`.
    2. The call link every lane ends on (also `BOOKING_LINK` in the intake file).
    3. The percentage on Revenue Partnerships 3.0, and what counts as revenue that comes from a partnership.
    4. Whether outreach names the prices, or they are said only on a reply and on the call.

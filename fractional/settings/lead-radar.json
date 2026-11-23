@@ -14,13 +14,16 @@
  "max_age_days": 7,
  "account": "owner",
  "routes": {
-  "_doc": "The four routes. The data route is named here and not built yet.",
+  "_doc": "The four routes, all on (Justin, 2026-11-23: get the switched-off sources fixed). The data route is an order to the cold leads agent's data lane: this agent builds no list itself.",
   "social": {
    "on": true,
    "channels": [
     "facebook",
     "instagram",
-    "reddit"
+    "reddit",
+    "youtube",
+    "tiktok",
+    "x"
    ]
   },
   "community_leads": {
@@ -39,12 +42,13 @@
    "list": "state/lead-radar/partners.jsonl"
   },
   "data": {
-   "on": false,
+   "on": true,
    "tools": [
     "treg",
     "consulti"
    ],
-   "for": "the email campaigns' lists"
+   "for": "the email campaigns' lists",
+   "how": "a list order in requests/cold-email/ naming the kept leads' companies; the cold leads agent's data lane builds and verifies it (Consulti verifies everything), under the spend guard"
   }
  },
  "sources": {
@@ -55,20 +59,23 @@
    "max_usd_per_call": 0.25
   },
   "treg": {
-   "on": false,
-   "team": "the client's own Treg team",
-   "max_usd_per_call": 0.25
+   "on": true,
+   "team": "the owner's Treg account, through the Treg connector on the bot or TREG_API_KEY",
+   "max_usd_per_call": 0.25,
+   "note": "on as its own source as well as inside One API. Every paid call goes through spend_guard.py first; with no line in context/spend-approvals.md it is held and the free reads carry on"
   },
   "dashboard-radar": {
    "on": true,
-   "note": "the AI Guy Lead Radar: its campaigns of people asking for AI or VA help, and its job-board campaigns. The worker's radar-poll job reads it"
+   "url": "https://radar.truerevenuepartnerships.com",
+   "note": "the AI Guy Lead Radar: its campaigns of people asking for AI or VA help, and its job-board campaigns. Set RADAR_APP_URL to the url here; the password (RADAR_DASHBOARD_PASSWORD) is given by hidden prompt, never in chat. A run costs about 90 to 140 of the dashboard's scrape credits, so this agent reads what the dashboard's own daily run found and starts a run itself only with Justin's yes"
   },
   "lead-radar-agent": {
    "on": false,
    "note": "the standalone Lead Radar agent, where the business runs one; its leads go to the sales agent like any other source"
   },
   "x-search": {
-   "on": false
+   "on": true,
+   "note": "read only, through the bot's own X search (skill x-intent-search). Never posts, replies, likes or follows"
   },
   "metamuse": {
    "on": false,
@@ -115,7 +122,7 @@
    ]
   },
   "tiktok": {
-   "on": false,
+   "on": true,
    "via": "account",
    "read": [],
    "terms": [],
@@ -124,7 +131,7 @@
    ]
   },
   "youtube": {
-   "on": false,
+   "on": true,
    "via": "account",
    "read": [],
    "terms": [],
@@ -133,7 +140,7 @@
    ]
   },
   "x": {
-   "on": false,
+   "on": true,
    "via": "x-search",
    "read": [],
    "terms": []

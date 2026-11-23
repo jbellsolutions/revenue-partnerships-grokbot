@@ -76,7 +76,7 @@
     "lead-radar": {
       "state": "test",
       "source": "roles/social.md, agents/lead-radar/, fractional/settings/lead-radar.json",
-      "waits_on": "the Lead Radar dashboard's address and its job-board campaigns"
+      "waits_on": "the dashboard password (the address is in the settings), the Skool and Whop group links and a signed-in browser, and a spend line for paid reads"
     },
     "aeo-seo": {
       "state": "test",
