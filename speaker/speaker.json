@@ -1,0 +1,107 @@
+{
+ "_doc": "This bot's SpeakerAgent settings, from Justin's words on 2026-11-24 (repo/speaker/SPEAKERAGENT.md). Names of things only: no key, address, phone number or link is in this file.",
+ "campaign": "revenue-partnerships",
+ "speaker": {
+  "_doc": "Filled on the bot from Justin's SpeakerAgent persona (its bio and its three topics), word for word, then shown to him once. speaker.py needs the name, who he serves and one topic before it runs.",
+  "name": "",
+  "title": "",
+  "serves": "",
+  "language": "English",
+  "topics": [],
+  "proof": [],
+  "voice": []
+ },
+ "booking_is_for": "getting Justin on the show: a recording, the host's audience, leads from the tracked link",
+ "leave_outs": [],
+ "lanes": {
+  "_doc": "podcasts covers audio shows and interview shows published as a podcast feed. stages (conferences, summits, seminars, paid speaking) is in the source this was adapted from and is off here until the owner turns it on.",
+  "podcasts": {
+   "on": true
+  },
+  "stages": {
+   "on": false
+  }
+ },
+ "sources": {
+  "_doc": "Order matters. hosted-list is Justin's SpeakerAgent account, read first every day through repo/skills/speaker/speakeragent/speakeragent.py and its dashboard. apple-rss and web-search fill a short day, and carry the day while the SpeakerAgent key is not in yet. speaker.py does not read the hosted list itself: the routine lists it with the CLI and writes each show into the day's found file.",
+  "order": [
+   "hosted-list",
+   "collab-handoffs",
+   "apple-rss",
+   "web-search"
+  ],
+  "hosted-list": {
+   "on": true,
+   "account": "SpeakerAgent",
+   "keys": [
+    "SPEAKERAGENT_API_URL",
+    "SPEAKERAGENT_API_KEY",
+    "SPEAKERAGENT_SPEAKER_ID"
+   ],
+   "take": "status New, GREEN first, then YELLOW"
+  },
+  "collab-handoffs": {
+   "on": true
+  },
+  "apple-rss": {
+   "on": true,
+   "terms": [],
+   "terms_per_run": 12,
+   "per_term": 200,
+   "feeds_per_run": 300
+  },
+  "web-search": {
+   "on": true
+  }
+ },
+ "reject_below": 20,
+ "quiet_days": 90,
+ "pace": {
+  "_doc": "Justin, 2026-11-24: \"find 10, 20 podcasts a day\". His earlier number (2026-11-17) was 20 to 30 a day for 1 to 2 booked; the newer one is used. open_per_day is twice the top of the range, because about half of opened shows were held on the first live run.",
+  "booked_per_day": [
+   1,
+   2
+  ],
+  "pitches_per_day": [
+   10,
+   20
+  ],
+  "open_per_day": 40
+ },
+ "holds_reviewed_per_run": 10,
+ "pitch": {
+  "words": "120 to 200",
+  "template_file": "",
+  "details_file": "speaker/pitch-details.json",
+  "_details_doc": "The private file the guest-form answers come from (which email, whether a phone may be given, the bio, how-did-you-hear). It lives on the bot's computer, never in the pack or this file.",
+  "booking_link_in_pitch": false,
+  "_booking_doc": "Justin, 2026-11-24: \"we shouldn't be sending a link anyway for them to book. We're trying to book it on their podcast.\" No pitch, form answer or follow-up carries his calendar link. Only when a host asks for his calendar does the sales agent give the link in SPEAKER_BOOKING_LINK (private intake value)."
+ },
+ "route_order": [
+  "the host's own booking calendar or open booking page, with no fee",
+  "the show's guest application form",
+  "an email to the host's or the show's published address"
+ ],
+ "follow_up_days": [
+  4,
+  10
+ ],
+ "attribution": {
+  "link": "the page a listener is sent to, with ?src=podcast-<show> added",
+  "crm_source_tag": "podcast:<show>"
+ },
+ "hand_off": {
+  "sales-crm": "every host who replies, every booked show, and a host who is also a possible buyer",
+  "content": "every recorded or published episode",
+  "partners": "a host who runs a partner programme or has a large audience of the speaker's buyers"
+ },
+ "routines": {
+  "research": "daily, in several slots: find, score, open and qualify shows until the day's pitches are covered; re-review held shows",
+  "pitches": "daily: draft a pitch for each accepted show",
+  "follow-up": "daily: follow-ups that are due, replies, bookings",
+  "week": "weekly: counts, and leads per appearance from the CRM source tag"
+ },
+ "_reject_doc": "reject_below is the documented SpeakerAgent line: a show scoring under 20 is rejected.",
+ "_route_doc": "Justin, 2026-11-24: \"We're trying to find their calendar to book in, or where to apply, or sending them an email, letting them know that we want to potentially get on the show.\"",
+ "account_sync": "After each step, set the show's status in SpeakerAgent with the CLI: Contacted, Replied, Booked or Passed."
+}

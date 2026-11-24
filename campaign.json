@@ -55,7 +55,7 @@
     },
     "speaker": {
       "state": "test",
-      "source": "roles/speaker.md, agents/speaker/",
+      "source": "roles/speaker.md, agents/speaker/, speaker/SPEAKERAGENT.md, speaker/speaker.json",
       "waits_on": "the SpeakerAgent keys and pitch details"
     },
     "sales-crm": {

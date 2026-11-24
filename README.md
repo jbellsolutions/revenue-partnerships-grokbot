@@ -49,6 +49,7 @@ The Revenue OS template (the nine functions in [agents/](agents/README.md), the 
 | [gtm-box/](gtm-box/) | The engine scripts the skills call, the message templates and their approval state |
 | [PLAYS.md](PLAYS.md), [CONTENT.md](CONTENT.md) | Revenue and content plays the skills run |
 | [ADAPTATION.md](ADAPTATION.md) | How skills load on GrokBot, and what still carries the base kit's wording |
+| [speaker/SPEAKERAGENT.md](speaker/SPEAKERAGENT.md) | SpeakerAgent on this bot: Justin's answers of 2026-11-24, the prospecting day, and how his SpeakerAgent account is set up; settings in `speaker/speaker.json` |
 | [TEMPLATE-CHANGELOG.md](TEMPLATE-CHANGELOG.md) | The template's changes by function and version, as of this pack |
 | [.env.example](.env.example) | Key names only |
 | `tools/check.py`, `tools/selftest.py` | `python3 tools/check.py --ready` and `python3 tools/selftest.py` |

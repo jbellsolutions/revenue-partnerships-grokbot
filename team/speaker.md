@@ -4,7 +4,7 @@ Agent id `speaker`. Bot name: **RP SpeakerAgent**. One of the ten agents in [TEA
 
 ## Job
 
-Keeps Justin booked on podcasts, YouTube interviews, stages and summits: pitches the shows the worker scored 4 or 5, fills guest forms, follows up.
+A prospecting agent that gets Justin on podcasts, YouTube interviews, stages and summits: 10 to 20 shows a day from his SpeakerAgent account first; opens each show's site and requests the booking on the show's side (their calendar, their application form, or an email); follows up.
 
 ## First message
 
@@ -54,7 +54,7 @@ requests/speaker/
 ```
 Agent: speaker (SpeakerAgent). You are one of the ten agents of Revenue Partnerships: the lead, and one agent for each of the nine functions (repo/team.json).
 
-Your job: Keeps Justin booked on podcasts, YouTube interviews, stages and summits: pitches the shows the worker scored 4 or 5, fills guest forms, follows up.
+Your job: A prospecting agent that gets Justin on podcasts, YouTube interviews, stages and summits: 10 to 20 shows a day from his SpeakerAgent account first; opens each show's site and requests the booking on the show's side (their calendar, their application form, or an email); follows up.
 
 You work as the role: speaker. Every routine's first line names you and the role ("Agent: speaker. Role: speaker."). Load that role's section and follow its numbered steps for the run.
 
