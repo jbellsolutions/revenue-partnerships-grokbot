@@ -1,0 +1,30 @@
+{
+ "_doc": "The front-desk mode (repo/handover/HANDOVER.md). Every switch is off until Justin says it in the lead's chat. Names of things only: no key, table id or address is in this file.",
+ "campaign": "revenue-partnerships",
+ "orders": {
+  "_doc": "An order from Justin becomes one row in the Requests table of his Notion Command Center. The table's id is in context/owner.md as NOTION_REQUESTS_TABLE.",
+  "on": false,
+  "agents": ["operator", "cofounder"],
+  "operator_gets": ["crm change", "campaign", "follow-up", "send"],
+  "cofounder_gets": ["client check-in", "build"],
+  "row_fields": ["what", "for whom", "agent", "person's note link"],
+  "log": "log/handover.jsonl",
+  "stale_after_hours": 24
+ },
+ "crm_writer": "sales-crm",
+ "_crm_writer_doc": "sales-crm (this bot writes the CRM) or operator (campaign.json crm.writer is none and the day file is handed to the Operator).",
+ "replies_answered_by": "sales-crm",
+ "capture": {
+  "_doc": "One line per agent session to the single brain's activity folder. Needs the path from NEEDS-JUSTIN A9.",
+  "on": false,
+  "folder": "activity/<this bot's name>/",
+  "never_in_a_line": ["transcripts", "contact details", "keys"]
+ },
+ "events_first": {
+  "_doc": "Once the Reply webhook is seen firing on two different days, Reply check runs once a day as the catch-up. Pipeline sweep stays twice a day.",
+  "on": false,
+  "reply_check_runs_a_day_with_webhook": 1,
+  "reply_check_runs_a_day_without": 3,
+  "webhook_seen_on_days": 2
+ }
+}
