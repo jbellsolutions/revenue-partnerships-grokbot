@@ -49,7 +49,7 @@ The Revenue OS template (the nine functions in [agents/](agents/README.md), the 
 | [gtm-box/](gtm-box/) | The engine scripts the skills call, the message templates and their approval state |
 | [PLAYS.md](PLAYS.md), [CONTENT.md](CONTENT.md) | Revenue and content plays the skills run |
 | [ADAPTATION.md](ADAPTATION.md) | How skills load on GrokBot, and what still carries the base kit's wording |
-| [handover/HANDOVER.md](handover/HANDOVER.md) | The front-desk mode, off until Justin says: his order becomes a request row for the Operator or the Co-Founder agent, who writes the CRM, capture to the single brain, events before timers; switches in `handover/handover.json` |
+| [handover/HANDOVER.md](handover/HANDOVER.md) | The front-desk mode, off until Justin says: his order becomes a request row for the Operator or the Co-Founder agent, who writes the CRM, capture to the single brain, events before timers, the After-call webhook (`handover/after_call.py`); switches in `handover/handover.json` |
 | [speaker/SPEAKERAGENT.md](speaker/SPEAKERAGENT.md) | SpeakerAgent on this bot: Justin's answers of 2026-11-24, the prospecting day, and how his SpeakerAgent account is set up; settings in `speaker/speaker.json` |
 | [TEMPLATE-CHANGELOG.md](TEMPLATE-CHANGELOG.md) | The template's changes by function and version, as of this pack |
 | [.env.example](.env.example) | Key names only |

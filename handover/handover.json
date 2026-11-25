@@ -26,5 +26,15 @@
   "reply_check_runs_a_day_with_webhook": 1,
   "reply_check_runs_a_day_without": 3,
   "webhook_seen_on_days": 2
+ },
+ "after_call": {
+  "_doc": "The Operator's one post per call (event call.followup_ready) to the sales agent's After-call webhook. Checked by repo/handover/after_call.py. The secret is in .secrets/after-call, placed by Justin; the webhook's address is in team-registry.md.",
+  "on": false,
+  "routine": "After-call",
+  "event": "call.followup_ready",
+  "max_age_seconds": 600,
+  "include_contact": false,
+  "on_saved": ["add to the person's note", "one notice in requests/justin/", "tell Justin once"],
+  "never": ["send", "rewrite a draft", "write the CRM"]
  }
 }

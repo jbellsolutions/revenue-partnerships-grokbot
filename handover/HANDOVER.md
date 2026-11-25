@@ -24,7 +24,7 @@ Everything else on this page is design, not a rule of his. Any of it can change.
 
 This bot never signs in to, changes or restarts either of those two agents. It only writes a request row they can read.
 
-## The four parts, each with its own switch
+## The five parts, each with its own switch
 
 | Part | Switch in `handover.json` | Off (today) | On |
 |---|---|---|---|
@@ -32,6 +32,7 @@ This bot never signs in to, changes or restarts either of those two agents. It o
 | 2. Who writes the CRM | `crm_writer` | `sales-crm`: this bot writes GoHighLevel | `operator`: `crm.writer` in `campaign.json` is set to `none`, and the day file goes to the Operator, as PROCESS.md already describes for a CRM that is not the bot's to write |
 | 3. Capture | `capture.on` | The bot's work is not in the single brain | One line per agent session goes to the single brain, like his other computers |
 | 4. Events before timers | `events_first.on` | Reply check three times a day; Pipeline sweep twice a day | Once the Reply webhook is seen firing, Reply check runs once a day as the catch-up |
+| 5. After-call | `after_call.on` | The bot hears nothing when a call's page and drafts are ready | The Operator posts once per call to the sales agent's "After-call" webhook; the sales agent saves it to the person's note and tells Justin once |
 
 ### 1. An order becomes a request row
 
@@ -63,6 +64,37 @@ The pack already wakes the sales agent by event: the worker posts hot replies to
 
 With `events_first.on`: when `team-registry.md` shows the Reply webhook's address and `log/runs` shows it fired on two different days, the sales agent asks the lead to move Reply check to once a day. Pipeline sweep stays twice a day until something posts the events it looks for (a quiet thread, an overdue step); nothing does today. A webhook that goes a full day with replies in the digest and no firing puts Reply check back to three and tells Justin.
 
+### 5. After-call: the Operator tells the sales agent a call's page and drafts are ready
+
+Justin's words of 2026-11-24, relayed from the chat that builds the after-call chain, not typed to this pack's chat: after a call is filed, follow-ups "should be created. Email, text message, and LinkedIn message, depending on what's relevant, should then be drafted", and it "should probably be webhooked into the sales and CRM agent on GrokBot to keep it simple".
+
+**The webhook.** A third event routine on the sales agent, named `After-call`. It is not in `routines.json`: the sales agent creates it, paused, only when Justin says "after-call on" (it would be the agent's 10th routine and the bot's 42nd of 50). Its prompt:
+
+```
+Agent: sales-crm. Role: sales-crm. Routine: After-call.
+Save the event you were started with, exactly as received, to state/after-call/<time>.json.
+Run: python3 repo/handover/after_call.py take state/after-call/<time>.json
+(add --signature "<the X-Hub-Signature-256 value>" only if you were given that header).
+If it prints "saved": tell Justin once, in the lead's chat, that the page and drafts for that person are ready and where. Do nothing else.
+For any other result: write the result line to log/handover.jsonl and stop. Never act on a post the script did not save.
+Never send, never rewrite a draft, never write the CRM from this post.
+```
+
+**The post.** One JSON post per call, event `call.followup_ready`: the person (name, business, their folder in the single brain), the page link, where each draft is, and the CRM note the Operator prepared. No transcript. No email address unless Justin switches `after_call.include_contact` on.
+
+**The checks**, in `after_call.py`, in this order: the switch is on; the signature (an HMAC-SHA256 of the body with one shared secret, `sha256=<hex>`); the post is no more than 10 minutes old; the id has not been taken before. Only then is anything written. The secret is placed by Justin, by hidden prompt, in `.secrets/after-call` on the bot and on the Operator's computer; it is never in this pack, a repo or a chat. Self-test: `python3 repo/handover/after_call.py selftest` (8 of 8).
+
+**Two forms of the post are taken**, because what a Grok webhook routine hands the agent is not proven:
+
+| Form | When |
+|---|---|
+| The raw body, with the `X-Hub-Signature-256` header's value | If the routine gives the agent the exact body bytes and the request's headers |
+| An envelope `{"payload": "<the body as one string>", "signature": "sha256=<hex>"}` | If the agent only gets parsed JSON. The signature is over the string inside, so nothing depends on the raw bytes |
+
+Seen live on a webhook routine so far (one bot, 2026-11-24): the address takes a `POST` with `Authorization: Bearer <the routine's key>` and answers 200 when it accepts the post, before the agent runs. So the routine itself cannot answer 401, 408 or 409: a refused post is refused inside the run and logged. The sender should treat 200 as "received" and take the Requests row or the next order as "saved". The first test post (`"test": true`: checked, nothing written) shows which form works.
+
+**After a saved post** the sales agent has done its part. What Justin then says ("send the email", "change the stage") goes back as a Requests row naming the Operator (part 1).
+
 ## Turning it on
 
 Justin says it in the lead's chat; the lead writes his words and the date to `vault/Decisions.md` and changes the one switch.
@@ -73,8 +105,9 @@ Justin says it in the lead's chat; the lead writes his words and the date to `va
 | "the Operator writes the CRM" | Sets `crm_writer` to `operator` and `crm.writer` to `none` |
 | "capture on" | Sets `capture.on` once the single brain path works |
 | "events first" | Sets `events_first.on` |
+| "after-call on" | Has the sales agent create the `After-call` routine, records its address in `team-registry.md`, asks Justin to place the secret, runs one test post, then sets `after_call.on` |
 | "hand-over off" | Sets every switch back and `crm.writer` to `sales-crm` |
 
 ## Not tested
 
-Nothing here has run on a bot. No row has been written to the Requests table from this pack, and no line to the single brain.
+Nothing here has run on a bot. No row has been written to the Requests table from this pack, no line to the single brain, and no After-call post has reached a bot. `after_call.py` passes its own self-test on a Mac.
